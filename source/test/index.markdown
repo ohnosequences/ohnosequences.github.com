@@ -1,14 +1,10 @@
 ---
 layout: page
-title: "test"
-date: 2012-05-24 19:10
+title: "legal issues"
 comments: false
 sharing: true
 footer: true
 ---
-
-
-# legal issues #
 
 ## contributions ##
 
