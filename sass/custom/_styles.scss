@@ -1,2 +1,32 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+.title_oh {
+  
+  color: $Salmon;
+}
+.title_no {
+  
+  color: $LightAmber;
+}
+.title_sequences {
+  
+  color: $Grey;
+}
+
+.title_bang {
+  
+  color: $Salmon;
+}
+
+.subtitle {
+  
+  font-family: $header-subtitle-font-family;
+  // font-style: italic;
+  font-weight: 300 !important;
+  padding-top: .6em;
+  font-size: .9em !important;
+  //text-align: left;
+  color: $subtitle-color;
+}
+
