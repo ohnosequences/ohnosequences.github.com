@@ -65,5 +65,19 @@ Concerning **dual licensing**, this is about the strongest statement one can mak
 1. [Bradley Kuhn - Project Harmony Considered Harmful](http://ebb.org/bkuhn/blog/2011/07/07/harmony-harmful.html)
 2. [Richard Fontana - Contribution Policies for Open Source Projects](http://ref.fedorapeople.org/fontana-linuxcon.html)
 
+### sample math ###
+
+Let's test if $f = g_1 \circ \beta$ inline math works. It does! Now
+
+$$
+U \colon \mathbf{Cat} / C \to \mathbf{Cat}
+$$
+
+_yeah!_ now, test AMSMath:
+
+$$
+\chi_a \colon \mathcal{C}^{\infty}_{\mathbb{R}} \to \mathbb{R}
+$$
+
 
 
