@@ -26,7 +26,7 @@ group members publications, more or less accurate reverse chronological order:
 
 - **Cutting Edge: Natural DNA Repetitive Extragenic Sequences from Gram-Negative Pathogens Strongly Stimulate TLR9.** Mattias Magnusson, Raquel Tobes, Jaime Sancho, and Eduardo Pareja <br/> *Journal of Immunology* \| **2007** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/17579017 "http://www.ncbi.nlm.nih.gov/pubmed/17579017")
 
-- **Search spaces representation in optimization problems** Pareja-Tobes, Pablo, D. Pelta, A. Sancho Royo, and J. Verdegay. <br/> *Expert Systems with Applications* \| **2007** \| [doi](http://dx.doi.org/10.1016/j.eswa.2007.05.046 "http://dx.doi.org/10.1016/j.eswa.2007.05.046")
+- **Search spaces representation in optimization problems** Pablo Pareja-Tobes, D. Pelta, A. Sancho Royo, and J. Verdegay. <br/> *Expert Systems with Applications* \| **2007** \| [doi](http://dx.doi.org/10.1016/j.eswa.2007.05.046 "http://dx.doi.org/10.1016/j.eswa.2007.05.046")
 
 - **Bacterial repetitive extragenic palindromic sequences are DNA targets for Insertion Sequence elements.** Raquel Tobes and Eduardo Pareja. <br/> *BMC genomics* \| **2006** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/16563168 "http://www.ncbi.nlm.nih.gov/pubmed/16563168")
 
