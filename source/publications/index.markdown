@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 
-group members publications, more or less accurate reverse chronological order:
+group members publications, (more or less accurate) reverse chronological order:
 
 - **Phagosomes Induced by Cytokines Function as anti-Listeria Vaccines: a novel role for functional compartmentalization of STAT-1 and cathepsin-D.** Eugenio Carrasco-Marín, Estela Rodriguez-Del Rio, Elisabet Frande-Cabanes, Raquel Tobes, Eduardo Pareja, M. Jesús Lecea-Cuello, Marta Ruiz-Sáez, Fidel Madrazo-Toca, Christoph Hölscher, and Carmen Alvarez-Dominguez. <br/> *The Journal of biological chemistry* \| **2012** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/22337873 "http://www.ncbi.nlm.nih.gov/pubmed/22337873")
 
