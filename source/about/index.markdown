@@ -19,13 +19,25 @@ As our name suggests, we're interested in _sequences_; but in lots of other thin
 
 ### bacterial genomics ###
 
+- **repeated extragenic sequences** their role in... In particular, _REPs_: Repetitive extragenic _palindromic_ sequences.
+- **horizontal gene transfer** In particular its relationship with antibiotic resistance, outbreaks, and related stuff.
+
 ### metagenomics ###
 
 ### cloud computing ###
 
+We've been using AWS since 2005, and it plays a critical role in everything we do. Right now, we're working on 
+
+- a pure Scala API for parts of EC2
+- an easy to use, scalable AWS-based BLAST service
+
 ### NoSQL databases ###
 
+We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and Pablo Pareja is a well-known participant of the noe4j community. We've built and use on a daily basis one of the biggest neo4j DBs out there, [bio4j](http://bio4j.com).
+
 ### category theory ###
+
+
 
 
 
