@@ -1,0 +1,2479 @@
+---
+author: Raquel Tobes
+comments: false
+date: 2011-06-05 20:40:36
+layout: post
+slug: '350'
+title: 'Escherichia coli EHEC Germany outbreak preliminary manual functional annotation '
+wordpress_id: 350
+categories:
+- ngs
+tag:
+- adhesion
+- Antibiotic resistance
+- EAEC
+- EHEC
+- Escherichia coli
+- European outbreak
+- hemolysin
+- HUS
+- pathogenicity
+- plasmid
+- toxin
+- virulence
+---
+
+Based on the preliminary results of our semi-automated method of annotation we have selected some predicted protein with potential implications in pathogenicity and virulence.
+There are 33 predicted genes annotated as toxins and we have found three putative hemolysins: Hemolysin E, a putative hemolysin expression modulating protein and a channel protein, hemolysin III family. We have found 31 predicted genes that could be related to specific antibiotic resistance: beta-lactamic, aminoglycoside, macrolide, polymyxin, tetracycline, fosfomycin and deoxycholate, novobiocin, chloramphenicol, bicyclomycin, norfloxacin and enoxacin and 6-mercaptopurine. This strain is rich in adhesion, secretion systems, pathogenicity and virulence related proteins. It seems to have a restriction-modification system, many proteins involved in Fe transport and utilization (siderophores as aerobactin and enterobactin), lysozyme, one inhibitor of pancreatic serine proteases, proteins involved in anaerobic respiration, antimicrobial peptides, proteins involved in quorum-sensing and biofilm formation that could confer competitive advantage to this strain.
+
+** **
+
+**Fast manual annotation **
+
+Based on the preliminary results of our semi-automated method of annotation we have reviewed manually the annotation tagging the principal genes and functions. This preliminary tagging has been carried out analyzing the annotation for each predicted protein following specific interesting points: toxins, hemolysins, antibiotic resistance, pathogenicity, adhesion, plasmid, phage and other features.
+
+We have selected and clustered genes with specific functions especially important from the human health perspective.  The tagged genes are displayed in the following simplified tables. The complete annotation tables are available at:
+
+[http://www.era7bioinformatics.com/docs/EHEC_E_COLI_GERMANY_OUTBREAK_Annotation_Era7_Bioinformatics_v1_5_6_2011.xls](http://www.era7bioinformatics.com/docs/EHEC_E_COLI_GERMANY_OUTBREAK_Annotation_Era7_Bioinformatics_v1_5_6_2011.xls)
+
+**Table 1: Toxins
+**
+
+In this table we have selected predicted proteins with annotations related with toxin function.
+
+
+
+
+
+
+
+
+Contig ID
+
+
+Gen ID
+
+
+tags
+
+
+Similar to
+
+
+Protein names
+
+
+
+
+
+
+husec41_c1134
+
+
+36180
+
+
+Toxin
+
+
+Q83Z99
+
+
+Putative acyltransferase MchD
+
+
+
+
+
+
+husec41_c1252
+
+
+46188
+
+
+Toxin
+
+
+D8CGU2
+
+
+Toxin-antitoxin system, toxin component, PIN family
+
+
+
+
+
+
+husec41_c136
+
+
+40883
+
+
+Toxin
+
+
+D7YRT1
+
+
+Toxin-antitoxin system, antitoxin component, Xre family
+
+
+
+
+
+
+husec41_c145
+
+
+66526
+
+
+Toxin
+
+
+C8THQ6
+
+
+Predicted antitoxin of YafQ-DinJ toxin-antitoxin system
+
+
+
+
+
+
+husec41_c145
+
+
+54284
+
+
+Toxin
+
+
+B7LHF6
+
+
+Toxin of the YafQ-DinJ toxin-antitoxin system
+
+
+
+
+
+
+husec41_c1518
+
+
+5119
+
+
+Toxin
+
+
+Q8VSL2
+
+
+Serine protease sepA autotransporter (EC 3.4.21.-)   [Cleaved into: Serine protease sepA; Serine protease sepA translocator]
+
+
+
+
+
+
+husec41_c1554
+
+
+45805
+
+
+Toxin
+
+
+C1NDL5
+
+
+Secreted autotransporter toxin Sat
+
+
+
+
+
+
+husec41_c1932
+
+
+50684
+
+
+Toxin
+
+
+B7LBW0
+
+
+Serine protease pic (ShMu)
+
+
+
+
+
+
+husec41_c2009
+
+
+41962
+
+
+Toxin
+
+
+D8ET41
+
+
+Toxin-antitoxin system protein
+
+
+
+
+
+
+husec41_c2132
+
+
+76041
+
+
+Toxin
+
+
+B7MC95
+
+
+Vacuolating autotransporter toxin
+
+
+
+
+
+
+husec41_c291
+
+
+110361
+
+
+Toxin
+
+
+B7LBY5
+
+
+Serine protease pet (Plasmid-encoded toxin pet) (EC   3.4.21.72)
+
+
+
+
+
+
+husec41_c380
+
+
+110360
+
+
+Toxin
+
+
+B7LBY5
+
+
+Serine protease pet (Plasmid-encoded toxin pet) (EC   3.4.21.72)
+
+
+
+
+
+
+husec41_c482
+
+
+84923
+
+
+Toxin
+
+
+C8TUV8
+
+
+Membrane protein
+
+
+
+
+
+
+husec41_c543
+
+
+42847
+
+
+Toxin
+
+
+E6ARB5
+
+
+Toxin-antitoxin system, antitoxin component, Xre family
+
+
+
+
+
+
+husec41_c567
+
+
+110363
+
+
+Toxin
+
+
+B7LBY5
+
+
+Serine protease pet (Plasmid-encoded toxin pet) (EC   3.4.21.72)
+
+
+
+
+
+
+husec41_c581
+
+
+45751
+
+
+Toxin
+
+
+E7J0S6
+
+
+Putative shET2 enterotoxin
+
+
+
+
+
+
+husec41_c59
+
+
+63485
+
+
+Toxin
+
+
+C8TP46
+
+
+Toxin ChpB of the ChpB-ChpS toxin-antitoxin system
+
+
+
+
+
+
+husec41_c672
+
+
+46347
+
+
+Toxin
+
+
+D7X7P6
+
+
+ShET2 enterotoxin, region
+
+
+
+
+
+
+husec41_c69
+
+
+41563
+
+
+Toxin
+
+
+D8BT94
+
+
+Toxin-antitoxin system, antitoxin component, HicB family
+
+
+
+
+
+
+husec41_c74
+
+
+69806
+
+
+Toxin
+
+
+C8TTV0
+
+
+Toxin of the YoeB-YefM toxin-antitoxin system
+
+
+
+
+
+
+husec41_c74
+
+
+68869
+
+
+Toxin
+
+
+A1ACN0
+
+
+Antitoxin of the YoeB-YefM toxin-antitoxin system
+
+
+
+
+
+
+husec41_c746
+
+
+89468
+
+
+Toxin
+
+
+C8TG29
+
+
+Toxin ChpA
+
+
+
+
+
+
+husec41_c782
+
+
+5124
+
+
+Toxin
+
+
+Q8VSL2
+
+
+Serine protease sepA autotransporter (EC 3.4.21.-)   [Cleaved into: Serine protease sepA; Serine protease sepA translocator]
+
+
+
+
+
+
+husec41_c797
+
+
+36434
+
+
+Toxin
+
+
+D7ZZI1
+
+
+Toxin-antitoxin system, antitoxin component, AbrB family
+
+
+
+
+
+
+husec41_rep_c2274
+
+
+50678
+
+
+Toxin
+
+
+B7LBW0
+
+
+Serine protease pic (ShMu)
+
+
+
+
+
+
+husec41_rep_c2292
+
+
+59806
+
+
+Toxin
+
+
+B7LBU0
+
+
+Toxin of the YeeV-YeeU toxin-antitoxin system
+
+
+
+
+
+
+husec41_rep_c2292
+
+
+25611
+
+
+Toxin
+
+
+E3PD62
+
+
+Putative antitoxin
+
+
+
+
+
+
+husec41_rep_c2295
+
+
+19119
+
+
+Toxin
+
+
+B3HJU4
+
+
+Serine proteAse eata (EC 3.4.21.-)
+
+
+
+
+
+
+husec41_rep_c2297
+
+
+108631
+
+
+Toxin
+
+
+C6UP08
+
+
+Shiga toxin II subunit B
+
+
+
+
+
+
+husec41_rep_c2297
+
+
+42022
+
+
+Toxin
+
+
+B3BQ93
+
+
+Shiga toxin subunit A (EC 3.2.2.22)
+
+
+
+
+
+
+husec41_rep_c2359
+
+
+5123
+
+
+Toxin
+
+
+Q8VSL2
+
+
+Serine protease sepA autotransporter (EC 3.4.21.-)   [Cleaved into: Serine protease sepA; Serine protease sepA translocator]
+
+
+
+
+
+
+husec41_rep_c2607
+
+
+104486
+
+
+Toxin
+
+
+B7MN77
+
+
+Toxin of the YeeV-YeeU toxin-antitoxin system
+
+
+
+
+
+
+husec41_rep_c2848
+
+
+5126
+
+
+Toxin
+
+
+Q8VSL2
+
+
+Serine protease sepA autotransporter (EC 3.4.21.-)   [Cleaved into: Serine protease sepA; Serine protease sepA translocator]
+
+
+
+
+
+
+husec41_c1549
+
+
+66741
+
+
+Toxin?
+
+
+D3QPV9
+
+
+Small toxic membrane polypeptide
+
+
+
+
+
+
+husec41_c685
+
+
+78980
+
+
+Toxin?
+
+
+E8YB84
+
+
+Hok/gef cell toxic protein
+
+
+
+
+
+
+husec41_c201
+
+
+19118
+
+
+Toxin?
+
+
+B3HJU4
+
+
+Serine proteAse eata (EC 3.4.21.-)
+
+
+
+
+**Table 2: Hemolysins and heme metabolism related proteins**
+
+
+
+
+
+
+
+
+Contig ID
+
+
+tags
+
+
+Similar to
+
+
+Protein names
+
+
+
+
+
+
+husec41_c1375
+
+
+Hemolysin
+
+
+B5YXK6
+
+
+Hemolysin E, chromosomal
+
+
+
+
+
+
+husec41_c1786
+
+
+Hemolysin
+
+
+Q0TDJ8
+
+
+Putative hemolysin expression modulating protein
+
+
+
+
+
+
+husec41_c604
+
+
+Hemolysin
+
+
+D3RHI6
+
+
+Channel protein, hemolysin III family
+
+
+
+
+
+
+husec41_c1103
+
+
+Heme
+
+
+C8U6D2
+
+
+Heme lyase, CcmH subunit
+
+
+
+
+
+
+husec41_c1469
+
+
+Heme
+
+
+C8U6D2
+
+
+Heme lyase, CcmH subunit
+
+
+
+
+
+
+husec41_c1469
+
+
+Heme
+
+
+C8TUD4
+
+
+Heme lyase, CcmF subunit
+
+
+
+
+
+
+husec41_c1914
+
+
+Heme
+
+
+C8TUD7
+
+
+Heme exporter protein C
+
+
+
+
+
+
+husec41_c194
+
+
+Heme
+
+
+C8TTP2
+
+
+Sulfoxide reductase heme-binding subunit yedZ   (Flavocytochrome yedZ)
+
+
+
+
+
+
+husec41_c231
+
+
+Heme
+
+
+D3GXL9
+
+
+Sulfoxide reductase heme-binding subunit yedZ   (Flavocytochrome yedZ)
+
+
+
+
+
+
+husec41_c458
+
+
+Heme
+
+
+C8TIQ7
+
+
+Siroheme synthase
+
+
+
+
+
+
+husec41_c656
+
+
+Heme
+
+
+C8TMW6
+
+
+Heme lyase, NrfG subunit
+
+
+
+
+
+
+husec41_c656
+
+
+Heme
+
+
+C8TMW5
+
+
+Heme lyase, NrfF subunit
+
+
+
+
+
+
+husec41_c656
+
+
+Heme
+
+
+C8TMW4
+
+
+Heme lyase, NrfE subunit
+
+
+
+
+
+
+husec41_c849
+
+
+Heme
+
+
+B7LAM4
+
+
+Heme exporter subunit ; ATP-binding component of ABC   superfamily
+
+
+
+
+
+
+husec41_c849
+
+
+Heme
+
+
+B7LAM3
+
+
+Heme exporter subunit ; membrane component of ABC   superfamily
+
+
+
+
+
+
+husec41_c849
+
+
+Heme
+
+
+C8TUD7
+
+
+Heme exporter protein C
+
+
+
+
+**Table 3: Antibiotic resistance. **
+
+In table 3 we have selected genes involved in specific antibiotic resistance and also genes encoding efflux pumps and multidrug resistance proteins that could be involved in some additional antibiotic resistance capabilities of this strain.
+
+
+
+
+
+
+
+
+Contig ID
+
+
+tags
+
+
+Similar to
+
+
+Protein names
+
+
+
+
+
+
+husec41_c1261
+
+
+Aminoglycoside resistance
+
+
+C8TVG3
+
+
+**Aminoglycoside**/multidrug efflux system protein AcrD
+
+
+
+
+
+
+husec41_c177
+
+
+Aminoglycoside resistance
+
+
+C8TVG3
+
+
+**Aminoglycoside**/multidrug efflux system protein AcrD
+
+
+
+
+
+
+husec41_c626
+
+
+Aminoglycoside resistance
+
+
+C8TVG3
+
+
+**Aminoglycoside**/multidrug efflux system protein AcrD
+
+
+
+
+
+
+husec41_c697
+
+
+Aminoglycoside resistance
+
+
+C8TVG3
+
+
+**Aminoglycoside**/multidrug efflux system protein AcrD
+
+
+
+
+
+
+husec41_c738
+
+
+Aminoglycoside resistance
+
+
+C8TVG3
+
+
+**Aminoglycoside**/multidrug efflux system protein AcrD
+
+
+
+
+
+
+husec41_c312
+
+
+Macrolide resistance
+
+
+C8TLZ5
+
+
+Fused **macrolide** transporter subunits of ABC   superfamily: ATP-binding component/membrane component
+
+
+
+
+
+
+husec41_c584
+
+
+Macrolide resistance
+
+
+C8TLZ5
+
+
+Fused **macrolide** transporter subunits of ABC   superfamily: ATP-binding component/membrane component
+
+
+
+
+
+
+husec41_c312
+
+
+Macrolide resistance
+
+
+C8TLZ4
+
+
+**Macrolide** transporter subunit, membrane fusion   protein component
+
+
+
+
+
+
+husec41_c48
+
+
+Penicillin resistance
+
+
+B7LBI2
+
+
+**Penicillin**-insensitive murein endopeptidase (EC   3.4.24.-) (D-alanyl-D-alanine-endopeptidase) (DD-endopeptidase)
+
+
+
+
+
+
+husec41_c1681
+
+
+Polymyxin resistance
+
+
+B7LAS5
+
+
+**Polymyxin** resistance protein B
+
+
+
+
+
+
+husec41_c497
+
+
+Polymyxin resistance
+
+
+D6I9J9
+
+
+**Polymyxin** resistance protein PmrM
+
+
+
+
+
+
+husec41_c2170
+
+
+beta-lactam resistance
+
+
+C8UQP5
+
+
+TEM-1 **beta-lactamase**
+
+
+
+
+
+
+husec41_c642
+
+
+Tetracycline resistance
+
+
+D3H382
+
+
+**Tetracycline** resistance protein
+
+
+
+
+
+
+husec41_c559
+
+
+beta-lactam resistance
+
+
+C8TJ28
+
+
+Regulator of penicillin binding proteins and **beta-lactamase **transcription
+
+
+
+
+
+
+husec41_c1436
+
+
+Tetracycline resistance
+
+
+C8TNP7
+
+
+Multidrug resistance protein mdtG
+
+
+
+
+
+
+husec41_c55
+
+
+Fosfomycin and deoxycholate resistance
+
+
+C8TU05
+
+
+Multidrug resistance protein mdtA (Multidrug transporter   mdtA)
+
+
+
+
+
+
+husec41_c1334
+
+
+Novobiocin and deoxycholate resistance
+
+
+C6V0N5
+
+
+Multidrug resistance protein MdtB (Multidrug transporter   MdtB)
+
+
+
+
+
+
+husec41_c1334
+
+
+Novobiocin and deoxycholate resistance
+
+
+C8TU07
+
+
+Multidrug resistance protein MdtC (Multidrug transporter   MdtC)
+
+
+
+
+
+
+husec41_c55
+
+
+Novobiocin and deoxycholate resistance
+
+
+C8TU07
+
+
+Multidrug resistance protein MdtC (Multidrug transporter   MdtC)
+
+
+
+
+
+
+husec41_c1063
+
+
+chloramphenicol resistance
+
+
+B7L855
+
+
+Multidrug resistance protein mdtL
+
+
+
+
+
+
+husec41_c654
+
+
+beta-lactam resistance
+
+
+C8TNX4
+
+
+**Beta-lactamase**/D-alanine carboxypeptidase AmpC
+
+
+
+
+
+
+husec41_c229
+
+
+beta-lactam resistance
+
+
+C8TIW8
+
+
+**Beta-lactamase**/D-alanine carboxypeptidase
+
+
+
+
+
+
+husec41_c1120
+
+
+Beta-lactamic resistance
+
+
+B7L5H7
+
+
+**Beta-lactam** resistance membrane protein
+
+
+
+
+
+
+husec41_c30
+
+
+Beta-lactamic resistance
+
+
+Q6BBP7
+
+
+**Beta-lactamase **(Beta-lactamase CTX-M-3) (CTX-M-3   extended-spectrum beta-lactamase) (Extended-spectrum class A beta-lactamase   CTX-M-3)
+
+
+
+
+
+
+husec41_rep_c2845
+
+
+Beta-lactamic resistance
+
+
+B2CD48
+
+
+**Beta-lactamase **TEM (Fragment)
+
+
+
+
+
+
+husec41_c132
+
+
+Bicyclomycin resistance
+
+
+B7LAK6
+
+
+**Bicyclomycin**/multidrug efflux system
+
+
+
+
+
+
+husec41_c720
+
+
+Bicyclomycin resistance
+
+
+C6V2S0
+
+
+**Bicyclomycin**/multidrug efflux system
+
+
+
+
+
+
+husec41_c1017
+
+
+Polymyxin resistance
+
+
+C8TUQ2
+
+
+Bifunctional** polymyxin** resistance protein ArnA
+
+
+
+
+
+
+husec41_c497
+
+
+Polymyxin resistance
+
+
+C8TUQ2
+
+
+Bifunctional **polymyxin** resistance protein ArnA
+
+
+
+
+
+
+husec41_c770
+
+
+norfloxacin and enoxacin resistance
+
+
+B7LFZ9
+
+
+Multidrug resistance protein mdtH
+
+
+
+
+
+
+husec41_c310
+
+
+6-mercaptopurine resistance
+
+
+C8TLE9
+
+
+Purine ribonucleoside efflux pump nepI
+
+
+
+
+
+
+husec41_c212
+
+
+Antibiotic resistance?
+
+
+B5Z494
+
+
+Drug resistance transporter, Bcr/CflA subfamily
+
+
+
+
+
+
+husec41_c642
+
+
+Antibiotic resistance?
+
+
+D3H381
+
+
+Tetracycline repressor
+
+
+
+
+
+
+husec41_c18
+
+
+Antibiotic resistance?
+
+
+C8TME8
+
+
+Membrane fusion protein (MFP) component of efflux pump,   signal anchor
+
+
+
+
+
+
+husec41_c348
+
+
+Antibiotic resistance?
+
+
+B7LB31
+
+
+Membrane fusion protein of efflux pump
+
+
+
+
+
+
+husec41_c1372
+
+
+Antibiotic resistance?
+
+
+D3GVT1
+
+
+Modulator of drug activity B
+
+
+
+
+
+
+husec41_c1352
+
+
+Antibiotic resistance?
+
+
+B7LEA2
+
+
+Multidrug efflux system
+
+
+
+
+
+
+husec41_c348
+
+
+Antibiotic resistance?
+
+
+B7LB24
+
+
+Multidrug efflux system component
+
+
+
+
+
+
+husec41_c1670
+
+
+Antibiotic resistance?
+
+
+B7LHX4
+
+
+Multidrug efflux system protein
+
+
+
+
+
+
+husec41_c684
+
+
+Antibiotic resistance?
+
+
+C8TQ83
+
+
+Multidrug efflux system protein
+
+
+
+
+
+
+husec41_c709
+
+
+Antibiotic resistance?
+
+
+C8UN45
+
+
+Multidrug efflux system protein
+
+
+
+
+
+
+husec41_c697
+
+
+Antibiotic resistance?
+
+
+C8TJ55
+
+
+Multidrug efflux system protein AcrA
+
+
+
+
+
+
+husec41_c1084
+
+
+Antibiotic resistance?
+
+
+C8TLV8
+
+
+Multidrug efflux system protein Cmr
+
+
+
+
+
+
+husec41_c75
+
+
+Antibiotic resistance?
+
+
+C8TFT3
+
+
+Multidrug efflux system protein EmrB
+
+
+
+
+
+
+husec41_c654
+
+
+Antibiotic resistance?
+
+
+C8TNX2
+
+
+Multidrug efflux system protein SugE
+
+
+
+
+
+
+husec41_c214
+
+
+Antibiotic resistance?
+
+
+B5YX79
+
+
+Multidrug resistance protein D
+
+
+
+
+
+
+husec41_c212
+
+
+Antibiotic resistance?
+
+
+C8TSE0
+
+
+Multidrug resistance protein mdtK (Multidrug-efflux   transporter)
+
+
+
+
+
+
+husec41_c288
+
+
+Antibiotic resistance?
+
+
+Q3I3P0
+
+
+ORF3-QacEdelta1 fusion protein
+
+
+
+
+
+
+husec41_c656
+
+
+Antibiotic resistance?
+
+
+B7LB29
+
+
+Outer membrane factor of efflux pump
+
+
+
+
+
+
+husec41_c407
+
+
+Antibiotic resistance?
+
+
+C8TJM6
+
+
+Predicted antibiotic transporter
+
+
+
+
+
+
+husec41_c993
+
+
+Antibiotic resistance?
+
+
+C8TTQ9
+
+
+Predicted multidrug efflux system
+
+
+
+
+
+
+husec41_c1456
+
+
+Antibiotic resistance?
+
+
+C8TV77
+
+
+Predicted multidrug efflux system protein Y
+
+
+
+
+
+
+husec41_c481
+
+
+Antibiotic resistance?
+
+
+C8TV77
+
+
+Predicted multidrug efflux system protein Y
+
+
+
+
+
+
+husec41_c1726
+
+
+Antibiotic resistance?
+
+
+C8ULT4
+
+
+Predicted outer membrane factor of efflux pump
+
+
+
+
+
+
+husec41_c1014
+
+
+Antibiotic resistance?
+
+
+C8TSY9
+
+
+Predicted transporter
+
+
+
+
+
+
+husec41_c497
+
+
+Antibiotic resistance?
+
+
+B7LAS1
+
+
+Probable   4-deoxy-4-formamido-L-arabinose-phosphoundecaprenol deformylase ArnD (EC 3.5.1.n3)
+
+
+
+
+
+
+husec41_c1334
+
+
+Antibiotic resistance?
+
+
+D3GZE1
+
+
+Putative multidrug resistance protein mdtD
+
+
+
+
+
+
+husec41_c464
+
+
+Antibiotic resistance?
+
+
+C8TU08
+
+
+Putative multidrug resistance protein mdtD
+
+
+
+
+
+
+husec41_c1656
+
+
+Antibiotic resistance?
+
+
+B7L8U8
+
+
+Putative multidrug resistance protein; DLP12 prophage
+
+
+
+
+
+
+husec41_c1277
+
+
+Antibiotic resistance?
+
+
+B7L7J5
+
+
+Putative multidrug transporter fused subunits of ABC   superfamily transporter: permease component; ATP-binding component
+
+
+
+
+
+
+husec41_c225
+
+
+Antibiotic resistance?
+
+
+C8TUQ0
+
+
+UDP-4-amino-4-deoxy-L-arabinose--oxoglutarate   aminotransferase (EC 2.6.1.87) (UDP-(beta-L-threo-pentapyranosyl-4''-ulose   diphosphate) aminotransferase) (UDP-4-amino-4-deoxy-L-arabinose   aminotransferase)
+
+
+
+
+
+
+husec41_c1017
+
+
+Antibiotic resistance?
+
+
+C6V2Y6
+
+
+Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose   transferase (EC 2.7.8.30) (Undecaprenyl-phosphate Ara4FN transferase)
+
+
+
+
+
+
+husec41_c225
+
+
+Antibiotic resistance?
+
+
+D3H1C1
+
+
+Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose   transferase (EC 2.7.8.30) (Undecaprenyl-phosphate Ara4FN transferase)
+
+
+
+
+
+
+husec41_c181
+
+
+Antibiotic resistance?
+
+
+B7LAR9
+
+
+Undecaprenyl-phosphate   4-deoxy-4-formamido-L-arabinose transferase (EC 2.7.8.30) (Undecaprenyl-phosphate   Ara4FN transferase) (Ara4FN transferase)
+
+
+
+
+
+
+husec41_c908
+
+
+Antibiotic resistance?
+
+
+C8TMT4
+
+
+DNA-damage-inducible SOS response protein DinF
+
+
+
+
+
+
+husec41_c481
+
+
+Antibiotic resistance?
+
+
+C8TV78
+
+
+EmrKY-TolC multidrug resistance efflux pump protein K,   membrane fusion protein component
+
+
+
+
+
+
+husec41_c2258
+
+
+Antibiotic resistance?
+
+
+B7LBS1
+
+
+EmrKY-TolC multidrug resistance efflux pump, membrane   fusion protein component
+
+
+
+
+
+
+husec41_c2050
+
+
+Antibiotic resistance?
+
+
+C8U6F0
+
+
+Fused predicted multidrug transport subunits of ABC   superfamily: membrane component/ATP-binding component
+
+
+
+
+
+
+husec41_c931
+
+
+Antibiotic resistance?
+
+
+C8TUF0
+
+
+Fused predicted multidrug transport subunits of ABC   superfamily: membrane component/ATP-binding component
+
+
+
+
+
+
+husec41_c449
+
+
+Antibiotic resistance?
+
+
+C8TJ42
+
+
+Fused predicted multidrug transporter subunits of ABC   superfamily: ATP-binding components
+
+
+
+
+
+
+husec41_c449
+
+
+Antibiotic resistance?
+
+
+C8TJ41
+
+
+Fused predicted multidrug transporter subunits of ABC   superfamily: ATP-binding components
+
+
+
+
+
+
+husec41_c897
+
+
+Antibiotic resistance?
+
+
+C8U8G6
+
+
+Fused predicted multidrug transporter subunits of ABC   superfamily: membrane component/ATP-binding component
+
+
+
+
+
+
+husec41_c1382
+
+
+Antibiotic resistance?
+
+
+B7L9Q8
+
+
+Wzx
+
+
+
+
+
+
+husec41_c2032
+
+
+Antibiotic resistance?
+
+
+Q93NP6
+
+
+Wzx
+
+
+
+
+
+
+husec41_c2082
+
+
+Antibiotic resistance?
+
+
+Q93NP6
+
+
+Wzx
+
+
+
+
+
+
+husec41_c2085
+
+
+Antibiotic resistance?
+
+
+B7L9Q8
+
+
+Wzx
+
+
+
+
+
+
+husec41_c832
+
+
+Antibiotic resistance?
+
+
+C8TRP6
+
+
+DNA-binding transcriptional dual activator MarA of   multiple antibiotic resistance
+
+
+
+
+
+
+husec41_c832
+
+
+Antibiotic resistance?
+
+
+C8TRP5
+
+
+DNA-binding transcriptional repressor MarR of multiple   antibiotic resistance
+
+
+
+
+
+
+husec41_c795
+
+
+Antibiotic resistance?
+
+
+C8THH6
+
+
+Fused glycosyl transferase and transpeptidase
+
+
+
+
+
+
+husec41_c440
+
+
+Antibiotic resistance?
+
+
+C8TJI6
+
+
+Fused penicillin-binding protein 1a: murein   transglycosylase/murein transpeptidase
+
+
+
+
+
+
+husec41_c1203
+
+
+Antibiotic resistance?
+
+
+C8TJV0
+
+
+Multidrug resistance efflux transporter MdtE
+
+
+
+
+
+
+husec41_c1099
+
+
+Antibiotic resistance?
+
+
+D3GR96
+
+
+Penicillin-binding protein 1B [includes:   penicillin-insensitive transglycosylase; penicillin sensitive transpeptidase]   (EC 2.4.1.129) (EC 3.4.-.-)
+
+
+
+
+
+
+husec41_c1011
+
+
+Antibiotic resistance?
+
+
+C6UUQ5
+
+
+p-hydroxybenzoic acid efflux pump subunit AaeA (pHBA   efflux pump protein A)
+
+
+
+
+
+
+husec41_c1123
+
+
+Antibiotic resistance?
+
+
+C8TIE2
+
+
+p-hydroxybenzoic acid efflux pump subunit AaeA (pHBA   efflux pump protein A)
+
+
+
+
+
+
+husec41_c1011
+
+
+Antibiotic resistance?
+
+
+C8TIE1
+
+
+p-hydroxybenzoic acid efflux pump subunit AaeB (pHBA   efflux pump protein B)
+
+
+
+
+
+
+husec41_c150
+
+
+Antibiotic resistance?
+
+
+C8TIE1
+
+
+p-hydroxybenzoic acid efflux pump subunit AaeB (pHBA   efflux pump protein B)
+
+
+
+
+
+
+husec41_c228
+
+
+Antibiotic resistance?
+
+
+C6UU60
+
+
+Predicted methyl viologen efflux pump
+
+
+
+
+
+
+husec41_c1148
+
+
+Antibiotic resistance?
+
+
+C8TL54
+
+
+Predicted multidrug or homocysteine efflux system protein   HsrA
+
+
+
+
+
+
+husec41_c124
+
+
+Antibiotic resistance?
+
+
+B7L8U8
+
+
+Putative multidrug resistance protein; DLP12 prophage
+
+
+
+

@@ -1,0 +1,1648 @@
+---
+author: Raquel Tobes
+comments: false
+date: 2011-06-05 20:28:08
+layout: post
+author: Raquel Tobes
+slug: '275'
+title: Escherichia coli EHEC Germany outbreak semi-automated annotation
+wordpress_id: 275
+categories:
+- ngs
+tag:
+- EAEC
+- EHEC
+- Escherichia coli
+- European outbreak
+- HUS
+---
+
+### Semi-automated annotation using BG7 system
+
+We did the semi-automated annotation of the genome sequenced by BGI (6-2-2011, [http://www.bgisequence.com/eu/index.php?cID=194](http://www.bgisequence.com/eu/index.php?cID=194) ) and assembled with MIRA by Nick Loman (6-2-2011  [http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/](http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/) ).
+
+Our system BG7 (Bacterial Genome annotation of Era7 Bioinformatics, [https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227](https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227) , [http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data](http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data) ) predicts ORFs and annotates them based on fragments of similarity with Uniprot proteins.
+
+In contrast to other annotation pipelines where finding ORFs is the first step followed by the annotation one, BG7 system first searches for protein similarity and then defines the ORF searching for start and stop signals. It is specifically designed for annotating prokaryotic genomes obtained with NGS data since it handles the principal errors of these technologies: false indels in homopolymer regions and substitutions. Annotation systems based on initial and exact ORF detection often may lose ORFs due to these kinds of sequencing errors that may lead to introduction or lack of stop codons and modification of start signals. BG7 is also designed to work with genomes fragmented in many contigs solving the problem of the detection of incomplete genes at the end of contigs. The system is especially suitable to detect rare genes similar to proteins from taxonomically distant organisms. BG7 takes advantage of cloud computing to perform extensive computing tasks in a reasonable time. The annotation of a 3Mb bacterial genome can be performed in less than 12 hours.
+
+### Dataset of proteins for similarity-based ORF prediction
+
+A set of 137063 proteins were selected as reference protein for the system BG7:
+
+- All representative proteins corresponding to Escherichia coli protein Uniref90 clusters  from organisms including in their name the terms “EHEC”  or “EAEC”
+- All Uniprot proteins from bacteria including in any field the term “toxin”
+- ­All Uniprot proteins from bacteria including in any field the term “hemolysin”
+- All the proteins from _Salmonella typhi_, _Yersinia pestis_ and _Shigella dysenteriae_
+
+The system search for similarities for each protein of the set in the contigs sequenced. This BLAST similarity results are the seed for prediction of ORFs.
+
+## RESULTS
+
+We have predicted **6327** genes, **6156** encoding proteins y **171** corresponding to ribosomal and tRNA.
+
+Only **1326** out of the 6156 protein encoding genes have canonical start and stop codon and haven´t frame-shifts neither intragenic stop codons. **2479** protein encoding genes (out of the 6156 predicted) include some frameshift or some intragenic stop codon in their sequences, probably caused by inherent technology errors. However our system is tolerant to errors of massive sequencing technologies and it has been able to detect a rich set of genes even with very preliminary sequencing results.
+
+Probably some of the proteins detected are fragmented and some of them could appear as two different predicted genes if they are in different contigs.
+
+We have analyzed the taxonomic origin of the proteins responsible of the prediction of the detected genes. Table 1, Figure 1 and Figure 2 display the result of this analysis.
+
+**Table 1: Taxonomic origin of** **proteins responsible of the prediction of the detected genes **
+
+
+
+
+
+
+
+
+Organism
+
+
+number of proteins
+
+
+
+
+
+
+Escherichia   coli O26:H11 (strain 11368 / EHEC)
+
+
+2810
+
+
+
+
+
+
+Escherichia   coli (strain 55989 / EAEC)
+
+
+1166
+
+
+
+
+
+
+Escherichia   coli O44:H18 (strain 042 / EAEC)
+
+
+339
+
+
+
+
+
+
+Escherichia   coli O103:H2 (strain 12009 / EHEC)
+
+
+296
+
+
+
+
+
+
+Escherichia   coli
+
+
+221
+
+
+
+
+
+
+Escherichia   coli O111:H- (strain 11128 / EHEC)
+
+
+151
+
+
+
+
+
+
+Escherichia   coli O157:H7 (strain EC4115 / EHEC)
+
+
+148
+
+
+
+
+
+
+Escherichia   coli O157:H7 (strain TW14359 / EHEC)
+
+
+144
+
+
+
+
+
+
+Escherichia   coli (strain K12)
+
+
+51
+
+
+
+
+
+
+Salmonella   typhi
+
+
+51
+
+
+
+
+
+
+Escherichia   coli O1:K1 / APEC
+
+
+50
+
+
+
+
+
+
+Escherichia   coli (strain UTI89 / UPEC)
+
+
+40
+
+
+
+
+
+
+Escherichia   coli O81 (strain ED1a)
+
+
+30
+
+
+
+
+
+
+Yersinia   pestis
+
+
+29
+
+
+
+
+
+
+Escherichia   coli O139:H28 (strain E24377A / ETEC)
+
+
+18
+
+
+
+
+
+
+Escherichia   coli B354
+
+
+14
+
+
+
+
+
+
+Escherichia   coli O55:H7 (strain CB9615 / EPEC)
+
+
+13
+
+
+
+
+
+
+Escherichia   coli O6:K15:H31 (strain 536 / UPEC)
+
+
+13
+
+
+
+
+
+
+Escherichia   coli B088
+
+
+12
+
+
+
+
+
+
+Escherichia   coli MS 119-7
+
+
+12
+
+
+
+
+
+
+Escherichia   coli O6
+
+
+12
+
+
+
+
+
+
+Escherichia   coli TA007
+
+
+12
+
+
+
+
+
+
+Escherichia   coli (strain SE11)
+
+
+11
+
+
+
+
+
+
+Escherichia   coli 1827-70
+
+
+11
+
+
+
+
+
+
+Escherichia   coli MS 107-1
+
+
+11
+
+
+
+
+
+
+Escherichia   coli O127:H6 (strain E2348/69 / EPEC)
+
+
+11
+
+
+
+
+
+
+Escherichia   coli EPECa14
+
+
+10
+
+
+
+
+
+
+Escherichia   coli M863
+
+
+10
+
+
+
+
+
+
+Escherichia   coli MS 124-1
+
+
+10
+
+
+
+
+
+
+Escherichia   coli B7A
+
+
+9
+
+
+
+
+
+
+Escherichia   coli H120
+
+
+9
+
+
+
+
+
+
+Escherichia   coli MS 117-3
+
+
+9
+
+
+
+
+
+
+Escherichia   coli MS 198-1
+
+
+9
+
+
+
+
+
+
+Escherichia   coli MS 21-1
+
+
+9
+
+
+
+
+
+
+Escherichia   coli O157:H7
+
+
+9
+
+
+
+
+
+
+Shigella   dysenteriae
+
+
+9
+
+
+
+
+
+
+Shigella   flexneri 2a str. 2457T
+
+
+9
+
+
+
+
+
+
+Escherichia   coli 3431
+
+
+8
+
+
+
+
+
+
+Escherichia   coli LT-68
+
+
+8
+
+
+
+
+
+
+Escherichia   coli MS 116-1
+
+
+8
+
+
+
+
+
+
+Escherichia   coli MS 182-1
+
+
+8
+
+
+
+
+
+
+Escherichia   coli O17:K52:H18 (strain UMN026 / ExPEC)
+
+
+8
+
+
+
+
+
+
+Escherichia   coli O45:K1 (strain S88 / ExPEC)
+
+
+8
+
+
+
+
+
+
+Escherichia   coli EC4100B
+
+
+7
+
+
+
+
+
+
+Escherichia   coli MS 145-7
+
+
+7
+
+
+
+
+
+
+Escherichia   coli MS 196-1
+
+
+7
+
+
+
+
+
+
+Escherichia   coli MS 84-1
+
+
+7
+
+
+
+
+
+
+Escherichia   coli (strain SMS-3-5 / SECEC)
+
+
+6
+
+
+
+
+
+
+Escherichia   coli B185
+
+
+6
+
+
+
+
+
+
+Escherichia   coli E128010
+
+
+6
+
+
+
+
+
+
+Escherichia   coli E482
+
+
+6
+
+
+
+
+
+
+Escherichia   coli FVEC1302
+
+
+6
+
+
+
+
+
+
+Escherichia   coli MS 16-3
+
+
+6
+
+
+
+
+
+
+Escherichia   coli MS 175-1
+
+
+6
+
+
+
+
+
+
+Escherichia   coli MS 187-1
+
+
+6
+
+
+
+
+
+
+Escherichia   coli MS 69-1
+
+
+6
+
+
+
+
+
+
+Escherichia   coli O9:H4 (strain HS)
+
+
+6
+
+
+
+
+
+
+Escherichia   sp. 3_2_53FAA
+
+
+6
+
+
+
+
+
+
+Shigella   boydii serotype 18 (strain CDC 3083-94 / BS512)
+
+
+6
+
+
+
+
+
+
+Shigella   dysenteriae serotype 1 (strain Sd197)
+
+
+6
+
+
+
+
+
+
+Shigella   flexneri
+
+
+6
+
+
+
+
+
+
+Escherichia   coli E1520
+
+
+5
+
+
+
+
+
+
+Escherichia   coli MS 110-3
+
+
+5
+
+
+
+
+
+
+Escherichia   coli MS 115-1
+
+
+5
+
+
+
+
+
+
+Escherichia   coli MS 45-1
+
+
+5
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. TW14588
+
+
+5
+
+
+
+
+
+
+Escherichia   coli O7:K1 (strain IAI39 / ExPEC)
+
+
+5
+
+
+
+
+
+
+Enterobacter   sakazakii (strain ATCC BAA-894)
+
+
+4
+
+
+
+
+
+
+Escherichia   coli 1357
+
+
+4
+
+
+
+
+
+
+Escherichia   coli 53638
+
+
+4
+
+
+
+
+
+
+Escherichia   coli B171
+
+
+4
+
+
+
+
+
+
+Escherichia   coli E110019
+
+
+4
+
+
+
+
+
+
+Escherichia   coli E22
+
+
+4
+
+
+
+
+
+
+Escherichia   coli F11
+
+
+4
+
+
+
+
+
+
+Escherichia   coli MS 185-1
+
+
+4
+
+
+
+
+
+
+Escherichia   coli MS 78-1
+
+
+4
+
+
+
+
+
+
+Escherichia   coli MS 85-1
+
+
+4
+
+
+
+
+
+
+Escherichia   coli O111:H-
+
+
+4
+
+
+
+
+
+
+Escherichia   coli O55:H7 str. USDA 5905
+
+
+4
+
+
+
+
+
+
+Escherichia   coli O78:H11 (strain H10407 / ETEC)
+
+
+4
+
+
+
+
+
+
+Escherichia   fergusonii (strain ATCC 35469 / DSM 13698 / CDC 0568-73)
+
+
+4
+
+
+
+
+
+
+Citrobacter   koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696)
+
+
+3
+
+
+
+
+
+
+Enterobacteria   phage lambda (Bacteriophage lambda)
+
+
+3
+
+
+
+
+
+
+Escherichia   albertii TW07627
+
+
+3
+
+
+
+
+
+
+Escherichia   coli (strain ATCC 55124 / KO11)
+
+
+3
+
+
+
+
+
+
+Escherichia   coli (strain B / BL21)
+
+
+3
+
+
+
+
+
+
+Escherichia   coli (strain B / REL606)
+
+
+3
+
+
+
+
+
+
+Escherichia   coli 1180
+
+
+3
+
+
+
+
+
+
+Escherichia   coli 83972
+
+
+3
+
+
+
+
+
+
+Escherichia   coli H263
+
+
+3
+
+
+
+
+
+
+Escherichia   coli MS 57-2
+
+
+3
+
+
+
+
+
+
+Escherichia   coli MS 60-1
+
+
+3
+
+
+
+
+
+
+Escherichia   coli RN587/1
+
+
+3
+
+
+
+
+
+
+Escherichia   sp. 1_1_43
+
+
+3
+
+
+
+
+
+
+Salmonella   typhimurium
+
+
+3
+
+
+
+
+
+
+Shigella   boydii serotype 4 (strain Sb227)
+
+
+3
+
+
+
+
+
+
+Shigella   flexneri serotype 5b (strain 8401)
+
+
+3
+
+
+
+
+
+
+Bacillus   cereus G9241
+
+
+2
+
+
+
+
+
+
+Citrobacter   youngae ATCC 29220
+
+
+2
+
+
+
+
+
+
+Enterobacteria   phage CUS-3
+
+
+2
+
+
+
+
+
+
+Enterobacteria   phage VT2phi_272
+
+
+2
+
+
+
+
+
+
+Escherichia   coli (strain K12 / DH10B)
+
+
+2
+
+
+
+
+
+
+Escherichia   coli (strain K12 / MC4100 / BW2952)
+
+
+2
+
+
+
+
+
+
+Escherichia   coli 2362-75
+
+
+2
+
+
+
+
+
+
+Escherichia   coli FVEC1412
+
+
+2
+
+
+
+
+
+
+Escherichia   coli H489
+
+
+2
+
+
+
+
+
+
+Escherichia   coli MS 146-1
+
+
+2
+
+
+
+
+
+
+Escherichia   coli MS 200-1
+
+
+2
+
+
+
+
+
+
+Escherichia   coli NC101
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O150:H5 (strain SE15)
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O157:H- str. H 2687
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. 1125
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. EC869
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O55:H7 str. 3256-97
+
+
+2
+
+
+
+
+
+
+Escherichia   coli O8 (strain IAI1)
+
+
+2
+
+
+
+
+
+
+Escherichia   coli TW10509
+
+
+2
+
+
+
+
+
+
+Salmonella   choleraesuis
+
+
+2
+
+
+
+
+
+
+Serratia   marcescens
+
+
+2
+
+
+
+
+
+
+Shigella   flexneri CDC 796-83
+
+
+2
+
+
+
+
+
+
+Shigella   sonnei (strain Ss046)
+
+
+2
+
+
+
+
+
+
+Citrobacter   rodentium (strain ICC168) (Citrobacter freundii biotype 4280)
+
+
+1
+
+
+
+
+
+
+Citrobacter   sp. 30_2
+
+
+1
+
+
+
+
+
+
+Cronobacter   turicensis (strain DSM 18703 / LMG 23827 / z3032)
+
+
+1
+
+
+
+
+
+
+Enterobacteria   phage H19B (Bacteriophage H19B)
+
+
+1
+
+
+
+
+
+
+Enterobacteria   phage Sf6 (Shigella flexneri bacteriophage VI) (Bacteriophage SfVI)
+
+
+1
+
+
+
+
+
+
+Enterobacteria   phage VT2-Sa (Bacteriophage VT2-Sa)
+
+
+1
+
+
+
+
+
+
+Erwinia   amylovora (strain CFBP1430)
+
+
+1
+
+
+
+
+
+
+Escherichia   coli (strain UM146)
+
+
+1
+
+
+
+
+
+
+Escherichia   coli 101-1
+
+
+1
+
+
+
+
+
+
+Escherichia   coli H252
+
+
+1
+
+
+
+
+
+
+Escherichia   coli MS 153-1
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H- str. 493-89
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. 1044
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. EC1212
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. EC4042
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. EC4486
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O157:H7 str. G5101
+
+
+1
+
+
+
+
+
+
+Escherichia   coli O83:H1 (strain NRG 857C / AIEC)
+
+
+1
+
+
+
+
+
+
+Escherichia   coli OR:K5:H- (strain ABU 83972)
+
+
+1
+
+
+
+
+
+
+Haemophilus   ducreyi
+
+
+1
+
+
+
+
+
+
+Klebsiella   pneumoniae (strain 342)
+
+
+1
+
+
+
+
+
+
+Klebsiella   pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)
+
+
+1
+
+
+
+
+
+
+Klebsiella   pneumoniae subsp. pneumoniae NTUH-K2044
+
+
+1
+
+
+
+
+
+
+Klebsiella   variicola (strain At-22)
+
+
+1
+
+
+
+
+
+
+Pantoea   sp. (strain At-9b)
+
+
+1
+
+
+
+
+
+
+Proteus   mirabilis
+
+
+1
+
+
+
+
+
+
+Salmonella   enterica subsp. enterica serovar Typhimurium str. TN061786
+
+
+1
+
+
+
+
+
+
+Salmonella   paratyphi A (strain AKU_12601)
+
+
+1
+
+
+
+
+
+
+Shigella   boydii ATCC 9905
+
+
+1
+
+
+
+
+
+
+Shigella   dysenteriae 1617
+
+
+1
+
+
+
+
+
+
+Shigella   dysenteriae CDC 74-1112
+
+
+1
+
+
+
+
+
+
+Shigella   sonnei
+
+
+1
+
+
+
+
+
+
+Shigella   sonnei 53G
+
+
+1
+
+
+
+
+
+
+Uncultured   gamma proteobacterium HF0010_10D20
+
+
+1
+
+
+
+
+
+
+Uncultured   Oceanospirillales bacterium HF4000_21D01
+
+
+1
+
+
+
+
+
+
+Vibrio   cholerae serotype O1 (strain ATCC 39541 / Ogawa 395 / O395)
+
+
+1
+
+
+
+
+
+
+Wolbachia   endosymbiont of Drosophila simulans
+
+
+1
+
+
+
+
+
+
+Yersinia   pestis Pestoides A
+
+
+1
+
+
+
+
+** **
+
+[caption id="attachment_298" align="aligncenter" width="452" caption="Figure 1: Taxonomic origin of proteins responsible of the prediction of the detected genes"]**[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/organism1.jpg)](http://blog.ohnosequences.com/2011/06/275/organism-2/)**[/caption] 
