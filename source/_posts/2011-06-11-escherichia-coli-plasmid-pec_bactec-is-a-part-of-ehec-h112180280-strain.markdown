@@ -23,7 +23,7 @@ As it was suggested by Kat Holt ([http://bacpathgenomics.wordpress.com/2011/06/0
 
 The figure displays a simple alignment obtained using MAUVE  Move Contigs tool between pEC_Bactec plasmid (above) and the scaffolds 7 and 13 of H112180280 genome (below):
 
-[![pEC-Bactec vs HPA UK 454 H112180280 strain](http://blog.ohnosequences.com/wp-content/uploads/2011/06/pEC_Bactec_vs_UK454_7_9_11_12_13.jpg)](http://blog.ohnosequences.com/2011/06/escherichia-coli-plasmid-pec_bactec-is-a-part-of-ehec-h112180280-strain/pec_bactec_vs_uk454_7_9_11_12_13/)
+{% img /images/pEC_Bactec_vs_UK454_7_9_11_12_13.jpg%}
 
 Scaffolds 7 and 13 cover practically all pEC-Bactec plasmid sequence. The two white `pEC-Bactec` regions that hasn't associated similar regions in `H112180280` correspond to the genes:
 

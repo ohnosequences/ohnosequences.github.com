@@ -20,6 +20,6 @@ One of the first uses we found for it was representing gene ontology protein ann
 
 Here you can see a graph representation of a protein set gene ontology annotations. Different colors have been applied to each ontology (_molecular function, biological process and cellular component_). Besides, nodes size is proportional to protein annotations number.
 
-Click [**here**](http://blog.ohnosequences.com/wp-content/uploads/2011/02/GoSlimBlog.svg) to open the svg in a new window.
+Click [**here**]( /images/GoSlimBlog.svg) to open the svg in a new window.
 
 

@@ -37,7 +37,7 @@ How similar these two strains would be? 454 assembly could help scaffolding Illu
 
 Here's what we got after aligning both genomes using Mauve ([http://gel.ahabs.wisc.edu/mauve/](http://gel.ahabs.wisc.edu/mauve/))
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/MAUVE_EHEC_UK454_vs_TY-2482.jpg)](http://blog.ohnosequences.com/2011/06/hpa-announces-a-new-e-coli-genome-strain-h112180280-we-do-a-quick-visual-comparison-with-ty-2482/mauve_ehec_uk454_vs_ty-2482/)
+{% img /images/MAUVE_EHEC_UK454_vs_TY-2482.jpg %}
 
 You can get the results of this Mauve analysis in the GitHub repository [https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/comparativeAnalysis/era7bioinformatics/Mauve_H112180280_TY2482](https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/comparativeAnalysis/era7bioinformatics/Mauve_H112180280_TY2482)
 

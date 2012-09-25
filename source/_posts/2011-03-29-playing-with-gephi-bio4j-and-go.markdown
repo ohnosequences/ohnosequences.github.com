@@ -29,7 +29,7 @@ Then, after a quick search on google I figured out that the amount of memory use
 With my file already imported, first I applied the algorithm [**OpenOrd**](http://gephi.org/2010/openord-new-layout-plugin-the-fastest-algorithm-so-far/) (which is the best one for large graphs) and then once it had an acceptable distribution I finally applied some iterations of the algorithm Fruchterman Reingold for a better visualization.
 And this is what I got:
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/03/wholeGoScreenShot-287x300.jpg)](http://blog.ohnosequences.com/wp-content/uploads/2011/03/wholeGo.svg)
+{% img /images/wholeGo.svg %}
 
 Colors correspondance:	
 
@@ -41,15 +41,16 @@ Colors correspondance:
 
 **Molecular function**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/03/molecularFunctionScreenShot-300x281.jpg)](http://www.bio4j.com/imgs/molecular_function)
+{% img /images/molecularFunctionScreenShot-300x281.jpg %}
 
 **Cellular component**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/03/cellularComponentScreenShot-300x280.jpg)](http://www.bio4j.com/imgs/cellular_component)
+{% img /images/cellularComponentScreenShot-300x280.jpg %}
 
 **Biological process**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/03/biologicalProcessScreenShot-300x275.jpg)](http://www.bio4j.com/imgs/biological_process)
+{% img /images/biologicalProcessScreenShot-300x275.jpg %}
+
 
 [Here](https://s3-eu-west-1.amazonaws.com/pablo-tests/wholeGo.gexf) you can download the gexf file in case you want to experiment a bit with it.
 

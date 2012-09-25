@@ -16,15 +16,13 @@ First click on _Advanced search_ in Uniprot (www.uniprot.org) website
 
 {% img /images/1.jpg %}
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/02/1.jpg)](http://blog.ohnosequences.com/?attachment_id=137)
-
 Then select _Domain_ in the field box and type _FYVE_
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/02/2.jpg)](http://blog.ohnosequences.com/?attachment_id=139)
+{% img /images/2.jpg %}
 
 Click then _Add & Search_ and select now _Organism_ in the Field box and type _Homo sapiens_.
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/02/3.jpg)](http://blog.ohnosequences.com/?attachment_id=138)
+{% img /images/3.jpg %}
 
 Clicking again on _Add & Search_ you get your set of proteins. And if you click on _Download_ on the right you can download the data in several formats.
 

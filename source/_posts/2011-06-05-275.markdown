@@ -1645,4 +1645,5 @@ Yersinia   pestis Pestoides A
 
 ** **
 
-[caption id="attachment_298" align="aligncenter" width="452" caption="Figure 1: Taxonomic origin of proteins responsible of the prediction of the detected genes"]**[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/organism1.jpg)](http://blog.ohnosequences.com/2011/06/275/organism-2/)**[/caption] 
+[caption id="attachment_298" align="aligncenter" width="452" caption="Figure 1: Taxonomic origin of proteins responsible of the prediction of the detected genes"]
+{% img /images/organism1.jpg %}[/caption] 

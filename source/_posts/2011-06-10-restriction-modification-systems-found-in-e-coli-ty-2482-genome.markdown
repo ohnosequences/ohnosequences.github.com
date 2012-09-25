@@ -22,12 +22,12 @@ Analysing the automatic annotation we did of the second BGI assembly of TY-2482 
 
 #### Type I restiction-modification system encoded in the contig 42
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/Contig42_TypeI2.jpg)](http://blog.ohnosequences.com/2011/06/restriction-modification-systems-found-in-e-coli-ty-2482-genome/contig42_typei-3/)
+{% img /images/Contig42_TypeI2.jpg%}
 
 #### Type II restriction-modification system encoded in contig 486
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/Contig486_TypeII.jpg)](http://blog.ohnosequences.com/2011/06/restriction-modification-systems-found-in-e-coli-ty-2482-genome/contig486_typeii/)
+{% img /images/Contig486_TypeII.jpg%}
 
 #### Type III Restriction-modification system encoded in contig 493
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/06/Contig493_TypeIII.jpg)](http://blog.ohnosequences.com/2011/06/restriction-modification-systems-found-in-e-coli-ty-2482-genome/contig493_typeiii/)
+{% img /images/Contig493_TypeIII.jpg%}
