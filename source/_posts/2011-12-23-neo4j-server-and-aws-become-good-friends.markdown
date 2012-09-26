@@ -43,15 +43,16 @@ And, what do you have to do?
 
 **UPDATE** --> Here you have the set of screenshots you should see in the process:
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/CloudFormationCreateStackScreenShot.jpg)](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/)
+
+[{% img /images/CloudFormationCreateStackScreenShot.jpg %}](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/)
 
 CloudFormation tab: click on Create new stack button.
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/Neo4jTemplateScreenshot2.jpg)](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/)
+[{% img /images/Neo4jTemplateScreenshot2.jpg %}](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/)
 
 Give a name to your stack and choose the option for uploading a file, browsing to the template file you previously downloaded from Neo4jAWS repository. Click 'Continue' then.
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/Neo4jTemplateScreenshot3.jpg)](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/)
+[{% img /images/Neo4jTemplateScreenshot3.jpg %}](http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/)
 
 You should be seeing something like this by now. It's time to provide all the parameters!
 When you're done, click con 'Continue' after reviewing the values and just wait for it to change to state 'CREATE_COMPLETE' ;)

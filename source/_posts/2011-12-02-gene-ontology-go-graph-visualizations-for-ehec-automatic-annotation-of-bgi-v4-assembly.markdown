@@ -30,19 +30,19 @@ A couple of days ago I published a post describing how to obtain [cool GO annota
 
 **Biological Process**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/BiologicalProcessScreenshot.jpg)](http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/)
+[{% img /images/BiologicalProcessScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/)
 
 _(Please click on the image above to check the zoomable version)_
 
 **Molecular Function**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/MolecularFunctionScreenshot.jpg)](http://bio4j.com/imgs/EHEC_BGI_MolecularFunction/)
+[{% img /images/MolecularFunctionScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_MolecularFunction/)
 
 _(Please click on the image above to check the zoomable version)_
 
 **Cellular Component**
 
-[![](http://blog.ohnosequences.com/wp-content/uploads/2011/12/CellularComponentScreenshot.jpg)](http://bio4j.com/imgs/EHEC_BGI_CellularComponent/)
+[{% img /images/CellularComponentScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_CellularComponent/)
 
 _(Please click on the image above to check the zoomable version)_
 
