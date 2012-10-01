@@ -79,6 +79,6 @@ $$
 \chi_a \colon \mathcal{C}^{\infty}_{\mathbb{R}} \to \mathbb{R}
 $$
 
-It's nice that math displays ok, I _love_ MathJax.
+It's nice that math displays ok, I _love_ [MathJax](http://mathjax.org).
 
 
