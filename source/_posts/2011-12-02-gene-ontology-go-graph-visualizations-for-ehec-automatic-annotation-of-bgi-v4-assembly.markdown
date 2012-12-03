@@ -30,7 +30,7 @@ A couple of days ago I published a post describing how to obtain [cool GO annota
 
 **Biological Process**
 
-[{% img /images/biologicalProcessScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/)
+[{% img /images/BiologicalProcessScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/)
 
 _(Please click on the image above to check the zoomable version)_
 
@@ -42,7 +42,7 @@ _(Please click on the image above to check the zoomable version)_
 
 **Cellular Component**
 
-[{% img /images/cellularComponentScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_CellularComponent/)
+[{% img /images/CellularComponentScreenshot.jpg %}](http://bio4j.com/imgs/EHEC_BGI_CellularComponent/)
 
 _(Please click on the image above to check the zoomable version)_
 
