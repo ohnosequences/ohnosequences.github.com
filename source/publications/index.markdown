@@ -8,6 +8,8 @@ footer: true
 
 group members publications, (more or less accurate) reverse chronological order:
 
+- **BG7: A New Approach for Bacterial Genome Annotation Designed for Next Generation Sequencing Data** Pablo Pareja-Tobes, Marina Manrique, Eduardo Pareja-Tobes, Eduardo Pareja, Raquel Tobes <br/> *PLoS One* \| **2012** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/23185310 "http://www.ncbi.nlm.nih.gov/pubmed/23185310")
+
 - **Phagosomes Induced by Cytokines Function as anti-Listeria Vaccines: a novel role for functional compartmentalization of STAT-1 and cathepsin-D.** Eugenio Carrasco-Marín, Estela Rodriguez-Del Rio, Elisabet Frande-Cabanes, Raquel Tobes, Eduardo Pareja, M. Jesús Lecea-Cuello, Marta Ruiz-Sáez, Fidel Madrazo-Toca, Christoph Hölscher, and Carmen Alvarez-Dominguez. <br/> *The Journal of biological chemistry* \| **2012** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/22337873 "http://www.ncbi.nlm.nih.gov/pubmed/22337873")
 
 - **Escherichia coli EHEC Germany outbreak preliminary functional annotation using BG7 system.** Raquel Tobes, Marina Manrique, Pablo Pareja-Tobes, Eduardo Pareja-Tobes, and Eduardo Pareja. <br/> *Nature Precedings* \| **2011** \| [doi](http://precedings.nature.com/doifinder/10.1038/npre.2011.6001.1 "http://precedings.nature.com/doifinder/10.1038/npre.2011.6001.1")
