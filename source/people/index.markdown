@@ -6,11 +6,19 @@ sharing: true
 footer: true
 ---
 
-### Raquel Tobes ###
+We are a healthy mix of people with wildly different backgrounds: Biology, Computer Science, Bioinformatics, Mathematics, ...
 
-### Pablo Pareja ###
+### Raquel Tobes
 
-### Marina Manrique ###
+### Pablo Pareja
 
-### Eduardo Pareja-Tobes ###
+### Marina Manrique
+
+### Eduardo Pareja-Tobes
+
+### Eduardo Pareja
+
+### Evdokim Kovach
+
+### Alexey Alekhin
 
