@@ -10,15 +10,16 @@ We are a healthy mix of people with wildly different backgrounds: Biology, Compu
 
 ### Raquel Tobes
 
-### Pablo Pareja
+### Eduardo Pareja
 
 ### Marina Manrique
 
-### Eduardo Pareja-Tobes
+### Pablo Pareja
 
-### Eduardo Pareja
+### Eduardo Pareja-Tobes
 
 ### Evdokim Kovach
 
 ### Alexey Alekhin
+
 
