@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://ohnosequences.github.com
+url: http://ohnosequences.com
 title: oh no sequences!
 subtitle: era7 bioinformatics R&D group
 author: oh no sequences!
@@ -65,7 +65,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: ohnoseq
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -94,7 +94,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-12161444-4
 
 # Facebook Like
 facebook_like: false
