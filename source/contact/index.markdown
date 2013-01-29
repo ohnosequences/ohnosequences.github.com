@@ -6,7 +6,8 @@ sharing: true
 footer: true
 ---
 
-questions, comments, interests, projects, whatever! we'll be happy to hear from you:
+
+[@ohnoseq](http://twitter.com/ohnoseq) on twitter, or just the form below. Questions, comments, interests, projects, whatever! we'll be happy to hear from you:
 
 <div id="wufoo-z7x3p9">
 </div> 
