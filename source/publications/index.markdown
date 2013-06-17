@@ -8,7 +8,7 @@ footer: true
 
 group members publications, (more or less accurate) reverse chronological order:
 
-- **Bloody coli: a gene cocktail in Escherichia coli O104:H4** Fernando Baquero, Raquel Tobes <br /> *mBio* \| 2013 \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23422408 "https://www.ncbi.nlm.nih.gov/pubmed/23422408")
+- **Bloody coli: a gene cocktail in Escherichia coli O104:H4** Fernando Baquero, Raquel Tobes <br /> *mBio* \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23422408 "https://www.ncbi.nlm.nih.gov/pubmed/23422408")
 
 - **Genome Sequence of Klebsiella pneumoniae KpQ3, a DHA-1 β-Lactamase-Producing Nosocomial Isolate** Raquel Tobes, Francisco M Codoñer, Elena López-Camacho, Iñigo J Salanueva, Marina Manrique, Marta Brozynska, Rosa Gómez-Gil, Juan F. Martínez-Blanch, Miguel Álvarez-Tejado, Eduardo Pareja, Jesús Mingorance <br/> *Genome announcements*  \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23469341 "https://www.ncbi.nlm.nih.gov/pubmed/23469341")
 
