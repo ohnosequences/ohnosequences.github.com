@@ -8,6 +8,10 @@ footer: true
 
 group members publications, (more or less accurate) reverse chronological order:
 
+- **Bloody coli: a gene cocktail in Escherichia coli O104:H4** Fernando Baquero, Raquel Tobes <br /> *mBio* \| 2013 \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23422408 "https://www.ncbi.nlm.nih.gov/pubmed/23422408")
+
+- **Genome Sequence of Klebsiella pneumoniae KpQ3, a DHA-1 β-Lactamase-Producing Nosocomial Isolate** Raquel Tobes, Francisco M Codoñer, Elena López-Camacho, Iñigo J Salanueva, Marina Manrique, Marta Brozynska, Rosa Gómez-Gil, Juan F. Martínez-Blanch, Miguel Álvarez-Tejado, Eduardo Pareja, Jesús Mingorance <br/> *Genome announcements*  \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23469341 "https://www.ncbi.nlm.nih.gov/pubmed/23469341")
+
 - **BG7: A New Approach for Bacterial Genome Annotation Designed for Next Generation Sequencing Data** Pablo Pareja-Tobes, Marina Manrique, Eduardo Pareja-Tobes, Eduardo Pareja, Raquel Tobes <br/> *PLoS One* \| **2012** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/23185310 "http://www.ncbi.nlm.nih.gov/pubmed/23185310")
 
 - **Phagosomes Induced by Cytokines Function as anti-Listeria Vaccines: a novel role for functional compartmentalization of STAT-1 and cathepsin-D.** Eugenio Carrasco-Marín, Estela Rodriguez-Del Rio, Elisabet Frande-Cabanes, Raquel Tobes, Eduardo Pareja, M. Jesús Lecea-Cuello, Marta Ruiz-Sáez, Fidel Madrazo-Toca, Christoph Hölscher, and Carmen Alvarez-Dominguez. <br/> *The Journal of biological chemistry* \| **2012** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/22337873 "http://www.ncbi.nlm.nih.gov/pubmed/22337873")
