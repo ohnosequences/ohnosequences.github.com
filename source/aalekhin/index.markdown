@@ -10,3 +10,5 @@ footer: true
 - **keywords** Maths, Computer Science, Cloud Computing, NGS, Scala, Haskell
 
 ### bio
+
+<script src="//about.me/embed/laughedelic?image=0&amp;style=site"></script>
