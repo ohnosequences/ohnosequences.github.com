@@ -11,4 +11,4 @@ footer: true
 
 ### bio
 
-<script src="//about.me/embed/laughedelic?image=0&amp;style=site"></script>
+<script src="//about.me/embed/laughedelic?image=0&amp;name=0&amp;headline=0"></script>
