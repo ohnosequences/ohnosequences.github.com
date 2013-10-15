@@ -19,24 +19,25 @@ As our name suggests, we're interested in _sequences_; but in lots of other thin
 
 ### bacterial genomics
 
-- **repeated extragenic sequences** their role in... In particular, _REPs_: Repetitive extragenic _palindromic_ sequences.
 - **horizontal gene transfer** In particular its relationship with antibiotic resistance, outbreaks, and related stuff.
+- **repeated extragenic sequences** their role in... In particular, _REPs_: Repetitive extragenic _palindromic_ sequences.
+
 
 ### metagenomics
 
-We've have a developed an AWS-based system for this, called _mg7_.
+We have a developed an AWS-based system for this, called _mg7_.
 
 ### cloud computing
 
 We've been using AWS since 2005, and it plays a critical role in everything we do. Right now, we're working on 
 
 - a pure Scala API for parts of EC2
-- an easy to use, scalable AWS-based BLAST service
+- an easy to use, scalable AWS-based library for declaring and executing stateless computations
 - a completely immutable, type-safe Scala system for writing and deploying machine configurations.
 
 ### NoSQL databases
 
-We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest graph DBs for biological data out there, [bio4j](http://bio4j.com).
+We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [TitanDB](https://github.com/thinkaurelius/titan) from its inception; [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest graph DBs for biological data out there, [bio4j](http://bio4j.com).
 
 ### category theory
 
