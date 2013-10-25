@@ -5,7 +5,7 @@ comments: false
 sharing: true
 footer: true
 ---
-
+ 
 group members publications, (more or less accurate) reverse chronological order:
 
 - **Noncontiguous Finished Genome Sequence of Staphylococcus aureus KLT6, a Staphylococcal Enterotoxin B-Positive Strain Involved in a Food Poisoning Outbreak in Switzerland** Raquel Tobes, Marina Manrique, Marta Brozynska, Roger Stephan, Eduardo Pareja, Sophia Johler <br /> *Genome Announcements* \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23704175 "https://www.ncbi.nlm.nih.gov/pubmed/23704175")
