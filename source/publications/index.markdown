@@ -8,6 +8,11 @@ footer: true
  
 group members publications, (more or less accurate) reverse chronological order:
 
+- **Genomic analysis of the emergence and evolution of multidrug resistance during a Klebsiella pneumoniae outbreak including carbapenem and colistin resistance.** Elena López-Camacho, Rosa Gómez-Gil, Raquel Tobes, Marina Manrique, María Lorenzo, Beatriz Galván, Estefanía Salvarelli, Youssef Moatassim, Iñigo J. Salanueva, Eduardo Pareja, Francisco M. Codoñer, Miguel Alvarez-Tejado, María Pilar Garcillán-Barcia, Fernando De la Cruz, Jesús Mingorance <br /> *Journal of Antimicrobial Chemotherapy* \| **2013** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24155060 "http://www.ncbi.nlm.nih.gov/pubmed/24155060")
+
+- **Normal Mutation Rate Variants Arise in a Mutator (Mut S) Escherichia coli Population** María-Carmen Turrientes, Fernando Baquero, Bruce R. Levin, José-Luis Martínez, Aida Ripoll, José-María González-Alba,  Raquel Tobes, Marina Manrique, Maria-Rosario Baquero, Mario-José Rodríguez-Domínguez, Rafael Cantón, Juan-Carlos Galán <br /> *PLOS ONE* \| **2013** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24069167 "http://www.ncbi.nlm.nih.gov/pubmed/24069167")
+
+
 - **Noncontiguous Finished Genome Sequence of Staphylococcus aureus KLT6, a Staphylococcal Enterotoxin B-Positive Strain Involved in a Food Poisoning Outbreak in Switzerland** Raquel Tobes, Marina Manrique, Marta Brozynska, Roger Stephan, Eduardo Pareja, Sophia Johler <br /> *Genome Announcements* \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23704175 "https://www.ncbi.nlm.nih.gov/pubmed/23704175")
 
 - **Bloody coli: a gene cocktail in Escherichia coli O104:H4** Fernando Baquero, Raquel Tobes <br /> *mBio* \| **2013** \| [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/23422408 "https://www.ncbi.nlm.nih.gov/pubmed/23422408")
