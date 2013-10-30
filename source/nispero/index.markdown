@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "nispero"
 comments: false
 sharing: true
 footer: true
