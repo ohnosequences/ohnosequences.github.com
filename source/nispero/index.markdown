@@ -1,5 +1,6 @@
 ---
 layout: page
+title: ""
 comments: false
 sharing: true
 footer: true
