@@ -20,11 +20,11 @@ UniprotKB + GeneOntology + NCBI taxonomy + RefSeq + Expasy Enzyme, integrated in
 
 a cloud-based metagenomics analysis system.
 
-### statika
+### [statika](http://ohnosequences.com/statika)
 
 a small Scala library for working with modules with explicit dependencies, with some specifics for declaring and applying immutable EC2 instance confs.
 
-### nispero
+### [nispero](http://ohnosequences.com/nispero)
 
 scaling stateless inherently parallel computations using AWS
 
