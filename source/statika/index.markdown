@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "statika"
+title: "Statika"
 comments: false
 sharing: true
 footer: true
 ---
-
-## Statika
 
 > managing dependencies on the type-level
 
@@ -18,6 +16,7 @@ This allows one to create configurations of modules, for example, for applying i
 ### Components of Statika
 
 The key components of the project are
+
 * [statika](https://github.com/ohnosequences/statika/) — the core library defining the most abstract concepts;
 * [aws-statika](https://github.com/ohnosequences/aws-statika/) — an extension of the abstract library with the things related to [Amazon Web Services (AWS)](http://aws.amazon.com/);
 * [sbt-statika](https://github.com/ohnosequences/sbt-statika/) — an sbt plugin, which standardizes the project settings for statika bundles and distributions within one Amazon account;
