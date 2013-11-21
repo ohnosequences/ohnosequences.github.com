@@ -15,29 +15,27 @@ We've been doing a lot of R&D at era7 bioinformatics since the start of the comp
 
 ## interests
 
-As our name suggests, we're interested in _sequences_; but in lots of other things too: cloud computing, graph DBs, functional programming and category theory... However, everything we do revolves in one way or another around **bacterial genomics**. 
+As our name suggests, we're interested in _sequences_; but in lots of other things too: cloud computing, graph DBs, functional programming and category theory... 
 
 ### bacterial genomics
 
 - **horizontal gene transfer** In particular its relationship with antibiotic resistance, outbreaks, and related stuff.
-- **repeated extragenic sequences** their role in... In particular, _REPs_: Repetitive extragenic _palindromic_ sequences.
-
+- **repeated extragenic sequences** In particular, _REPs_: Repetitive extragenic _palindromic_ sequences.
 
 ### metagenomics
 
-We have a developed an AWS-based system for this, called _mg7_.
+We have developed an AWS-based system for this, called _mg7_ (manuscript in preparation).
 
 ### cloud computing
 
-We've been using AWS since 2005, and it plays a critical role in everything we do. Right now, we're working on 
+We've been using AWS since 2005, and it plays a critical role in everything we do. You can take a look at two of our cloud-related libraries:
 
-- a pure Scala API for parts of EC2
-- an easy to use, scalable AWS-based library for declaring and executing stateless computations
-- a completely immutable, type-safe Scala system for writing and deploying machine configurations.
+- [nispero](/nispero): an easy to use, scalable AWS-based library for declaring and executing stateless computations
+- [statika](/statika): a completely immutable, type-safe Scala system for writing and deploying machine configurations.
 
 ### NoSQL databases
 
-We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [TitanDB](https://github.com/thinkaurelius/titan) from its inception; [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest graph DBs for biological data out there, [bio4j](http://bio4j.com).
+We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [TitanDB](https://github.com/thinkaurelius/titan) from its inception; [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest and more complex graph DBs for biological data out there, [bio4j](http://bio4j.com).
 
 ### category theory
 
