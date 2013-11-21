@@ -8,17 +8,13 @@ footer: true
 
 ![nispero](nispero.png)
 
-## what?
+_Nispero_ is a Scala library for declaring stateless computations and scaling them using a combination of services from AWS. Highlights are
 
-*Nispero* is distributed system that can perform parallel stateless computations using Amazon Web Services capacity.
+- strongly typed configuration (Scala code!)
+- automatic deploy/undeploy
+- CRDT-like semantics (a _nispero_ instance is essentially a morphism between idempotent commutative monoids)
 
-## why?
-
-[Amazon EC2](http://aws.amazon.com/ec2/) web service provide unlimited amount of computation capacity.
-*Nispero* helps you parallelize your computations and execute it at EC2.
-
-## how?
-See [nispero documentation](https://github.com/ohnosequences/nispero/blob/master/doc/README.md) for details.
+See the [nispero documentation](https://github.com/ohnosequences/nispero/blob/master/doc/README.md) for more details.
 
 
 
