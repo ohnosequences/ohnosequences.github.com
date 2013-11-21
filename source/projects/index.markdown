@@ -16,18 +16,19 @@ a bacterial genome annotation system designed for NGS data. Published in [PLoS O
 
 UniprotKB + GeneOntology + NCBI taxonomy + RefSeq + Expasy Enzyme, integrated in a graph DB with easy [AWS](http://aws.amazon.com) deployment. _Manuscript under preparation_.
 
-### mg7
-
-a cloud-based metagenomics analysis system.
-
 ### [statika](http://ohnosequences.com/statika)
 
-a small Scala library for working with modules with explicit dependencies, with some specifics for declaring and applying immutable EC2 instance confs.
+A Scala library for working with modules with explicit dependencies, with some specifics for AWS, like declaring and applying immutable EC2 instance configurations.
 
 ### [nispero](http://ohnosequences.com/nispero)
 
-scaling stateless inherently parallel computations using AWS
+A Scala library designed for declaring and scaling stateless inherently parallel computations using AWS
+
+### mg7
+
+a cloud-based metagenomics analysis system. _Manuscript under preparation_
+
 
 ### saws
 
-a Scala library for interacting with AWS, making heavy use of dependent types and type-level stuff. _WIP_
+a Scala library for interacting with AWS, making heavy use of dependent types and type-level programming. _WIP_
