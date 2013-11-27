@@ -1068,8 +1068,8 @@ servers analyze data
   iframe {
     border: none;
     background-color: white;
-    height: 100%;
-    width: 100%;
+    height: 480;
+    width: 360;
   }
   #controls {
     bottom: 0;
