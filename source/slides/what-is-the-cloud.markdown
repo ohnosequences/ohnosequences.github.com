@@ -7,7 +7,7 @@ footer: true
 ---
 
 <div id="slides">
-  <iframe allowfullscreen mozallowfullscreen webkitallowfullscreen>
+  <iframe width="100%" allowfullscreen mozallowfullscreen webkitallowfullscreen>
     <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
