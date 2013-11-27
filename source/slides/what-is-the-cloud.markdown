@@ -8,8 +8,10 @@ footer: true
 
 Slides from the "cloud and NGS data analysis" course that we ran on August 2013.
 
-<div id="slides" width="100%" >
-  <iframe allowfullscreen mozallowfullscreen webkitallowfullscreen>
+-----
+
+<div id="slides" >
+  <iframe width="480" height="360" allowfullscreen mozallowfullscreen webkitallowfullscreen>
     <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
