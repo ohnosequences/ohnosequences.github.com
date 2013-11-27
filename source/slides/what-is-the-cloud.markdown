@@ -11,7 +11,7 @@ Slides from the "cloud and NGS data analysis" course that we ran on August 2013.
 -----
 
 <div id="slides" >
-  <iframe width="480px !important" height="360px !important" allowfullscreen mozallowfullscreen webkitallowfullscreen>
+  <iframe class="dzslides_embedded" allowfullscreen mozallowfullscreen webkitallowfullscreen>
     <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
