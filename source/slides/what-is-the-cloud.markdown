@@ -6,8 +6,10 @@ sharing: true
 footer: true
 ---
 
-<div id="slides">
-  <iframe width="100%" allowfullscreen mozallowfullscreen webkitallowfullscreen>
+Slides from the "cloud and NGS data analysis" course that we ran on August 2013.
+
+<div id="slides" width="100%" >
+  <iframe allowfullscreen mozallowfullscreen webkitallowfullscreen>
     <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
