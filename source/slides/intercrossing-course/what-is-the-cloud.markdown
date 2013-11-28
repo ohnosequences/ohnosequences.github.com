@@ -11,5 +11,3 @@ Slides of the "What is the cloud?" session by [Eduardo Pareja-Tobes](/eparejatob
 <br>
 
 <iframe class="frame" width="640" height="500" src="embedder.html#raw.what-is-the-cloud.html">
-
-
