@@ -6,7 +6,8 @@ sharing: true
 footer: true
 ---
 
-[Eduardo Pareja-Tobes](/eparejatobes) on "What is the cloud?" as part of the [_INTERCROSSING_](/intercrossing) course we gave on August 2013: _Cloud Computing and NGS Data Analysis_.
+- What is the cloud? - [Eduardo Pareja-Tobes](/eparejatobes) :: August 2013
+- _Cloud Computing and NGS Data Analysis_ - [_INTERCROSSING_](/intercrossing) course
 
 <br>
 
