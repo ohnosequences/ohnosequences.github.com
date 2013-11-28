@@ -11,6 +11,6 @@ This set of slides comes from a course we gave as part of the [_INTERCROSSING_](
 - [what is the cloud?](what-is-the-cloud)
 - get to know AWS (practical session)
 - [cloud computing and NGS data analysis](cloud-ngs-data-analysis)
-- [statika and configuration in the cloud](conf-cloud-statika-intro)
+- [statika and configuration in the cloud](conf-in-the-cloud-statika)
 - [nispero and stateless parallel computations](parallel-stateless-nispero-intro)
 - [cloud architectures](cloud-architectures-intro)
