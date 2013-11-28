@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <meta name="author" content="@eparejatobes" />
+  <meta name="dcterms.date" content="2013-08-29" />
+  <title>cloud arch</title>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+<style>
+  html { background-color: #425331; }
+  body { 
+    background-color: #f9fcfe; 
+    color: #414141;
+    text-align: left;
+  }
+  /* A section is a slide. It's size is 800x600, and this will never change */
+  section {
+
+    display: inline-block;
+    font-family: Open Sans, sans;
+    font-weight: 400;
+    font-size: 225%; /* 16 * 2.25 = 36 */
+    color: #535353;
+  }
+
+  p { margin-bottom: 1.333em; }
+  strong { color: #b8913d; } 
+  em {  font-weight: 400; color: #121212; }
+  code {  font-family: PT Mono; font-size: 76%; }
+  address, blockquote, dl, fieldset, p, form, h1, h2, h3, h4, 
+  h5, h6, hr, ol, pre, table, ul, dl { 
+    vertical-align: middle;
+  }
+  h1, h2, h3 {
+    margin-top:0; margin-bottom:0;
+    letter-spacing: -1px;
+    text-align: center;
+    font-family: Bitter;
+    font-weight: normal;
+    color: #b8463d;
+  }
+  h1 {  font-size:2em; padding: 0.6666em 0; }
+  h1 { padding-top: 0; }
+  h2 {  font-size:1.75em; padding:0.381em 0;  }
+  h3 {  
+    font-size: 1.5em; 
+    padding-top: 0;
+    padding-bottom: 0.8888em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left; 
+  }
+  section.titleslide h1 {}
+  h1.title { 
+    text-align: right;
+    font-size: 2.4em;
+    font-family: Bitter;
+    font-weight: bold; 
+    font-style: italic;
+    color: #b8913d;
+    padding: 0.6666em 0;
+    padding-bottom: 0;
+  }
+    h2.author { 
+    font-size: 1.25em;
+    font-family: Open Sans;
+    text-align: right;
+    margin: 0 0 0 0;
+    font-weight: 300; color:#266871; 
+  }
+  h3.date { 
+    text-align: right;
+    font-size: 1em;
+    font-family: Open Sans;
+    margin: 0 0 0 0;
+    font-weight: 300; font-style: normal;
+  }
+  ul { list-style-type: round;}
+  ol { list-style-type: decimal;}
+  ul, ol {
+    margin: 10px 10px 10px 80px;
+  }
+  li { text-align: left; }
+  q { quotes: "“" "”" "‘" "’"; }
+  blockquote { 
+    margin-top: 1.333em;
+    padding-top: 1.333em;
+    padding-bottom: 1.333em; 
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+    text-align: right;
+    border-right: 6px solid #b8463d;
+    background-color: #f2f2f2;
+  }
+  a:link {color:#266871; text-decoration: none;}      /* unvisited link */
+  a:visited {color:#266871; text-decoration: none;}  /* visited link */
+  a:hover {color:#569ca6;}  /* mouse over link */
+  a:active {color:#3e7f89;}  /* selected link */
+
+  /* Figures are displayed full-page, with the caption on
+     top of the image/video */
+  figure {
+    background-color: transparent;
+    overflow: visible;
+  }
+  img:first-of-type {
+    margin-left: -80px;
+    margin-top: -120px;
+    position:absolute;
+    width: 800px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  figure > img {
+    width: 800px !important;
+    height: 600px !important;
+    margin-left: -80px;
+    margin-top: -120px;
+  }
+  figcaption {
+    margin: 70px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+  }
+
+  /* Transition effect */
+  /* Feel free to change the transition effect for original
+     animations. See here:
+     https://developer.mozilla.org/en/CSS/CSS_transitions
+     How to use CSS3 Transitions: */
+  section {
+      -moz-transition: left 200ms ease-out 0s;
+      -webkit-transition: left 200ms ease-out 0s;
+      -ms-transition: left 200ms ease-out 0s;
+      transition: left 200ms ease-out 0s;
+  }
+
+  /* Before */
+  section { 
+
+    width: 640px;
+    position: absolute;
+    height:360px;
+    top: 50%; left: 50%;
+    margin-left: -320px; margin-top: -180px;
+    vertical-align: middle;
+    left: -150%; }
+  /* Now */
+  section[aria-selected] { 
+    /* 16:9 640x360 */
+    width: 640px;
+    position: absolute;
+    height:360px;
+    top: 50%; left: 50%;
+    margin-left: -320px; margin-top: -180px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  /* After */
+  section[aria-selected] ~ section { 
+
+    width: 640px;
+    position: absolute;
+    height:360px;
+    top: 50%; left: 50%;
+    margin-left: -320px; margin-top: -180px;
+    vertical-align: middle;
+    left: +150%; 
+  }
+
+  /* Incremental elements */
+
+  /* By default, visible */
+  .incremental > * { opacity: 1; }
+
+  /* The current item */
+  .incremental > *[aria-selected] { color: #b8913d; opacity: 1; font-weight: 500;}
+
+  /* The items to-be-selected */
+  .incremental > *[aria-selected] ~ * { opacity: 0.3; }
+
+  /*logos*/
+  #logos_div {
+    position: absolute;
+    
+  }
+  #ohnoseq_logo_div {}
+  #ohnoseq_logo {
+    /*6.132867133*/
+    height: 20px; width: 123px;
+    top:570px;
+    left: 730px;
+    position: relative;
+  }
+  #era7_logo_div {}
+  #era7_logo {
+    /*4.866071429*/
+    height: 20px; width: 97px;
+    position: relative;
+    top: 540px;
+    left: 755px;
+  }
+  #intercrossing_logo {
+    /*1.236979167*/
+    height: 64px; width: 80px;
+    position: relative;  
+    top:45px;
+    left: 780px;
+  }
+</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<section>
+  <h1 class="title">cloud arch</h1>
+  <h2 class="author"><a href="http://ohnosequences.com/eparejatobes">@eparejatobes</a></h2>
+  <h3 class="date">2013-08-29</h3>
+</section>
+<div id="logos_div">
+  <div id="ohnoseq_logo_div">
+    <a href="http://ohnosequences.com">
+      <img id="ohnoseq_logo" src="ohnoseq-logo.png">
+    </a>
+  </div>
+  </div>
+  <div id="era7_logo_div">
+    <a href="http://era7bioinformatics.com">
+      <img id="era7_logo" src="era7-logo.png">
+    </a>
+  </div>
+  <div id="intercrossing_logo_div">
+    <a href="http://intercrossing.wikispaces.com">
+      <img id="intercrossing_logo" src="intercrossing-logo.png">
+    </a>
+  </div>
+</div> 
+<section class="slide level2">
+
+<h4 id="talk-outline">talk outline</h4>
+<ul>
+<li>“good practices” <!-- - distributed systems -> different --></li>
+<li><p>simple example: nispero</p></li>
+<li><p>the future?</p></li>
+</ul>
+</section>
+<section id="good-practices" class="titleslide slide level1"><h1>good practices</h1></section><section class="slide level2">
+
+<h3 id="let-it-crash">1. let it crash</h3>
+<ul>
+<li>design for <strong>failure</strong></li>
+<li>and <strong>test</strong> it!</li>
+</ul>
+</section><section class="slide level2">
+
+<h4 id="the-netflix-example">the Netflix example</h4>
+<p>around 2010 they started using something they called <a href="http://thenextweb.com/insider/2013/03/03/how-your-business-could-learn-from-chaos-monkey/">Chaos Monkey</a>: a system which randomly <strong>kills</strong> services and components of their <strong>own</strong> infrastructure</p>
+</section><section class="slide level2">
+
+<h3 id="supervision">supervision</h3>
+<p>Nice, but you need a <strong>hierarchy</strong> for that. <a href="http://www.erlang.org/doc/design_principles/sup_princ.html">Erlang</a>, <a href="http://doc.akka.io/docs/akka/snapshot/general/supervision.html">Akka actors</a>, etc</p>
+</section><section class="slide level2">
+
+<h3 id="message-passing">2. message passing</h3>
+<p>components communicate via <strong>messages</strong> → <em>reify</em> communication</p>
+</section><section class="slide level2">
+
+<h3 id="queues">queues!</h3>
+<p><strong>semantics</strong> and <strong>scalability</strong> are important</p>
+</section><section class="slide level2">
+
+<h3 id="the-sqs-case">the SQS case</h3>
+<p>A really nice service <strong>if</strong> you design for its characteristics</p>
+<ul>
+<li>weak semantics</li>
+<li>scalable!</li>
+</ul>
+</section><section class="slide level2">
+
+<h3 id="post">post</h3>
+<ul>
+<li>can (will) fail -&gt; retry!</li>
+<li>message will appear (eventually)</li>
+</ul>
+</section><section class="slide level2">
+
+<h3 id="receive">receive</h3>
+<ul>
+<li>same message <span class="math">\([0, \infty[\)</span> times</li>
+<li>get all -&gt; eventually</li>
+<li><strong>actively</strong> delete messages</li>
+</ul>
+</section><section class="slide level2">
+
+<h3 id="receive-ii">receive II</h3>
+<p>received messages (eventually) won’t be visible to other clients. After a time window they will <strong>reappear</strong> unless the <strong>receiver</strong> actively delete them.</p>
+</section><section class="slide level2">
+
+<h3 id="checksguarantees">checks/guarantees?</h3>
+<p><strong>if</strong> needed, just <strong>implement</strong> them. But not embedded into the messaging infrastructure!</p>
+</section><section class="slide level2">
+
+<h3 id="push-vs-pull">push vs pull</h3>
+<p>always prefer <strong>pull</strong> over <em>push</em></p>
+<ul>
+<li><strong>local</strong> -&gt; plan, react, time!</li>
+<li><strong>reduces</strong> coordination</li>
+</ul>
+</section><section id="state" class="slide level2">
+<h1>3. state</h1>
+<p>go <strong>stateless</strong> (whenever possible)</p>
+</section><section class="slide level2">
+
+<h3 id="stateless"><em>stateless?</em></h3>
+<p>make state <strong>explicit</strong>, <strong>immutable</strong> and <strong>local</strong></p>
+</section><section class="slide level2">
+
+<h3 id="state-machines">state machines</h3>
+<p>with <em>messages</em> as <strong>input</strong>, <em>messages</em> as <strong>output</strong></p>
+</section><section class="slide level2">
+
+<h3 id="data">data?</h3>
+<p>compute -&gt; store -&gt; send message with ref.</p>
+<p>Other components will <strong>pull</strong> that!</p>
+</section>
+<section id="nispero" class="titleslide slide level1"><h1>nispero</h1></section><section class="slide level2">
+
+<figure>
+<img src="nispero-arch.png" />
+</figure>
+</section><section id="cap" class="slide level2">
+<h1>CAP</h1>
+<ul>
+<li><strong>C</strong>onsistency</li>
+<li><strong>A</strong>vailability</li>
+<li><strong>P</strong>artitioning</li>
+</ul>
+</section><section class="slide level2">
+
+<h3 id="consistency">consistency</h3>
+<p>= simultaneity = <strong>global</strong> time</p>
+</section><section class="slide level2">
+
+<h3 id="availability">availability</h3>
+<p>some <strong>external</strong> agent can keep acting on the system</p>
+</section><section class="slide level2">
+
+<h3 id="partitioning">partitioning</h3>
+<p>network failures, machine crashes, …</p>
+</section><section class="slide level2">
+
+<h3 id="the-cap-theorem">The CAP “theorem”</h3>
+<blockquote>
+<p>only <strong>2</strong> out of the <strong>3</strong> in <strong>CAP</strong></p>
+</blockquote>
+</section><section class="slide level2">
+
+<h3 id="caveats">caveats</h3>
+<ul class="incremental">
+<li>vague, imprecise, not a theorem</li>
+<li>consistency ↔ availability</li>
+<li><em>arbitrary</em> partitioning</li>
+<li><strong>generic</strong> statement</li>
+</ul>
+</section>
+<section id="the-future" class="titleslide slide level1"><h1>the future</h1></section><section class="slide level2">
+
+<h3 id="abstract-over-execution">abstract over execution</h3>
+<p>Identify a <strong>semantic</strong> universe <span class="math">\(\mathcal{U}\)</span> which represents the <strong>systems</strong> that you want to build. <strong>Describe</strong> your system <span class="math">\(S\colon \mathcal{U}\)</span> in that framework</p>
+</section><section class="slide level2">
+
+<h3 id="abstract-over-execution-1">abstract over execution</h3>
+<p>Now an execution is just</p>
+<p><span class="math">\[
+E\colon S \to P
+\]</span></p>
+<p>where <span class="math">\(P \colon \mathcal{U}\)</span>. <a href="http://dscpi.uninsubria.it/staff/Walters">RFC Walters</a> and others</p>
+</section><section class="slide level2">
+
+<h3 id="model-platform-state">model platform state</h3>
+<p><strong>explicitly</strong>: if you want to execute something on <strong>AWS</strong>, express what is out of control <em>also</em> in <span class="math">\(\mathcal{U}\)</span>:</p>
+<p><span class="math">\[\mathrm{amz} \colon \mathcal{U}\]</span></p>
+</section><section class="slide level2">
+
+<h3 id="correct-by-construction">correct by construction</h3>
+<p>Now, what you have is a family of executions parameterized by AWS state</p>
+<p><span class="math">\[
+E\colon S \times \mathrm{amz} \to P \times \mathrm{amz}
+\]</span></p>
+</section><section class="slide level2">
+
+<blockquote>
+<p><strong>higher-order</strong> <em>state machines</em>!!</p>
+</blockquote>
+</section><section class="slide level2">
+
+<h3 id="possible-now">possible now?</h3>
+<p>Not really. In this direction → <a href="http://docs.scala-lang.org/overviews/core/futures.html">Futures</a>, <a href="http://doc.akka.io/docs/akka/snapshot/scala/dataflow.html">Dataflow concurrency</a>, …</p>
+<p>But, we’re working on it!</p>
+</section><section class="slide level2">
+
+<h3 id="relativity">relativity</h3>
+<p>there is an <strong>absolute limit</strong> for transmission of information: the speed of <strong>light</strong></p>
+</section><section class="slide level2">
+
+<h3 id="relativity-1">relativity</h3>
+<p>there is an <strong>absolute limit</strong> for transmission of information: the speed of the <strong>network</strong></p>
+</section><section class="slide level2">
+
+<h3 id="causality">causality?</h3>
+<p>use <strong>actions</strong> as time; represent causality as <strong>time</strong> in your <strong>abstract</strong> model</p>
+<p>As <strong>executions</strong> preserve <strong>actions</strong>, they will respect <strong>causality</strong></p>
+</section><section class="slide level2">
+
+<h3 id="dependent-types">dependent types!</h3>
+<p>Could (should!) play a <strong>big role</strong> here.</p>
+<ul>
+<li>value-dependent ref frames</li>
+<li><em>certified</em> <a href="http://christophermeiklejohn.com/coq/2013/06/11/distributed-data-structures.html">distributed systems</a></li>
+</ul>
+</section>
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<!-- Default Style -->
+<style>
+  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  details { display: none; }
+  body {
+    width: 800px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto; }
+  html { overflow: hidden; }
+  body { display: none; }
+  body.loaded { display: block; }
+  .incremental {visibility: hidden; }
+  .incremental[active] {visibility: visible; }
+  #progress-bar{
+    bottom: 0;
+    position: absolute;
+    -moz-transition: width 400ms linear 0s;
+    -webkit-transition: width 400ms linear 0s;
+    -ms-transition: width 400ms linear 0s;
+    transition: width 400ms linear 0s;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    width: 100%; height: 100%;
+  }
+</style>
+
+<script>
+  var Dz = {
+    remoteWindows: [],
+    idx: -1,
+    step: 0,
+    slides: null,
+    progressBar : null,
+    params: {
+      autoplay: "1"
+    }
+  };
+
+  Dz.init = function() {
+    document.body.className = "loaded";
+    this.slides = $$("body > section");
+    this.progressBar = $("#progress-bar");
+    this.setupParams();
+    this.onhashchange();
+    this.setupTouchEvents();
+    this.onresize();
+  }
+  
+  Dz.setupParams = function() {
+    var p = window.location.search.substr(1).split('&');
+    p.forEach(function(e, i, a) {
+      var keyVal = e.split('=');
+      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+    });
+  // Specific params handling
+    if (!+this.params.autoplay)
+      $$.forEach($$("video"), function(v){ v.controls = true });
+  }
+
+  Dz.onkeydown = function(aEvent) {
+    // Don't intercept keyboard shortcuts
+    if (aEvent.altKey
+      || aEvent.ctrlKey
+      || aEvent.metaKey
+      || aEvent.shiftKey) {
+      return;
+    }
+    if ( aEvent.keyCode == 37 // left arrow
+      || aEvent.keyCode == 38 // up arrow
+      || aEvent.keyCode == 33 // page up
+    ) {
+      aEvent.preventDefault();
+      this.back();
+    }
+    if ( aEvent.keyCode == 39 // right arrow
+      || aEvent.keyCode == 40 // down arrow
+      || aEvent.keyCode == 34 // page down
+    ) {
+      aEvent.preventDefault();
+      this.forward();
+    }
+    if (aEvent.keyCode == 35) { // end
+      aEvent.preventDefault();
+      this.goEnd();
+    }
+    if (aEvent.keyCode == 36) { // home
+      aEvent.preventDefault();
+      this.goStart();
+    }
+    if (aEvent.keyCode == 32) { // space
+      aEvent.preventDefault();
+      this.toggleContent();
+    }
+    if (aEvent.keyCode == 70) { // f
+      aEvent.preventDefault();
+      this.goFullscreen();
+    }
+  }
+
+  /* Touch Events */
+
+  Dz.setupTouchEvents = function() {
+    var orgX, newX;
+    var tracking = false;
+
+    var db = document.body;
+    db.addEventListener("touchstart", start.bind(this), false);
+    db.addEventListener("touchmove", move.bind(this), false);
+
+    function start(aEvent) {
+      aEvent.preventDefault();
+      tracking = true;
+      orgX = aEvent.changedTouches[0].pageX;
+    }
+
+    function move(aEvent) {
+      if (!tracking) return;
+      newX = aEvent.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        this.forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          this.back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  Dz.onresize = function() {
+    var db = document.body;
+    var sx = db.clientWidth / window.innerWidth;
+    var sy = db.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+
+    db.style.MozTransform = transform;
+    db.style.WebkitTransform = transform;
+    db.style.OTransform = transform;
+    db.style.msTransform = transform;
+    db.style.transform = transform;
+  }
+
+
+  Dz.getDetails = function(aIdx) {
+    var s = $("section:nth-of-type(" + aIdx + ")");
+    var d = s.$("details");
+    return d ? d.innerHTML : "";
+  }
+
+  Dz.onmessage = function(aEvent) {
+    var argv = aEvent.data.split(" "), argc = argv.length;
+    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
+    var win = aEvent.source;
+    if (argv[0] === "REGISTER" && argc === 1) {
+      this.remoteWindows.push(win);
+      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+      return;
+    }
+    if (argv[0] === "BACK" && argc === 1)
+      this.back();
+    if (argv[0] === "FORWARD" && argc === 1)
+      this.forward();
+    if (argv[0] === "START" && argc === 1)
+      this.goStart();
+    if (argv[0] === "END" && argc === 1)
+      this.goEnd();
+    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
+      this.toggleContent();
+    if (argv[0] === "SET_CURSOR" && argc === 2)
+      window.location.hash = "#" + argv[1];
+    if (argv[0] === "GET_CURSOR" && argc === 1)
+      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
+    if (argv[0] === "GET_NOTES" && argc === 1)
+      this.postMsg(win, "NOTES", this.getDetails(this.idx));
+  }
+
+  Dz.toggleContent = function() {
+    // If a Video is present in this new slide, play it.
+    // If a Video is present in the previous slide, stop it.
+    var s = $("section[aria-selected]");
+    if (s) {
+      var video = s.$("video");
+      if (video) {
+        if (video.ended || video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+
+  Dz.setCursor = function(aIdx, aStep) {
+    // If the user change the slide number in the URL bar, jump
+    // to this slide.
+    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
+    window.location.hash = "#" + aIdx + aStep;
+  }
+
+  Dz.onhashchange = function() {
+    var cursor = window.location.hash.split("#"),
+        newidx = 1,
+        newstep = 0;
+    if (cursor.length == 2) {
+      newidx = ~~cursor[1].split(".")[0];
+      newstep = ~~cursor[1].split(".")[1];
+      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
+        newstep = 0;
+        newidx++;
+      }
+    }
+    this.setProgress(newidx, newstep);
+    if (newidx != this.idx) {
+      this.setSlide(newidx);
+    }
+    if (newstep != this.step) {
+      this.setIncremental(newstep);
+    }
+    for (var i = 0; i < this.remoteWindows.length; i++) {
+      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
+    }
+  }
+
+  Dz.back = function() {
+    if (this.idx == 1 && this.step == 0) {
+      return;
+    }
+    if (this.step == 0) {
+      this.setCursor(this.idx - 1,
+                     this.slides[this.idx - 2].$$('.incremental > *').length);
+    } else {
+      this.setCursor(this.idx, this.step - 1);
+    }
+  }
+
+  Dz.forward = function() {
+    if (this.idx >= this.slides.length &&
+        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+        return;
+    }
+    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
+      this.setCursor(this.idx + 1, 0);
+    } else {
+      this.setCursor(this.idx, this.step + 1);
+    }
+  }
+
+  Dz.goStart = function() {
+    this.setCursor(1, 0);
+  }
+
+  Dz.goEnd = function() {
+    var lastIdx = this.slides.length;
+    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
+    this.setCursor(lastIdx, lastStep);
+  }
+
+  Dz.setSlide = function(aIdx) {
+    this.idx = aIdx;
+    var old = $("section[aria-selected]");
+    var next = $("section:nth-of-type("+ this.idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.$("video");
+      if (video) {
+        video.pause();
+      }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.$("video");
+      if (video && !!+this.params.autoplay) {
+        video.play();
+      }
+    } else {
+      // That should not happen
+      this.idx = -1;
+      // console.warn("Slide doesn't exist.");
+    }
+  }
+
+  Dz.setIncremental = function(aStep) {
+    this.step = aStep;
+    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
+    if (old) {
+      old.removeAttribute('aria-selected');
+    }
+    var incrementals = $$('.incremental');
+    if (this.step <= 0) {
+      $$.forEach(incrementals, function(aNode) {
+        aNode.removeAttribute('active');
+      });
+      return;
+    }
+    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
+    if (next) {
+      next.setAttribute('aria-selected', true);
+      next.parentNode.setAttribute('active', true);
+      var found = false;
+      $$.forEach(incrementals, function(aNode) {
+        if (aNode != next.parentNode)
+          if (found)
+            aNode.removeAttribute('active');
+          else
+            aNode.setAttribute('active', true);
+        else
+          found = true;
+      });
+    } else {
+      setCursor(this.idx, 0);
+    }
+    return next;
+  }
+
+  Dz.goFullscreen = function() {
+    var html = $('html'),
+        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
+    if (requestFullscreen) {
+      requestFullscreen.apply(html);
+    }
+  }
+  
+  Dz.setProgress = function(aIdx, aStep) {
+    var slide = $("section:nth-of-type("+ aIdx +")");
+    if (!slide)
+      return;
+    var steps = slide.$$('.incremental > *').length + 1,
+        slideSize = 100 / (this.slides.length - 1),
+        stepSize = slideSize / steps;
+    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
+  }
+  
+  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
+    aMsg = [aMsg];
+    for (var i = 2; i < arguments.length; i++)
+      aMsg.push(encodeURIComponent(arguments[i]));
+    aWin.postMessage(aMsg.join(" "), "*");
+  }
+  
+  function init() {
+    Dz.init();
+    window.onkeydown = Dz.onkeydown.bind(Dz);
+    window.onresize = Dz.onresize.bind(Dz);
+    window.onhashchange = Dz.onhashchange.bind(Dz);
+    window.onmessage = Dz.onmessage.bind(Dz);
+  }
+
+  window.onload = init;
+</script>
+
+
+<script> // Helpers
+  if (!Function.prototype.bind) {
+    Function.prototype.bind = function (oThis) {
+
+      // closest thing possible to the ECMAScript 5 internal IsCallable
+      // function 
+      if (typeof this !== "function")
+      throw new TypeError(
+        "Function.prototype.bind - what is trying to be fBound is not callable"
+      );
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
+                   aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+      fNOP.prototype = this.prototype;
+      fBound.prototype = new fNOP();
+
+      return fBound;
+    };
+  }
+
+  var $ = (HTMLElement.prototype.$ = function(aQuery) {
+    return this.querySelector(aQuery);
+  }).bind(document);
+
+  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
+    return this.querySelectorAll(aQuery);
+  }).bind(document);
+
+  $$.forEach = function(nodeList, fun) {
+    Array.prototype.forEach.call(nodeList, fun);
+  }
+
+</script>
+<!-- vim: set fdm=marker: }}} -->
+</body>
+</html>
