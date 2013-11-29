@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cloud and NGS INTERCROSSING course
+title: Cloud and NGS course
 comments: false
 sharing: true
 footer: true
