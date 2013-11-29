@@ -10,4 +10,4 @@ Slides of the "problem definition - outbreak pathogen identification" session by
 
 <br>
 
-<script async class="speakerdeck-embed" data-id="97807c203b2e0131fd9932e62b00e619" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="fc8ffe703b350131fd9a32e62b00e619" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
