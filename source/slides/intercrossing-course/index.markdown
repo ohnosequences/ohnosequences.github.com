@@ -14,5 +14,5 @@ This set of slides comes from a course we gave as part of the [_INTERCROSSING_](
 - [NGS data analysis](ngs-data-analysis)
 - [problem defintion: outbreak pathogen identification](problem-definition-outbreaks)
 - [statika and configuration in the cloud](conf-in-the-cloud-statika)
-- [nispero and stateless parallel computations](parallel-stateless-nispero)
+- [nispero and stateless parallel computations](stateless-parallel-nispero)
 - [cloud architectures](cloud-architectures)
