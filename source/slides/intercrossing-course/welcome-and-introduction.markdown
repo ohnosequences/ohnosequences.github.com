@@ -11,4 +11,4 @@ Slides of the "NGS data analysis" session by [Eduardo Pareja](/epareja), from th
 <br>
 
 <!-- TODO WRONG LINK -->
-<script async class="speakerdeck-embed" data-id="9890ff403a870131edda6ef1f34b6106" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="7cfef3e03b1c0131067936e4e8065d82" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
