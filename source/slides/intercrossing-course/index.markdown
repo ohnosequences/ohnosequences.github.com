@@ -12,6 +12,7 @@ This set of slides comes from a course we gave as part of the [_INTERCROSSING_](
 - [what is the cloud?](what-is-the-cloud)
 - get to know AWS (practical session)
 - [NGS data analysis](ngs-data-analysis)
+- [problem defintion: outbreak pathogen identification](problem-definition-outbreaks)
 - [statika and configuration in the cloud](conf-in-the-cloud-statika)
 - [nispero and stateless parallel computations](parallel-stateless-nispero)
 - [cloud architectures](cloud-architectures)
