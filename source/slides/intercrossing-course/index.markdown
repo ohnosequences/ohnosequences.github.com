@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Cloud and NGS course - August 2013"
+title: "Cloud and NGS _INTERCROSSING_ course"
 comments: false
 sharing: true
 footer: true
