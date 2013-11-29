@@ -1,10 +1,13 @@
 ---
 layout: page
-title: "Cloud and NGS _INTERCROSSING_ course"
+title: Cloud and NGS _INTERCROSSING_ course
 comments: false
 sharing: true
 footer: true
 ---
+
+# Cloud and NGS _INTERCROSSING_ course
+
 This set of slides comes from a course we gave as part of the [_INTERCROSSING_](/intercrossing) International Training Network, titled _Cloud Computing and NGS Data Analysis_. The audience composition was a mix of Biologists, Mathematicians, Bioinformaticians and Statisticians; we tried to have something for all of them.
 
 - [welcome and introduction](welcome-and-introduction)
