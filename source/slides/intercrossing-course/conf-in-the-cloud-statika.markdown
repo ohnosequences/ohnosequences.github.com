@@ -10,4 +10,4 @@ Slides of the "configuration in the cloud - statika" session by [Eduardo Pareja-
 
 <br>
 
-<iframe class="frame" width="640" height="500" src="embedder.html#raw.conf-in-the-cloud-statika.html">
+<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="embedder.html#raw.conf-in-the-cloud-statika.html">
