@@ -10,5 +10,4 @@ Slides of the "stateless and parallel computations - nispero" session by [Marina
 
 <br>
 
-<!-- TODO fix the link -->
-<script async class="speakerdeck-embed" data-id="9890ff403a870131edda6ef1f34b6106" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="97807c203b2e0131fd9932e62b00e619" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
