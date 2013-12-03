@@ -6,6 +6,11 @@ sharing: true
 footer: true
 ---
 
-_INTERCROSSING_ is an EU-funded Marie Curie Initial Training Network of which we are members, focused on Next Generation Sequencing, Cloud Computing and Population Genetics. As part of it two _early stage researchers_ (ESRs) are part of our group: [Alexey Alekhin](/aalekhin) and [Evdokim Kovach](/ekovach). 
+_INTERCROSSING_ is an EU-funded Marie Curie Initial Training Network of which we are members, focused on Next Generation Sequencing, Cloud Computing and Population Genetics. As part of it two _early stage researchers_ (ESRs):
+
+- [Alexey Alekhin](/aalekhin)
+- [Evdokim Kovach](/ekovach) 
+
+will obtain PhD-level training as members of our group.
 
 - [_INTERCROSSING_ network website](http://intercrossing.wikispaces.com)
