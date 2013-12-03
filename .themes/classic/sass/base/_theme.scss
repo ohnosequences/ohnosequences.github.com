@@ -70,13 +70,14 @@ aside.sidebar a {
 }
 a:visited {}
 
-div#content {
-  a {
-    text-decoration: none !important;
-  }
-}
 a {
   @include transition(color .3s);
+}
+
+div#content {
+  > a {
+    text-decoration: none !important;
+  }
 }
 
 html {
