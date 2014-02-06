@@ -10,7 +10,7 @@ Slides of ["Bio4j: bigger, faster, leaner"](https://fosdem.org/2014/schedule/eve
 
 <br>
 
-<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="embedder.html#raw.bio4j-bigger-faster-leaner.html">
+<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#raw.bio4j-bigger-faster-leaner.html">
   
 <br>
 
