@@ -8,11 +8,9 @@ footer: true
 
 Slides of ["Bio4j: bigger, faster, leaner"](https://fosdem.org/2014/schedule/event/graphdevroom_bio4j_2/) talk by [Pablo Pareja](/ppareja) on the [FOSDEM 2014](https://fosdem.org/2014/) conference.
 
-<br>
 
 <iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#fosdem-2014/raw.bio4j-bigger-faster-leaner.html">
   
-<br>
 
 Bio4j is a high-performance cloud-enabled graph-based bioinformatics data platform. It integrates most data available in UniProt KB (SwissProt + Trembl), Gene Ontology (GO), UniRef (50, 90, 100), RefSeq, NCBI taxonomy, and Expasy Enzyme DBs. Data is organized in a way semantically equivalent to what it represents in the graph structure, and thanks to this, queries which would even be impossible to perform with a standard Relational DB can just take a couple of seconds with Bio4j.
 
