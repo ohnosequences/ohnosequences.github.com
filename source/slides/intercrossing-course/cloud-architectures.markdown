@@ -10,6 +10,6 @@ Slides of the "Cloud architectures" session by [Eduardo Pareja-Tobes](/eparejato
 
 <br>
 
-<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#raw.cloud-architectures.html">
+<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#intercrossing-course/raw.cloud-architectures.html">
 
 

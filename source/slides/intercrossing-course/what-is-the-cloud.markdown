@@ -10,4 +10,4 @@ Slides of the "What is the cloud?" session by [Eduardo Pareja-Tobes](/eparejatob
 
 <br>
 
-<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#raw.what-is-the-cloud.html">
+<iframe class="frame" width="640" height="500" allowfullscreen mozallowfullscreen webkitallowfullscreen src="../embedder.html#intercrossing-course/raw.what-is-the-cloud.html">
