@@ -192,5 +192,6 @@ public interface Type <
 }
 ```
 
+## full example
 
-
+_TODO_ link to the typed graphs repo
