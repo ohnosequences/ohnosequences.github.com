@@ -17,7 +17,7 @@ The general ideas with implementations is
 
 ## Titan typed nodes
 
-`TitanNode` and the accompanying `TitanNode.Type` extends `Node` and follows the same pattern:
+`TitanNode` and the accompanying `TitanNode.Type` extend `Node`, `Node.Type` and follow the same pattern:
 
 ``` java
 public abstract class TitanNode <
@@ -27,15 +27,18 @@ public abstract class TitanNode <
   // it is a TitanVertex too!
   implements Node<N,NT>, TitanVertex
 {
-  // body omitted
+  
+  protected TitanVertex rawVertex;
+  
+  // rest of body omitted
 }
 ```
 
-So `N`,`NT` again refer to the implementing class, and we know that `N` is a `TitanNode`.
+So `N`,`NT` again refer to the implementing class, and we know that `N` is a `TitanNode`. It is also a `TitanVertex`, with all Titan-specific methods forwarded to the wrapped `rawVertex`.
 
 ## node and relationship types
 
-Titan has a native notion of relationship types (labels), but there's no such thing for nodes. We're using properties instead, so that having that property means that the node has that type. Note that it is just the _presence_ of such property what adscribes the type to a given node; you could use the _value_ as an id for example. Looking at the code, for titan node types the interface has
+Titan has a native notion of relationship types (labels), but there's no such thing (yet; there will be in `0.5`) for nodes. We're using properties instead, so that having that property means that the node has that type. Note that it is just the _presence_ of such property what adscribes the type to a given node; you could use the _value_ as an id for example. Looking at the code, for titan node types the interface has
 
 ``` java
 // inside TitanNode.Type
@@ -48,7 +51,7 @@ while for rels
 ``` java
 // inside TitanRelationship.Type
 public TitanLabel label();
-public R from(TitanEdge edge);
+public R fromTitanEdge(TitanEdge edge);
 ```
 
 We are also using node and rel types here as factories, so that passing an instance of them gives you a way of generically building a node or rel of the right type; this is essential for having what we could call
@@ -79,6 +82,7 @@ public <
     return relType.from(tEdges.iterator().next());
   }
 ```
+
 So you get
 
 1. a completely generic uniform implementation
