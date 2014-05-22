@@ -199,7 +199,7 @@ A good mnemonic is that this is determined by the return type of the in and out 
 - `r` is `oneToMany` means `in(r)` returns one rel, `out(r)` returns a list
 - `manyToOne` means `in(r)` returns a list, `out(r)` one rel
 
-And this is basically all for now; below there's a self-contained example for a model declaration with just users, twits and a "user twitted twit" relationship.
+And this is basically all for now; below there's a self-contained example for a model declaration with just users, twits and a "user twitted twit" relationship, in all its glory type parameter abundance:
 
 ``` java
 import com.ohnosequences.typedGraphs.*;
