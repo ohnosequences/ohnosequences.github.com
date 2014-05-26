@@ -49,7 +49,7 @@ public interface Element <
 
 The key here is how `Element` and `Element.Type` refer to each other in their definitions; this way you cannot define an element without defining its type. I was playing with this ideas and this [post](http://axisofeval.blogspot.com/2010/05/typeful-dynamic-programming-or-javac.html) from Manuel Simoni where a similar application of this pattern is mentioned confirmed me that this was possible. 
 
-Being able to link at the type level entities and their types, together with the together with  makes possible for `N` and `NT` to represent implementing types of `Element` and `Element.Type` respectively. This technique lets you work with implementing classes generically at the level of the abstract type. We can do all this thanks to Java supporting a variant of [F-bounded polymorphism](http://www.cs.utexas.edu/~wcook/papers/FBound89/CookFBound89.pdf).
+Being able to link at the type level entities and their types, together with `N` and `NT` representing implementing types of `Element` and `Element.Type` lets you work with implementing classes generically at the level of the abstract type. We will see more of this in the next post, where I will talk about implementations.
 
 #### generic, safe properties
 
