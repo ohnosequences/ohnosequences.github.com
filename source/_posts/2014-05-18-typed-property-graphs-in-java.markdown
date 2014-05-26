@@ -155,7 +155,9 @@ And this is basically all for now; below there's a self-contained example for a 
 import com.ohnosequences.typedGraphs.*;
 
 /*
-  A User node. N,NT need to be left abstract until the point where you bound them in a final class; same for all the equivalent entity,type pairs in what follows.
+  A User node. N,NT need to be left abstract until the point where
+  you bound them in a final class; same for all the equivalent
+  entity,type pairs in what follows.
 */
 public interface User <
   N extends User<N,NT>, NT extends User.Type<N,NT>
@@ -170,7 +172,10 @@ extends
     Node.Type<N,NT>
   {
     /*
-      An id property. It is defined inside the node type just for convenience, so that implementing classes can refer to it as User.Type.id. Here with N,NT we're bounding this property to be of User nodes, and the value type is set to String using default methods
+      An id property. It is defined inside the node type just for convenience,
+      so that implementing classes can refer to it as User.Type.id. 
+      Here with N,NT we're bounding this property to be of User nodes, 
+      and the value type is set to String using default methods.
     */
     public interface id <
       N extends User<N,NT>, NT extends User.Type<N,NT>,
@@ -186,7 +191,8 @@ extends
 }
 
 /*
-  A node for twits. The pattern is exactly the same as that for Users; we're just adding a permalink property.
+  A node for twits. The pattern is exactly the same as that for Users;
+  we're just adding a permalink property.
 */
 public interface Twit <
   N extends Twit<N,NT>, NT extends Twit.Type<N,NT>
@@ -214,7 +220,8 @@ extends
 }
 
 /*
-  This relationship connects a user with one of its tweets; its arity is then many to one. It also has a date property.
+  This relationship connects a user with one of its tweets; its arity is then 
+  many to one. It also has a date property.
 */
 public interface Twitted <
   S extends User<S,ST>, ST extends User.Type<S,ST>,
