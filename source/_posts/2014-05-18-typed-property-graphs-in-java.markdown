@@ -17,11 +17,11 @@ So that's why one month ago I started working on a Java API for property graphs 
 - in/out style methods can be both generic and as arguments you can only pass relationships with the right types; their return type can depend on the (statically-known) arity of the relationship
 - all the types can be further refined by implementations
 
-At some point it felt a bit of a dancing bear effort _TODO explain_ but in the end (and mostly thanks to Java 8 default methods) it is surpringly usable and expressive; so much that we are adopting it as a base for [Bio4j](http://bio4j.com). If you are working with typed graph data in Java, I think you should keep reading. OK enough about generalities, let's do a walk-through!
+At some point it felt a bit of a dancing bear effort (as the old saying goes: the amazing thing is that the bear can dance _at all_) but in the end, and mostly thanks to Java 8 [default methods](http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) it is surpringly usable and expressive; so much that we are adopting it as a base for [Bio4j](http://bio4j.com). If you are working with typed graph data in Java, I think you should keep reading. OK enough about generalities, let's do a walk-through!
 
 ### the Element base class
 
-As in Blueprints, there's a base `Element` class, which acts as a container for properties; here they are also typed. Let's look first at the type part
+As in Blueprints, there's a base `Element` class, which acts as a container for properties; here they are also typed. Let's look first at the signatures
 
 #### Elements and their types
 
@@ -47,28 +47,9 @@ public interface Element <
 }
 ```
 
-The key here is how `Element` and `Element.Type` refer to each other in their definitions; this way you cannot define an element without defining its type. 
+The key here is how `Element` and `Element.Type` refer to each other in their definitions; this way you cannot define an element without defining its type. I was playing with this ideas and this [post](http://axisofeval.blogspot.com/2010/05/typeful-dynamic-programming-or-javac.html) from Manuel Simoni where a similar application of this pattern is mentioned confirmed me that this was possible. 
 
-This together with F-bounded polyomorphism makes possible for `N` and `NT` to represent implementing types of `Element` and `Element.Type` respectively. This technique lets you work with implementing classes generically at the level of the abstract type.
-
-Let's see an stupid implementation, just for the sake of example:
-
-``` java
-public final class User implements Element<User, User.Type> {
-
-  @Override public User.Type type() { 
-
-    return Type.user;
-  } 
-
-  public static enum Type implements Element.Type<User, User.Type> {
-
-    user;
-
-    @Override public Type value() {  return hey;  }
-  }
-}
-```
+Being able to link at the type level entities and their types, together with the together with  makes possible for `N` and `NT` to represent implementing types of `Element` and `Element.Type` respectively. This technique lets you work with implementing classes generically at the level of the abstract type. We can do all this thanks to Java supporting a variant of [F-bounded polymorphism](http://www.cs.utexas.edu/~wcook/papers/FBound89/CookFBound89.pdf).
 
 #### generic, safe properties
 
@@ -77,9 +58,9 @@ The property signature can say a lot:
 ``` java
 public abstract class Property <
     // the element which has this property
-    N extends Element<N,NT>, NT extends Element.Type<N,NT>,
+    N extends Element<E,ET>, NT extends Element.Type<E,ET>,
     // the property
-    P extends Property<N,NT,P,V>,
+    P extends Property<E,ET,P,V>,
     // the value type of this property
     V
   > 
@@ -88,48 +69,17 @@ public abstract class Property <
   }
 ```
 
-`P` refers again to the implementing class, and `V` is the value type for this property. The pair `N,NT` here acts as a witness for `N,NT` nodes having this property; this way inside `Element` we can define a `get` method which can only be called on properties defined for that `Element`, as `E,ET` correspond to "this" element:
+`P` refers again to the implementing class, and `V` is the value type for this property. The pair `E,ET` here acts as a witness for `E,ET` elements having this property; this way inside `Element` we can define a `get` method which can only be called on properties defined for that `Element`, as `E,ET` correspond to "this" element:
 
 ``` java
 public <P extends Property<E,ET,P,V>, V> V get(P p);
 ```
 
-Then for example inside `User` (or anywhere else) you could have 
-
-``` java
-// same as before
-public final class User implements Element<User, User.Type> {
-
-  public static enum id extends Property<User,User.Type,id,String> {
-
-    id(Type.hey, "id", String.class);
-  }
-
-  // just for convenience
-  public static id id = id.id
-}
-```
-
-that's all. Now given a `User` instance you can get its id through
-
-``` java
-// you can also do a static import of User
-String hey_id = hey.get(User.id);
-```
-
-Let's look at the signature for the `get` method inside `Element`
-
-``` java
-public <P extends Property<E,ET,P,V>, V> V get(P p);
-```
-
-Recall that `E` and `ET` are references to "this" element and its type. What this implies just based in the signature is
+As I just said, `E` and `ET` are references to "this" element and its type. What this implies just based in the signature is
 
 - _you can only call get on properties that are defined for **that** element_
 
-Another important point is that `id` could be defined anywhere; for example, for concrete implementations it is normally a good idea to group properties somewhere. 
-
-You can also of course create abstract properties; imagine that you want to have an id for all of your nodes (but only nodes, not relationships), of type `String`; just do
+Another important point is that properties could be defined anywhere, and separately from the element definition. You can also of course create abstract properties; imagine that you want to have an id for all of your nodes (but only nodes, not relationships), of type `String`; just do
 
 ``` java
 public abstract class Id <
@@ -142,7 +92,7 @@ public abstract class Id <
 
 ### Relationships
 
-Both nodes and relationships are elements, so that they have a type and can have properties. Nodes are essentially About relationships, the key features are
+Both nodes and relationships are elements, so that they have a type and can have properties. Nodes are essentially just a marker interface over elements. About relationships, the key features are
 
 - typed source and target
 - relationship types specify the arity
@@ -171,7 +121,7 @@ As before, elements and their types always go together; here
 
 note how inside the body we can refer to implementing types in the definition of the `source` and `target` methods.
 
-The arity is defined at the relationship type, and I'm following the same terminology as in [Titan type definitions](https://github.com/thinkaurelius/titan/wiki/Type-Definition-Overview).
+The arity is defined at the relationship type, and I'm following the same terminology as in [Titan type definitions](https://github.com/thinkaurelius/titan/wiki/Type-Definition-Overview#cardinality-constraints).
 
 ``` java
 public interface Type <
@@ -199,14 +149,16 @@ A good mnemonic is that this is determined by the return type of the in and out 
 - `r` is `oneToMany` means `in(r)` returns one rel, `out(r)` returns a list
 - `manyToOne` means `in(r)` returns a list, `out(r)` one rel
 
-And this is basically all for now; below there's a self-contained example for a model declaration with just users, twits and a "user twitted twit" relationship, in all its glory type parameter abundance:
+And this is basically all for now; below there's a self-contained example for a model declaration with just users, twits and a "user twitted twit" relationship, in all its  type parameter glory:
 
 ``` java
 import com.ohnosequences.typedGraphs.*;
 
+/*
+  A User node. N,NT need to be left abstract until the point where you bound them in a final class; same for all the equivalent entity,type pairs in what follows.
+*/
 public interface User <
-  N extends User<N,NT>,
-  NT extends User.Type<N,NT>
+  N extends User<N,NT>, NT extends User.Type<N,NT>
 >
 extends
   Node<N,NT>
@@ -217,7 +169,9 @@ extends
   extends
     Node.Type<N,NT>
   {
-
+    /*
+      An id property. It is defined inside the node type just for convenience, so that implementing classes can refer to it as User.Type.id. Here with N,NT we're bounding this property to be of User nodes, and the value type is set to String using default methods
+    */
     public interface id <
       N extends User<N,NT>, NT extends User.Type<N,NT>,
       P extends id<N,NT,P,String>>
@@ -231,6 +185,9 @@ extends
   }
 }
 
+/*
+  A node for twits. The pattern is exactly the same as that for Users; we're just adding a permalink property.
+*/
 public interface Twit <
   N extends Twit<N,NT>, NT extends Twit.Type<N,NT>
 >
@@ -256,6 +213,9 @@ extends
   }
 }
 
+/*
+  This relationship connects a user with one of its tweets; its arity is then many to one. It also has a date property.
+*/
 public interface Twitted <
   S extends User<S,ST>, ST extends User.Type<S,ST>,
   R extends Twitted<S,ST, R,RT, T,TT>, RT extends Twitted.Type<S,ST, R,RT, T,TT>,
