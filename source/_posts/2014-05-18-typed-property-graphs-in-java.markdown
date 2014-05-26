@@ -149,7 +149,7 @@ A good mnemonic is that this is determined by the return type of the in and out 
 - `r` is `oneToMany` means `in(r)` returns one rel, `out(r)` returns a list
 - `manyToOne` means `in(r)` returns a list, `out(r)` one rel
 
-And this is basically all for now; below there's a self-contained example for a model declaration with just users, twits and a "user twitted twit" relationship, in all its  type parameter glory:
+And this is basically all for now; below there's a self-contained example for a model declaration with just users, tweets and a "user twitted tweet" relationship, in all its  type parameter glory:
 
 ``` java
 import com.ohnosequences.typedGraphs.*;
@@ -191,23 +191,23 @@ extends
 }
 
 /*
-  A node for twits. The pattern is exactly the same as that for Users;
+  A node for tweets. The pattern is exactly the same as that for Users;
   we're just adding a permalink property.
 */
-public interface Twit <
-  N extends Twit<N,NT>, NT extends Twit.Type<N,NT>
+public interface Tweet <
+  N extends Tweet<N,NT>, NT extends Tweet.Type<N,NT>
 >
 extends
   Node<N,NT>
 {
   public interface Type <
-    N extends Twit<N,NT>, NT extends Twit.Type<N,NT>
+    N extends Tweet<N,NT>, NT extends Tweet.Type<N,NT>
   >
   extends
     Node.Type<N,NT>
   {
     public interface permalink <
-      N extends Twit<N,NT>, NT extends Twit.Type<N,NT>,
+      N extends Tweet<N,NT>, NT extends Tweet.Type<N,NT>,
       P extends permalink<N,NT,P,String>>
     >
     extends
@@ -223,18 +223,18 @@ extends
   This relationship connects a user with one of its tweets; its arity is then 
   many to one. It also has a date property.
 */
-public interface Twitted <
+public interface Tweetted <
   S extends User<S,ST>, ST extends User.Type<S,ST>,
-  R extends Twitted<S,ST, R,RT, T,TT>, RT extends Twitted.Type<S,ST, R,RT, T,TT>,
-  T extends Twit<T,TT>, TT extends Twit.Type<T,TT>
+  R extends Tweetted<S,ST, R,RT, T,TT>, RT extends Tweetted.Type<S,ST, R,RT, T,TT>,
+  T extends Tweet<T,TT>, TT extends Tweet.Type<T,TT>
 >
 extends
   Relationship<S,ST,R,RT,T,TT>
 {
   public interface Type <
     S extends User<S,ST>, ST extends User.Type<S,ST>,
-    R extends Twitted<S,ST, R,RT, T,TT>, RT extends Twitted.Type<S,ST, R,RT, T,TT>,
-    T extends Twit<T,TT>, TT extends Twit.Type<T,TT>
+    R extends Tweetted<S,ST, R,RT, T,TT>, RT extends Tweetted.Type<S,ST, R,RT, T,TT>,
+    T extends Tweet<T,TT>, TT extends Tweet.Type<T,TT>
   >
   extends
     Relationship.Type<S,ST,R,RT,T,TT>
@@ -242,8 +242,8 @@ extends
 
     public interface date <
       S extends User<S,ST>, ST extends User.Type<S,ST>,
-      R extends Twitted<S,ST, R,RT, T,TT>, RT extends Twitted.Type<S,ST, R,RT, T,TT>,
-      T extends Twit<T,TT>, TT extends Twit.Type<T,TT>,
+      R extends Tweetted<S,ST, R,RT, T,TT>, RT extends Tweetted.Type<S,ST, R,RT, T,TT>,
+      T extends Tweet<T,TT>, TT extends Tweet.Type<T,TT>,
       P extends date<S,ST,R,RT,T,TT,P,java.util.Date>
     >
     extends
