@@ -121,7 +121,7 @@ As before, elements and their types always go together; here
 
 note how inside the body we can refer to implementing types in the definition of the `source` and `target` methods.
 
-The arity is defined at the relationship type, and I'm following the same terminology as in [Titan type definitions](https://github.com/thinkaurelius/titan/wiki/Type-Definition-Overview#cardinality-constraints).
+The arity is defined at the relationship type, and I'm following the same terminology as in [Titan type definitions](https://github.com/thinkaurelius/titan/wiki/Type-Definition-Overview#cardinality-constraints). Nested inside `Relationship` we have
 
 ``` java
 public interface Type <
@@ -149,7 +149,12 @@ A good mnemonic is that this is determined by the return type of the in and out 
 - `r` is `oneToMany` means `in(r)` returns one rel, `out(r)` returns a list
 - `manyToOne` means `in(r)` returns a list, `out(r)` one rel
 
-And this is basically all for now; below there's a self-contained example for a model declaration with just users, tweets and a "user twitted tweet" relationship, in all its  type parameter glory:
+And this is basically all for now; below there's a self-contained example for a model declaration with just users, tweets and a "user twitted tweet" relationship, in all its  type parameter glory. The general pattern is
+
+1. for defining schemas you need to leave all the type parameters free, so that they can play their role as types of implementations
+2. when actually implementing it, do it with final classes bounding all parameters, and never subclass them
+
+Of course you can create as many intermediate layers as you want between those two, but always leaving all parameters free until the very bottom layer.
 
 ``` java
 import com.ohnosequences.typedGraphs.*;
