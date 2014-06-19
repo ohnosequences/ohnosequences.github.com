@@ -7,9 +7,13 @@ comments: false
 categories: [Java, graphs, libraries]
 ---
 
-[Property graphs](https://github.com/tinkerpop/blueprints/wiki/Property-Graph-Model) form a flexible simple model which can encompass the data and query capabilities of most of the existing graph database technologies. The [Blueprints](https://github.com/tinkerpop/blueprints) Java API for them though falls a bit short when you are working with strongly typed data models, such as what we have in [Bio4j](http://bio4j.com). 
+> **TL;DR** We have a WIP experimental library for working with graphs in Java in a type-safe way. You can think of it as a typed Blueprints. It's on github: [ohnosequences/typed-graphs](https://github.com/ohnosequences/typed-graphs). I explain its design a bit in what follows.
 
-So that's why one month ago I started working on a Java API for property graphs that could let you express as much as possible about your graph model in the type system. The result (still highly experimental) is very much in the spirit of Blueprints basic interfaces, but with more types: 
+[Property graphs](https://github.com/tinkerpop/blueprints/wiki/Property-Graph-Model) form a flexible simple model which can encompass the data and query capabilities of most of the existing graph database technologies, with [Blueprints](https://github.com/tinkerpop/blueprints) being the de-facto standard for working with graph databases in Java. If you don't know what this is all about, and executive summary could be: In Blueprints you have vertices and edges, and both of them have properties. Edges (and vertices in 3.0) are typed in a nominal style, with nodes having local query methods letting you retrieve incoming or outgoing edges of a given type. 
+
+Then, why work on a Java library for graphs? well, it's a question of _types_. Blueprints falls short when you are working with strongly typed data models, and this is certainly something that we need to deal with: [Bio4j](http://bio4j.com), one of our projects, consists in integrating a lot of bio-related data into a graph data model.
+
+So that's why two months ago I started working on a Java API for property graphs that could let you express as much as possible about your graph model in the (extremely limited) Java type system. The result (still highly experimental) is very much in the spirit of Blueprints basic interfaces, but with more types: 
 
 - every element has (and cannot be defined without) a companion type
 - you can only retrieve the properties that an element has statically
