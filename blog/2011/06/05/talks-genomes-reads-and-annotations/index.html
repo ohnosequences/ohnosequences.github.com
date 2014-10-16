@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Talks, Genomes, Reads and Annotations - oh no sequences!</title>
+  <meta name="author" content="oh no sequences!">
+
+  
+  <meta name="description" content="Last 1st of June I was attending to the conference “Applied Bioinformatics &amp; Public Health Microbiology” held at the Welcome Trust Conference &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ohnosequences.com/blog/2011/06/05/talks-genomes-reads-and-annotations">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="oh no sequences!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,300italic,400,400italic,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  showMathMenu: false,
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }, 
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", webFont: "TeX", availableFonts: [] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12161444-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1>
+    <a href="/">
+      <span class="title_oh">oh</span><span class="title_no">no</span><span class="title_sequences">sequences</span><span class="title_bang">!</span>
+    </a>
+  </h1>
+  <h2>era7 bioinformatics R&D group</h2>
+
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ohnosequences.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog">blog</a></li>
+  <li><a href="/publications">publications</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/people">people</a></li>
+  <li><a href="/about">about</a></li>
+  <li><a href="/contact">contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Talks, Genomes, Reads and Annotations</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-05T22:01:46+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Last 1st of June I was attending to the conference “<a href="https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227">Applied Bioinformatics &amp; Public Health Microbiology</a>” held at the Welcome Trust Conference Centre (Hinxton, UK)</p>
+
+<p>The main purpose of the conference was to point out the importance of high-throughput technologies (mainly NGS) and bioinformatics in solving issues related to public health.</p>
+
+<p>During the morning sessions of the second day (2nd of June) BGI announced the release of the sequencing data of 5 IonTorrent chips (see the  announcement <a href="http://www.bgisequence.com/eu/index.php?cID=194&amp;sms_ss=twitter&amp;at_xt=4de74702e845e3a2,0">here </a>). Just some hours later Nick Loman (@pathogenomenick) published a de novo assembly of the reads with MIRA in his blog (see post <a href="http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/">here</a>). And then, some hours later (in the morning of the 3rd of June) we published the annotation of the Nick’s assembly in <a href="http://www.era7bioinformatics.com/en/E_Coli_EHEC_O104_STRAIN_EU_OUTBREAK_era7bioinformatics.html">our website</a>. We annotated it with the pipeline (BG7 pipeline) we were presenting at the conference (see talk slides <a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data">here</a>).</p>
+
+<p>Now we are working on this automatic annotation data searching for proteins that may be involved in pathogenesis. These preliminary results look promising.</p>
+
+<p>Definitely, it’s been a really exciting experience. In the middle of a conference where we were trying to see how NGS could be applied to solve public health issues we could get the genome of the bacteria responsible for this important outbreak. In less than 24 hours we got the reads, the assembly and the annotation. A good case study :)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Marina Manrique</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-05T22:01:46+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ngs/'>ngs</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2011/06/05/talks-genomes-reads-and-annotations/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2011/06/05/talks-genomes-reads-and-annotations/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/05/30/bio4j-includes-refseq-data-now/" title="Previous Post: Bio4j includes RefSeq data now !">&laquo; Bio4j includes RefSeq data now !</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/06/05/275/" title="Next Post: Escherichia coli EHEC Germany outbreak semi-automated annotation">Escherichia coli EHEC Germany outbreak semi-automated annotation &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ohnosequences">@ohnosequences</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ohnosequences',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - oh no sequences! -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

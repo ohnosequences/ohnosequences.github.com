@@ -1,0 +1,956 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Escherichia coli EHEC Germany outbreak semi-automated annotation - oh no sequences!</title>
+  <meta name="author" content="oh no sequences!">
+
+  
+  <meta name="description" content="Semi-automated annotation using BG7 system We did the semi-automated annotation of the genome sequenced by BGI (6-2-2011, http://www.bgisequence.com/ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ohnosequences.com/blog/2011/06/05/275">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="oh no sequences!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,300italic,400,400italic,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  showMathMenu: false,
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }, 
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", webFont: "TeX", availableFonts: [] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12161444-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1>
+    <a href="/">
+      <span class="title_oh">oh</span><span class="title_no">no</span><span class="title_sequences">sequences</span><span class="title_bang">!</span>
+    </a>
+  </h1>
+  <h2>era7 bioinformatics R&D group</h2>
+
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ohnosequences.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog">blog</a></li>
+  <li><a href="/publications">publications</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/people">people</a></li>
+  <li><a href="/about">about</a></li>
+  <li><a href="/contact">contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Escherichia coli EHEC Germany outbreak semi-automated annotation</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-05T22:28:08+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3 id="semi-automated-annotation-using-bg7-system">Semi-automated annotation using BG7 system</h3>
+
+<p>We did the semi-automated annotation of the genome sequenced by BGI (6-2-2011, <a href="http://www.bgisequence.com/eu/index.php?cID=194">http://www.bgisequence.com/eu/index.php?cID=194</a> ) and assembled with MIRA by Nick Loman (6-2-2011  <a href="http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/">http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/</a> ).</p>
+
+<p>Our system BG7 (Bacterial Genome annotation of Era7 Bioinformatics, <a href="https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227">https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227</a> , <a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data">http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data</a> ) predicts ORFs and annotates them based on fragments of similarity with Uniprot proteins.</p>
+
+<p>In contrast to other annotation pipelines where finding ORFs is the first step followed by the annotation one, BG7 system first searches for protein similarity and then defines the ORF searching for start and stop signals. It is specifically designed for annotating prokaryotic genomes obtained with NGS data since it handles the principal errors of these technologies: false indels in homopolymer regions and substitutions. Annotation systems based on initial and exact ORF detection often may lose ORFs due to these kinds of sequencing errors that may lead to introduction or lack of stop codons and modification of start signals. BG7 is also designed to work with genomes fragmented in many contigs solving the problem of the detection of incomplete genes at the end of contigs. The system is especially suitable to detect rare genes similar to proteins from taxonomically distant organisms. BG7 takes advantage of cloud computing to perform extensive computing tasks in a reasonable time. The annotation of a 3Mb bacterial genome can be performed in less than 12 hours.</p>
+
+<h3 id="dataset-of-proteins-for-similarity-based-orf-prediction">Dataset of proteins for similarity-based ORF prediction</h3>
+
+<p>A set of 137063 proteins were selected as reference protein for the system BG7:</p>
+
+<ul>
+  <li>All representative proteins corresponding to Escherichia coli protein Uniref90 clusters  from organisms including in their name the terms “EHEC”  or “EAEC”</li>
+  <li>All Uniprot proteins from bacteria including in any field the term “toxin”</li>
+  <li>­All Uniprot proteins from bacteria including in any field the term “hemolysin”</li>
+  <li>All the proteins from <em>Salmonella typhi</em>, <em>Yersinia pestis</em> and <em>Shigella dysenteriae</em></li>
+</ul>
+
+<p>The system search for similarities for each protein of the set in the contigs sequenced. This BLAST similarity results are the seed for prediction of ORFs.</p>
+
+<h2 id="results">RESULTS</h2>
+
+<p>We have predicted <strong>6327</strong> genes, <strong>6156</strong> encoding proteins y <strong>171</strong> corresponding to ribosomal and tRNA.</p>
+
+<p>Only <strong>1326</strong> out of the 6156 protein encoding genes have canonical start and stop codon and haven´t frame-shifts neither intragenic stop codons. <strong>2479</strong> protein encoding genes (out of the 6156 predicted) include some frameshift or some intragenic stop codon in their sequences, probably caused by inherent technology errors. However our system is tolerant to errors of massive sequencing technologies and it has been able to detect a rich set of genes even with very preliminary sequencing results.</p>
+
+<p>Probably some of the proteins detected are fragmented and some of them could appear as two different predicted genes if they are in different contigs.</p>
+
+<p>We have analyzed the taxonomic origin of the proteins responsible of the prediction of the detected genes. Table 1, Figure 1 and Figure 2 display the result of this analysis.</p>
+
+<p><strong>Table 1: Taxonomic origin of</strong> **proteins responsible of the prediction of the detected genes **</p>
+
+<p>Organism</p>
+
+<p>number of proteins</p>
+
+<p>Escherichia   coli O26:H11 (strain 11368 / EHEC)</p>
+
+<p>2810</p>
+
+<p>Escherichia   coli (strain 55989 / EAEC)</p>
+
+<p>1166</p>
+
+<p>Escherichia   coli O44:H18 (strain 042 / EAEC)</p>
+
+<p>339</p>
+
+<p>Escherichia   coli O103:H2 (strain 12009 / EHEC)</p>
+
+<p>296</p>
+
+<p>Escherichia   coli</p>
+
+<p>221</p>
+
+<p>Escherichia   coli O111:H- (strain 11128 / EHEC)</p>
+
+<p>151</p>
+
+<p>Escherichia   coli O157:H7 (strain EC4115 / EHEC)</p>
+
+<p>148</p>
+
+<p>Escherichia   coli O157:H7 (strain TW14359 / EHEC)</p>
+
+<p>144</p>
+
+<p>Escherichia   coli (strain K12)</p>
+
+<p>51</p>
+
+<p>Salmonella   typhi</p>
+
+<p>51</p>
+
+<p>Escherichia   coli O1:K1 / APEC</p>
+
+<p>50</p>
+
+<p>Escherichia   coli (strain UTI89 / UPEC)</p>
+
+<p>40</p>
+
+<p>Escherichia   coli O81 (strain ED1a)</p>
+
+<p>30</p>
+
+<p>Yersinia   pestis</p>
+
+<p>29</p>
+
+<p>Escherichia   coli O139:H28 (strain E24377A / ETEC)</p>
+
+<p>18</p>
+
+<p>Escherichia   coli B354</p>
+
+<p>14</p>
+
+<p>Escherichia   coli O55:H7 (strain CB9615 / EPEC)</p>
+
+<p>13</p>
+
+<p>Escherichia   coli O6:K15:H31 (strain 536 / UPEC)</p>
+
+<p>13</p>
+
+<p>Escherichia   coli B088</p>
+
+<p>12</p>
+
+<p>Escherichia   coli MS 119-7</p>
+
+<p>12</p>
+
+<p>Escherichia   coli O6</p>
+
+<p>12</p>
+
+<p>Escherichia   coli TA007</p>
+
+<p>12</p>
+
+<p>Escherichia   coli (strain SE11)</p>
+
+<p>11</p>
+
+<p>Escherichia   coli 1827-70</p>
+
+<p>11</p>
+
+<p>Escherichia   coli MS 107-1</p>
+
+<p>11</p>
+
+<p>Escherichia   coli O127:H6 (strain E2348/69 / EPEC)</p>
+
+<p>11</p>
+
+<p>Escherichia   coli EPECa14</p>
+
+<p>10</p>
+
+<p>Escherichia   coli M863</p>
+
+<p>10</p>
+
+<p>Escherichia   coli MS 124-1</p>
+
+<p>10</p>
+
+<p>Escherichia   coli B7A</p>
+
+<p>9</p>
+
+<p>Escherichia   coli H120</p>
+
+<p>9</p>
+
+<p>Escherichia   coli MS 117-3</p>
+
+<p>9</p>
+
+<p>Escherichia   coli MS 198-1</p>
+
+<p>9</p>
+
+<p>Escherichia   coli MS 21-1</p>
+
+<p>9</p>
+
+<p>Escherichia   coli O157:H7</p>
+
+<p>9</p>
+
+<p>Shigella   dysenteriae</p>
+
+<p>9</p>
+
+<p>Shigella   flexneri 2a str. 2457T</p>
+
+<p>9</p>
+
+<p>Escherichia   coli 3431</p>
+
+<p>8</p>
+
+<p>Escherichia   coli LT-68</p>
+
+<p>8</p>
+
+<p>Escherichia   coli MS 116-1</p>
+
+<p>8</p>
+
+<p>Escherichia   coli MS 182-1</p>
+
+<p>8</p>
+
+<p>Escherichia   coli O17:K52:H18 (strain UMN026 / ExPEC)</p>
+
+<p>8</p>
+
+<p>Escherichia   coli O45:K1 (strain S88 / ExPEC)</p>
+
+<p>8</p>
+
+<p>Escherichia   coli EC4100B</p>
+
+<p>7</p>
+
+<p>Escherichia   coli MS 145-7</p>
+
+<p>7</p>
+
+<p>Escherichia   coli MS 196-1</p>
+
+<p>7</p>
+
+<p>Escherichia   coli MS 84-1</p>
+
+<p>7</p>
+
+<p>Escherichia   coli (strain SMS-3-5 / SECEC)</p>
+
+<p>6</p>
+
+<p>Escherichia   coli B185</p>
+
+<p>6</p>
+
+<p>Escherichia   coli E128010</p>
+
+<p>6</p>
+
+<p>Escherichia   coli E482</p>
+
+<p>6</p>
+
+<p>Escherichia   coli FVEC1302</p>
+
+<p>6</p>
+
+<p>Escherichia   coli MS 16-3</p>
+
+<p>6</p>
+
+<p>Escherichia   coli MS 175-1</p>
+
+<p>6</p>
+
+<p>Escherichia   coli MS 187-1</p>
+
+<p>6</p>
+
+<p>Escherichia   coli MS 69-1</p>
+
+<p>6</p>
+
+<p>Escherichia   coli O9:H4 (strain HS)</p>
+
+<p>6</p>
+
+<p>Escherichia   sp. 3<em>2</em>53FAA</p>
+
+<p>6</p>
+
+<p>Shigella   boydii serotype 18 (strain CDC 3083-94 / BS512)</p>
+
+<p>6</p>
+
+<p>Shigella   dysenteriae serotype 1 (strain Sd197)</p>
+
+<p>6</p>
+
+<p>Shigella   flexneri</p>
+
+<p>6</p>
+
+<p>Escherichia   coli E1520</p>
+
+<p>5</p>
+
+<p>Escherichia   coli MS 110-3</p>
+
+<p>5</p>
+
+<p>Escherichia   coli MS 115-1</p>
+
+<p>5</p>
+
+<p>Escherichia   coli MS 45-1</p>
+
+<p>5</p>
+
+<p>Escherichia   coli O157:H7 str. TW14588</p>
+
+<p>5</p>
+
+<p>Escherichia   coli O7:K1 (strain IAI39 / ExPEC)</p>
+
+<p>5</p>
+
+<p>Enterobacter   sakazakii (strain ATCC BAA-894)</p>
+
+<p>4</p>
+
+<p>Escherichia   coli 1357</p>
+
+<p>4</p>
+
+<p>Escherichia   coli 53638</p>
+
+<p>4</p>
+
+<p>Escherichia   coli B171</p>
+
+<p>4</p>
+
+<p>Escherichia   coli E110019</p>
+
+<p>4</p>
+
+<p>Escherichia   coli E22</p>
+
+<p>4</p>
+
+<p>Escherichia   coli F11</p>
+
+<p>4</p>
+
+<p>Escherichia   coli MS 185-1</p>
+
+<p>4</p>
+
+<p>Escherichia   coli MS 78-1</p>
+
+<p>4</p>
+
+<p>Escherichia   coli MS 85-1</p>
+
+<p>4</p>
+
+<p>Escherichia   coli O111:H-</p>
+
+<p>4</p>
+
+<p>Escherichia   coli O55:H7 str. USDA 5905</p>
+
+<p>4</p>
+
+<p>Escherichia   coli O78:H11 (strain H10407 / ETEC)</p>
+
+<p>4</p>
+
+<p>Escherichia   fergusonii (strain ATCC 35469 / DSM 13698 / CDC 0568-73)</p>
+
+<p>4</p>
+
+<p>Citrobacter   koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696)</p>
+
+<p>3</p>
+
+<p>Enterobacteria   phage lambda (Bacteriophage lambda)</p>
+
+<p>3</p>
+
+<p>Escherichia   albertii TW07627</p>
+
+<p>3</p>
+
+<p>Escherichia   coli (strain ATCC 55124 / KO11)</p>
+
+<p>3</p>
+
+<p>Escherichia   coli (strain B / BL21)</p>
+
+<p>3</p>
+
+<p>Escherichia   coli (strain B / REL606)</p>
+
+<p>3</p>
+
+<p>Escherichia   coli 1180</p>
+
+<p>3</p>
+
+<p>Escherichia   coli 83972</p>
+
+<p>3</p>
+
+<p>Escherichia   coli H263</p>
+
+<p>3</p>
+
+<p>Escherichia   coli MS 57-2</p>
+
+<p>3</p>
+
+<p>Escherichia   coli MS 60-1</p>
+
+<p>3</p>
+
+<p>Escherichia   coli RN587/1</p>
+
+<p>3</p>
+
+<p>Escherichia   sp. 1<em>1</em>43</p>
+
+<p>3</p>
+
+<p>Salmonella   typhimurium</p>
+
+<p>3</p>
+
+<p>Shigella   boydii serotype 4 (strain Sb227)</p>
+
+<p>3</p>
+
+<p>Shigella   flexneri serotype 5b (strain 8401)</p>
+
+<p>3</p>
+
+<p>Bacillus   cereus G9241</p>
+
+<p>2</p>
+
+<p>Citrobacter   youngae ATCC 29220</p>
+
+<p>2</p>
+
+<p>Enterobacteria   phage CUS-3</p>
+
+<p>2</p>
+
+<p>Enterobacteria   phage VT2phi_272</p>
+
+<p>2</p>
+
+<p>Escherichia   coli (strain K12 / DH10B)</p>
+
+<p>2</p>
+
+<p>Escherichia   coli (strain K12 / MC4100 / BW2952)</p>
+
+<p>2</p>
+
+<p>Escherichia   coli 2362-75</p>
+
+<p>2</p>
+
+<p>Escherichia   coli FVEC1412</p>
+
+<p>2</p>
+
+<p>Escherichia   coli H489</p>
+
+<p>2</p>
+
+<p>Escherichia   coli MS 146-1</p>
+
+<p>2</p>
+
+<p>Escherichia   coli MS 200-1</p>
+
+<p>2</p>
+
+<p>Escherichia   coli NC101</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O150:H5 (strain SE15)</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O157:H- str. H 2687</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O157:H7 str. 1125</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O157:H7 str. EC869</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O55:H7 str. 3256-97</p>
+
+<p>2</p>
+
+<p>Escherichia   coli O8 (strain IAI1)</p>
+
+<p>2</p>
+
+<p>Escherichia   coli TW10509</p>
+
+<p>2</p>
+
+<p>Salmonella   choleraesuis</p>
+
+<p>2</p>
+
+<p>Serratia   marcescens</p>
+
+<p>2</p>
+
+<p>Shigella   flexneri CDC 796-83</p>
+
+<p>2</p>
+
+<p>Shigella   sonnei (strain Ss046)</p>
+
+<p>2</p>
+
+<p>Citrobacter   rodentium (strain ICC168) (Citrobacter freundii biotype 4280)</p>
+
+<p>1</p>
+
+<p>Citrobacter   sp. 30_2</p>
+
+<p>1</p>
+
+<p>Cronobacter   turicensis (strain DSM 18703 / LMG 23827 / z3032)</p>
+
+<p>1</p>
+
+<p>Enterobacteria   phage H19B (Bacteriophage H19B)</p>
+
+<p>1</p>
+
+<p>Enterobacteria   phage Sf6 (Shigella flexneri bacteriophage VI) (Bacteriophage SfVI)</p>
+
+<p>1</p>
+
+<p>Enterobacteria   phage VT2-Sa (Bacteriophage VT2-Sa)</p>
+
+<p>1</p>
+
+<p>Erwinia   amylovora (strain CFBP1430)</p>
+
+<p>1</p>
+
+<p>Escherichia   coli (strain UM146)</p>
+
+<p>1</p>
+
+<p>Escherichia   coli 101-1</p>
+
+<p>1</p>
+
+<p>Escherichia   coli H252</p>
+
+<p>1</p>
+
+<p>Escherichia   coli MS 153-1</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H- str. 493-89</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H7 str. 1044</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H7 str. EC1212</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H7 str. EC4042</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H7 str. EC4486</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O157:H7 str. G5101</p>
+
+<p>1</p>
+
+<p>Escherichia   coli O83:H1 (strain NRG 857C / AIEC)</p>
+
+<p>1</p>
+
+<p>Escherichia   coli OR:K5:H- (strain ABU 83972)</p>
+
+<p>1</p>
+
+<p>Haemophilus   ducreyi</p>
+
+<p>1</p>
+
+<p>Klebsiella   pneumoniae (strain 342)</p>
+
+<p>1</p>
+
+<p>Klebsiella   pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578)</p>
+
+<p>1</p>
+
+<p>Klebsiella   pneumoniae subsp. pneumoniae NTUH-K2044</p>
+
+<p>1</p>
+
+<p>Klebsiella   variicola (strain At-22)</p>
+
+<p>1</p>
+
+<p>Pantoea   sp. (strain At-9b)</p>
+
+<p>1</p>
+
+<p>Proteus   mirabilis</p>
+
+<p>1</p>
+
+<p>Salmonella   enterica subsp. enterica serovar Typhimurium str. TN061786</p>
+
+<p>1</p>
+
+<p>Salmonella   paratyphi A (strain AKU_12601)</p>
+
+<p>1</p>
+
+<p>Shigella   boydii ATCC 9905</p>
+
+<p>1</p>
+
+<p>Shigella   dysenteriae 1617</p>
+
+<p>1</p>
+
+<p>Shigella   dysenteriae CDC 74-1112</p>
+
+<p>1</p>
+
+<p>Shigella   sonnei</p>
+
+<p>1</p>
+
+<p>Shigella   sonnei 53G</p>
+
+<p>1</p>
+
+<p>Uncultured   gamma proteobacterium HF0010_10D20</p>
+
+<p>1</p>
+
+<p>Uncultured   Oceanospirillales bacterium HF4000_21D01</p>
+
+<p>1</p>
+
+<p>Vibrio   cholerae serotype O1 (strain ATCC 39541 / Ogawa 395 / O395)</p>
+
+<p>1</p>
+
+<p>Wolbachia   endosymbiont of Drosophila simulans</p>
+
+<p>1</p>
+
+<p>Yersinia   pestis Pestoides A</p>
+
+<p>1</p>
+
+<hr />
+
+<p>[caption id=”attachment_298” align=”aligncenter” width=”452” caption=”Figure 1: Taxonomic origin of proteins responsible of the prediction of the detected genes”]
+<img src="/images/organism1.jpg" />[/caption] </p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raquel Tobes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-05T22:28:08+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ngs/'>ngs</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2011/06/05/275/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2011/06/05/275/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/06/05/talks-genomes-reads-and-annotations/" title="Previous Post: Talks, Genomes, Reads and Annotations">&laquo; Talks, Genomes, Reads and Annotations</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/06/05/350/" title="Next Post: Escherichia coli EHEC Germany outbreak preliminary manual functional annotation ">Escherichia coli EHEC Germany outbreak preliminary manual functional annotation  &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ohnosequences">@ohnosequences</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ohnosequences',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - oh no sequences! -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

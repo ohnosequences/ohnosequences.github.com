@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cloud computing | oh no sequences!]]></title>
+  <link href="http://ohnosequences.com/blog/categories/cloud-computing/atom.xml" rel="self"/>
+  <link href="http://ohnosequences.com/"/>
+  <updated>2014-10-16T18:21:44+02:00</updated>
+  <id>http://ohnosequences.com/</id>
+  <author>
+    <name><![CDATA[oh no sequences!]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[INTERCROSSING cloud and NGS course]]></title>
+    <link href="http://ohnosequences.com/blog/2013/12/03/intercrossing-cloud-and-ngs-course/"/>
+    <updated>2013-12-03T19:35:00+01:00</updated>
+    <id>http://ohnosequences.com/blog/2013/12/03/intercrossing-cloud-and-ngs-course</id>
+    <content type="html"><![CDATA[<p>During the past August we gave a course as part of the <a href="http://intercrossing.wikispaces.com/"><em>INTERCROSSING</em></a> Initial Training Network we are part of. The course was titled <em>Cloud Computing and NGS Data Analysis</em></p>
+
+<p><img src="/images/intercrossing-cloud-course.jpg"></p>
+
+<p>The audience composition was a mix of Biologists, Mathematicians, Bioinformaticians and Statisticians; we tried to have something for all of them. </p>
+
+<p>We set 3 working groups with a mix of people with different backgrounds, in every group you could find <em>bio</em> and <em>maths/CS</em> guys. We made up these <em>interdisciplinary</em> teams on purpose, we wanted to simulate as much as possible the kind of working environment they could find in <em>real</em> world with its pros and cons like the advantage of being able to learn one from others but also the difficulties of understanding people with completely different background.</p>
+
+<p>From the beginning the students were given a problem to solve: <em>outbreak pathogen identification</em>. And they were asked to design a system to face it. We wanted them to come up with a solution as realistic as possible. We picked a challenging problem with no define solution to enhance their creativity and to make them work hard on something in a similar scenario of <em>real life</em> problems. We were not so interested in a given solution but in how they faced the problem and designed a solution from scratch. We really wanted them to think about a <em>real life</em> problem and we think we got it.</p>
+
+<p>So, we scheduled the talks in a way that the first days they could get some general concepts they would need to face the problem and from then on they also had sessions for team working and asking questions. On Friday each team explained the others their system.</p>
+
+<p>It was a pretty intensive week for them and for us! We had a great time supervising their work and watching from the background how they developed their projects. We hope they enjoyed the course as much as we did!</p>
+
+<h3 id="course-slides">course slides</h3>
+
+<p>You can get the slides from the course <a href="http://ohnosequences.com/slides/intercrossing-course/">here</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Neo4j Server and AWS become good friends!]]></title>
+    <link href="http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/"/>
+    <updated>2011-12-23T15:14:50+01:00</updated>
+    <id>http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends</id>
+    <content type="html"><![CDATA[<p>Hi everyone!</p>
+
+<p>Christmas Eve is almost here and there’s still time for a last-minute present. 
+Thanks to <strong><a href="http://aws.amazon.com/cloudformation/">CloudFormation</a></strong> and this template I’m about to show you, <strong><a href="http://docs.neo4j.org/chunked/snapshot/server.html">Neo4j Server</a></strong> is now friends with <strong><a href="http://aws.amazon.com">AWS</a></strong> <em>(Amazon Web Services)</em> and together they bring you the opportunity of getting your own fresh Neo4j Server machine running in just a few clicks!</p>
+
+<p>I created the github repository <strong><a href="https://github.com/pablopareja/Neo4jAWS">Neo4jAWS</a></strong> where you can find all the files needed for this, <em>(which are actually not many but probably I’ll be adding more tools for Neo4j and AWS integration soon)</em>.</p>
+
+<p>Ok, so what does this CloudFormation template actually do?</p>
+
+<ol>
+  <li>It <strong>launches an instance</strong> in the availability zone you decide and with a type of your choice -_ you should also provide your key-pair_</li>
+  <li><strong>Attaches the volume including your Neo4j DB</strong> to the new instance <em>(you must provide your volume ID)</em></li>
+  <li><strong>Downloads</strong> the <strong>latest Neo4j stable release</strong> (1.5) and <strong>overwrites the server properties file with your own file</strong><em>(you have to provide a public URL where it should be available)</em></li>
+  <li>It finally <strong>starts the Neo4j Server</strong> previously copying your DB folder under the data server folder (you have to provide the name of that folder as a parameter for the template)</li>
+</ol>
+
+<p>And, what do you have to do?</p>
+
+<ol>
+  <li>Go to the <strong>CloudFormation section</strong><a href="https://console.aws.amazon.com/cloudformation/"> of the AWS console</a></li>
+  <li>Click on ‘Create New Stack’ button</li>
+  <li>Download the <a href="https://github.com/pablopareja/Neo4jAWS/raw/master/Neo4jServerCloudFormationTemplate.txt"><strong>template file</strong></a> from the github repository and then select the option ‘Upload a Template File’ </li>
+  <li>You should be seeing now the parameters window where you should enter the values: <strong>KeyPairName</strong>, <strong>Neo4jDBFolder</strong>, <strong>AvailabilityZone</strong>, <strong>EBSVolumeID</strong>, <strong>ServerPropertiesFile **(this should be a public URL), and **InstanceType</strong></li>
+  <li>Once you’ve reviewed that everything’s OK, just click next and wait for the stack to change to the <strong>state CREATE_COMPLETE</strong></li>
+</ol>
+
+<p><strong>UPDATE</strong> –&gt; Here you have the set of screenshots you should see in the process:</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/"><img src="/images/CloudFormationCreateStackScreenShot.jpg"></a></p>
+
+<p>CloudFormation tab: click on Create new stack button.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/"><img src="/images/Neo4jTemplateScreenshot2.jpg"></a></p>
+
+<p>Give a name to your stack and choose the option for uploading a file, browsing to the template file you previously downloaded from Neo4jAWS repository. Click ‘Continue’ then.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/"><img src="/images/Neo4jTemplateScreenshot3.jpg"></a></p>
+
+<p>You should be seeing something like this by now. It’s time to provide all the parameters!
+When you’re done, click con ‘Continue’ after reviewing the values and just wait for it to change to state ‘CREATE_COMPLETE’ ;)</p>
+
+<p>If nothing weird happens, you should be able to see the WebAdmin in your browser typing as URL the public IP given as output of the stack plus the port you specified in your neo4j-server.properties file.</p>
+
+<blockquote>
+  <p>Beware that the template opens by default the port 7474 for communicating with the Server, if you want to use another port number for any reason, you should change the SecurityGroup manually</p>
+</blockquote>
+
+<p>As always, please don’t hesitate to give any kind of feedback or suggestion you may have, as well as pointing to possible issues/bugs <em>(you can use github issues in the repository for that)</em>.</p>
+
+<p>Happy Holidays!</p>
+
+<p><a href="http://www.twitter.com/pablopareja"><strong>@pablopareja</strong></a></p>
+]]></content>
+  </entry>
+  
+</feed>

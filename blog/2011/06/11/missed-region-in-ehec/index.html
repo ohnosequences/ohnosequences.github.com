@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Missed region in EHEC  - oh no sequences!</title>
+  <meta name="author" content="oh no sequences!">
+
+  
+  <meta name="description" content="David Studholme detected a missed region in EHEC TY-2482-v1 (http://www.genomic.org.uk/blog/?p=523) assembly that was also absent in TY-2482-v2. This &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ohnosequences.com/blog/2011/06/11/missed-region-in-ehec">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="oh no sequences!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,300italic,400,400italic,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  showMathMenu: false,
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }, 
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", webFont: "TeX", availableFonts: [] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12161444-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1>
+    <a href="/">
+      <span class="title_oh">oh</span><span class="title_no">no</span><span class="title_sequences">sequences</span><span class="title_bang">!</span>
+    </a>
+  </h1>
+  <h2>era7 bioinformatics R&D group</h2>
+
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ohnosequences.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog">blog</a></li>
+  <li><a href="/publications">publications</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/people">people</a></li>
+  <li><a href="/about">about</a></li>
+  <li><a href="/contact">contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Missed region in EHEC </h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T13:04:16+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>David Studholme detected a missed region in EHEC TY-2482-v1 (<a href="http://www.genomic.org.uk/blog/?p=523">http://www.genomic.org.uk/blog/?p=523</a>) assembly that was also absent in TY-2482-v2.</p>
+
+<p>This is the region with type VI secretion system surrounding the detected by Studholme missed region:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">contig  Era7 geneID ini Era7 tags Protein name</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 108864  2776  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 83591 6193  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 85611 6792  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 107028  7091  secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 79778 8549  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 58451 9104  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 108747  10185 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 60210 10494 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 106509  10965 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 75277 12958 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 99465 13930 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 92338 15696 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 94122 16111 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 81926 16627 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 95285 18115 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 102409  18594 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 11998 19032   Transposase</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>contig</p>
+
+<p>Era7 geneID</p>
+
+<p>ini</p>
+
+<p>Era7 tags</p>
+
+<p>Protein name</p>
+
+<p>106</p>
+
+<p>108864</p>
+
+<p>2776</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>83591</p>
+
+<p>6193</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>85611</p>
+
+<p>6792</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>107028</p>
+
+<p>7091</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>79778</p>
+
+<p>8549</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>58451</p>
+
+<p>9104</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>108747</p>
+
+<p>10185</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>60210</p>
+
+<p>10494</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>106509</p>
+
+<p>10965</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>75277</p>
+
+<p>12958</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>99465</p>
+
+<p>13930</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>92338</p>
+
+<p>15696</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>94122</p>
+
+<p>16111</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>81926</p>
+
+<p>16627</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>95285</p>
+
+<p>18115</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>102409</p>
+
+<p>18594</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>11998</p>
+
+<p>19032</p>
+
+<p>Transposase</p>
+
+<p>.</p>
+
+<p>These are the BLASTN results for that region of  BGI_assembly_v2 vs EC 55989:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">query id  subject id  % identity  align len q. start  q. end  s. start  s. end  evalue</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.88 18937 1 18937 3369005 3387941 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  100.00  3964  18923 22886 3389265 3393228 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.92 3832  22885 26716 3397877 3401707 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.84 2455  26837 29291 3427391 3429843 0.0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>query id</p>
+
+<p>subject id</p>
+
+<p>% identity</p>
+
+<p>align len</p>
+
+<p>q. start</p>
+
+<p>q. end</p>
+
+<p>s. start</p>
+
+<p>s. end</p>
+
+<p>evalue</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.88</p>
+
+<p>18937</p>
+
+<p>1</p>
+
+<p>18937</p>
+
+<p>3369005</p>
+
+<p>3387941</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>100.00</p>
+
+<p>3964</p>
+
+<p>18923</p>
+
+<p>22886</p>
+
+<p>3389265</p>
+
+<p>3393228</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.92</p>
+
+<p>3832</p>
+
+<p>22885</p>
+
+<p>26716</p>
+
+<p>3397877</p>
+
+<p>3401707</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.84</p>
+
+<p>2455</p>
+
+<p>26837</p>
+
+<p>29291</p>
+
+<p>3427391</p>
+
+<p>3429843</p>
+
+<p>0.0</p>
+
+<p>.</p>
+
+<p>These are the EC 55989 genes missed in BGI assembly v2:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3318 3401747 3402160 EC55989_3318</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3319 3402305 3402739 EC55989_3319</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3320 3402739 3403275 EC55989_3320</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3321 3403256 3404356 EC55989_3321</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3322 3404311 3406074 EC55989_3322</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein; putative membrane protein 3406082 3406879 EC55989_3323</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3324 3406776 3408374 EC55989_3324</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3325 3408374 3411763 EC55989_3325</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3326 3411756 3412904 EC55989_3326</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3327 3412908 3413174 EC55989_3327</span>
+</span><span class="line"><span class="l-Scalar-Plain">Conserved hypothetical protein. Putative exported protein 3413206 3413883 EC55989_3328</span>
+</span><span class="line"><span class="l-Scalar-Plain">conserved hypothetical protein; putative exported protein 3414027 3414704 EC55989_3329</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3330 3414724 3416406 EC55989_3330</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3331 3416403 3418928 EC55989_3331</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3333 3419451 3420026 EC55989_3333</span>
+</span><span class="line"><span class="l-Scalar-Plain">putative chaperone clpB 3420014 3422680 EC55989_3334</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3335 3422840 3423331 EC55989_3335</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3336 3423337 3425163 EC55989_3336</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3337 3425070 3425789 EC55989_3337</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3338 3425720 3427057 EC55989_3338</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3339 3427073 3428617 EC55989_3339</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>hypothetical   protein EC55989_3318</p>
+
+<p>3401747</p>
+
+<p>3402160</p>
+
+<p>EC55989_3318</p>
+
+<p>hypothetical protein EC55989_3319</p>
+
+<p>3402305</p>
+
+<p>3402739</p>
+
+<p>EC55989_3319</p>
+
+<p>hypothetical protein EC55989_3320</p>
+
+<p>3402739</p>
+
+<p>3403275</p>
+
+<p>EC55989_3320</p>
+
+<p>hypothetical protein EC55989_3321</p>
+
+<p>3403256</p>
+
+<p>3404356</p>
+
+<p>EC55989_3321</p>
+
+<p>hypothetical protein EC55989_3322</p>
+
+<p>3404311</p>
+
+<p>3406074</p>
+
+<p>EC55989_3322</p>
+
+<p>hypothetical protein; putative membrane protein</p>
+
+<p>3406082</p>
+
+<p>3406879</p>
+
+<p>EC55989_3323</p>
+
+<p>hypothetical protein EC55989_3324</p>
+
+<p>3406776</p>
+
+<p>3408374</p>
+
+<p>EC55989_3324</p>
+
+<p>hypothetical protein EC55989_3325</p>
+
+<p>3408374</p>
+
+<p>3411763</p>
+
+<p>EC55989_3325</p>
+
+<p>hypothetical protein EC55989_3326</p>
+
+<p>3411756</p>
+
+<p>3412904</p>
+
+<p>EC55989_3326</p>
+
+<p>hypothetical protein EC55989_3327</p>
+
+<p>3412908</p>
+
+<p>3413174</p>
+
+<p>EC55989_3327</p>
+
+<p>Conserved hypothetical protein. Putative exported protein</p>
+
+<p>3413206</p>
+
+<p>3413883</p>
+
+<p>EC55989_3328</p>
+
+<p>conserved hypothetical protein; putative exported protein</p>
+
+<p>3414027</p>
+
+<p>3414704</p>
+
+<p>EC55989_3329</p>
+
+<p>hypothetical protein EC55989_3330</p>
+
+<p>3414724</p>
+
+<p>3416406</p>
+
+<p>EC55989_3330</p>
+
+<p>hypothetical protein EC55989_3331</p>
+
+<p>3416403</p>
+
+<p>3418928</p>
+
+<p>EC55989_3331</p>
+
+<p>hypothetical protein EC55989_3333</p>
+
+<p>3419451</p>
+
+<p>3420026</p>
+
+<p>EC55989_3333</p>
+
+<p>putative chaperone clpB</p>
+
+<p>3420014</p>
+
+<p>3422680</p>
+
+<p>EC55989_3334</p>
+
+<p>hypothetical protein EC55989_3335</p>
+
+<p>3422840</p>
+
+<p>3423331</p>
+
+<p>EC55989_3335</p>
+
+<p>hypothetical protein EC55989_3336</p>
+
+<p>3423337</p>
+
+<p>3425163</p>
+
+<p>EC55989_3336</p>
+
+<p>hypothetical protein EC55989_3337</p>
+
+<p>3425070</p>
+
+<p>3425789</p>
+
+<p>EC55989_3337</p>
+
+<p>hypothetical protein EC55989_3338</p>
+
+<p>3425720</p>
+
+<p>3427057</p>
+
+<p>EC55989_3338</p>
+
+<p>hypothetical protein EC55989_3339</p>
+
+<p>3427073</p>
+
+<p>3428617</p>
+
+<p>EC55989_3339</p>
+
+<p>.</p>
+
+<p>We will review this region in the new annotations that we will do for the two new available genome sequences contributed by HPA and BGI.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raquel Tobes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T13:04:16+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ngs/'>ngs</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2011/06/11/missed-region-in-ehec/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2011/06/11/missed-region-in-ehec/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/06/11/escherichia-coli-plasmid-pec_bactec-is-a-part-of-ehec-h112180280-strain/" title="Previous Post: Escherichia coli plasmid pEC_Bactec is a part of EHEC H112180280 strain ">&laquo; Escherichia coli plasmid pEC_Bactec is a part of EHEC H112180280 strain </a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/06/11/automatic-annotation-of-bgi-v3-assembly-of-e-coli-ty-2482-genome/" title="Next Post: Automatic annotation of BGI V3 assembly of E. coli TY-2482 genome">Automatic annotation of BGI V3 assembly of E. coli TY-2482 genome &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ohnosequences">@ohnosequences</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ohnosequences',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - oh no sequences! -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

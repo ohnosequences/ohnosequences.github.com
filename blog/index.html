@@ -1,0 +1,1472 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>oh no sequences!</title>
+  <meta name="author" content="oh no sequences!">
+
+  
+  <meta name="description" content="During the past August we gave a course as part of the INTERCROSSING Initial Training Network we are part of. The course was titled Cloud Computing &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ohnosequences.com/blog">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="oh no sequences!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,300italic,400,400italic,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  showMathMenu: false,
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }, 
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", webFont: "TeX", availableFonts: [] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12161444-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1>
+    <a href="/">
+      <span class="title_oh">oh</span><span class="title_no">no</span><span class="title_sequences">sequences</span><span class="title_bang">!</span>
+    </a>
+  </h1>
+  <h2>era7 bioinformatics R&D group</h2>
+
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ohnosequences.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog">blog</a></li>
+  <li><a href="/publications">publications</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/people">people</a></li>
+  <li><a href="/about">about</a></li>
+  <li><a href="/contact">contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-03T19:35:00+01:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>During the past August we gave a course as part of the <a href="http://intercrossing.wikispaces.com/"><em>INTERCROSSING</em></a> Initial Training Network we are part of. The course was titled <em>Cloud Computing and NGS Data Analysis</em></p>
+
+<p><img src="/images/intercrossing-cloud-course.jpg" /></p>
+
+<p>The audience composition was a mix of Biologists, Mathematicians, Bioinformaticians and Statisticians; we tried to have something for all of them. </p>
+
+<p>We set 3 working groups with a mix of people with different backgrounds, in every group you could find <em>bio</em> and <em>maths/CS</em> guys. We made up these <em>interdisciplinary</em> teams on purpose, we wanted to simulate as much as possible the kind of working environment they could find in <em>real</em> world with its pros and cons like the advantage of being able to learn one from others but also the difficulties of understanding people with completely different background.</p>
+
+<p>From the beginning the students were given a problem to solve: <em>outbreak pathogen identification</em>. And they were asked to design a system to face it. We wanted them to come up with a solution as realistic as possible. We picked a challenging problem with no define solution to enhance their creativity and to make them work hard on something in a similar scenario of <em>real life</em> problems. We were not so interested in a given solution but in how they faced the problem and designed a solution from scratch. We really wanted them to think about a <em>real life</em> problem and we think we got it.</p>
+
+<p>So, we scheduled the talks in a way that the first days they could get some general concepts they would need to face the problem and from then on they also had sessions for team working and asking questions. On Friday each team explained the others their system.</p>
+
+<p>It was a pretty intensive week for them and for us! We had a great time supervising their work and watching from the background how they developed their projects. We hope they enjoyed the course as much as we did!</p>
+
+<h3 id="course-slides">course slides</h3>
+
+<p>You can get the slides from the course <a href="http://ohnosequences.com/slides/intercrossing-course/">here</a></p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-21T20:02:04+02:00" pubdate data-updated="true">May 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my opinion, <strong>Curtis Huttenhower</strong> presented the newest perspectives for understanding human microbiome. Some ideas from his talk:</p>
+
+<ul>
+  <li>Not who, but why: the IBD microbiome is defined by adaptation to oxidative stress.</li>
+  <li>Niche specialization is crucial in human microbiome.</li>
+  <li>Human Microbiome Project Unified Metabolic Analysis Network: Who’s there vs what they’re doing.</li>
+  <li>Species-level resolution is critical for understanding microbiome function, strain-level is even better.</li>
+</ul>
+
+<p>Some interesting ideas presented at the conference:</p>
+
+<p><strong>Ian Wilson:</strong></p>
+
+<ul>
+  <li>Disease and microbiome: causal or casual?</li>
+  <li>Recolonization after Atbs resulted in cage-dependent subgroups with different bacterial populations and metabotypes.</li>
+</ul>
+
+<p><strong>Karen Scott:</strong></p>
+
+<ul>
+  <li>Anaerobic Roseburia/E. rectale group bacteria constitute 10% of gut microbiota in healthy individuals.</li>
+  <li>The main fermentation product of Roseburia species is butyrate. The genomic analysis of the enzymes involved is complex.</li>
+  <li>Dietary interventions (augmenting the amount of starch consumed) can dramatically affect Roseburia genus presence in gut.</li>
+</ul>
+
+<p><strong>Barbara Pachikian:</strong></p>
+
+<ul>
+  <li>Fructooligosaccharides (FOS) supplementation reverses hepatic steatosis.</li>
+</ul>
+
+<p><strong>Francisco Guarner:</strong></p>
+
+<ul>
+  <li>In IBD mucosal lesions are caused by immune response against colonic bacteria.</li>
+</ul>
+
+<p><strong>Paul Cotter:</strong></p>
+
+<ul>
+  <li>Bacteriocins as tools to alter the composition of gut microbiota.</li>
+</ul>
+
+<p><strong>Ruth Ley:</strong></p>
+
+<ul>
+  <li>In the third trimester of pregnancy gut bacterial composition shows a dramatic shift.</li>
+  <li>The third trimester microbiota could induce low-grade inflammation, adiposity gain and reduced insulin sensitivity beneficial in pregnancy R.Ley</li>
+  <li>Gut microbiota’s impact on metabolism: highly adaptive in pregnancy and detrimental in obese host.</li>
+</ul>
+
+<p><strong>Fredrik Backhed:</strong></p>
+
+<ul>
+  <li>Apoe -/- germ-free male mice are resistant to diet-induced atherosclerosis.</li>
+  <li>Gut microbiota modulate bile acid synthesis.</li>
+</ul>
+
+<p><strong>Simon Murch:</strong></p>
+
+<ul>
+  <li>There are differences between the flora from cesarean infants and from vaginally delivered infants.</li>
+  <li>Different bacteria induce different gene expression in the host</li>
+  <li>Breast milking and reduction of antibiotic exposure are critical for microbial diversity in low birth weight neonates.</li>
+</ul>
+
+<p><strong>A. Walker:</strong></p>
+
+<ul>
+  <li>CF infants have more pathogenic bacteria in their lower respiratory microbiota (P. aeruginosa, S. maltophilia, B. cepacia)</li>
+</ul>
+
+<p><strong>Elisa Noll:</strong></p>
+
+<ul>
+  <li>Gut-microbial metabolism can alter host metabolism in the favour of obesity and insulin resistance.</li>
+</ul>
+
+<p><strong>Fergus Shanaham:</strong></p>
+
+<ul>
+  <li>What is a healthy gut? Low biodiversity implies more pathogens colonization.</li>
+</ul>
+
+<p><strong>Douwe van Sinderen:</strong></p>
+
+<ul>
+  <li>Bifidobacterial pili and surface polysaccharide allow competitive host colonization and persistence
+-Perhaps genes involved in colonization are not expressed in vitro.</li>
+</ul>
+
+<p><strong>Catarina Simoes:</strong></p>
+
+<ul>
+  <li>Diet affects the gut microbiota in twins.</li>
+</ul>
+
+<p><strong>Kathleen Sim:</strong></p>
+
+<ul>
+  <li>Missing bifidobacteria: undercounting in neonatal gut microbiota using classical universal primers.</li>
+</ul>
+
+<p><strong>Julian Marchesi:</strong></p>
+
+<ul>
+  <li>Experiments colonizing gut from mices with human microbiota</li>
+  <li>Core functions of gut microbiota need to be useful to the host but at the same time to the bacteria.</li>
+</ul>
+
+<p><strong>Willem de Vos:</strong></p>
+
+<ul>
+  <li>Gut microbiome with low diversity in colitis</li>
+  <li>Ileum microbiota is shaped by fast sugar uptake</li>
+  <li>Microbiota diversity likely to provide resilience</li>
+  <li>Diversity and stability characterize a healthy microbiome.</li>
+</ul>
+
+<p><strong>Jeremy K. Nicholson:</strong></p>
+
+<ul>
+  <li>There are many more targets for cancer in human microbiome than in human genome</li>
+  <li>The microbiome as a therapeutic target</li>
+  <li>Influence of maternal genome on early microbiome development.</li>
+</ul>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-23T15:14:50+01:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi everyone!</p>
+
+<p>Christmas Eve is almost here and there’s still time for a last-minute present. 
+Thanks to <strong><a href="http://aws.amazon.com/cloudformation/">CloudFormation</a></strong> and this template I’m about to show you, <strong><a href="http://docs.neo4j.org/chunked/snapshot/server.html">Neo4j Server</a></strong> is now friends with <strong><a href="http://aws.amazon.com">AWS</a></strong> <em>(Amazon Web Services)</em> and together they bring you the opportunity of getting your own fresh Neo4j Server machine running in just a few clicks!</p>
+
+<p>I created the github repository <strong><a href="https://github.com/pablopareja/Neo4jAWS">Neo4jAWS</a></strong> where you can find all the files needed for this, <em>(which are actually not many but probably I’ll be adding more tools for Neo4j and AWS integration soon)</em>.</p>
+
+<p>Ok, so what does this CloudFormation template actually do?</p>
+
+<ol>
+  <li>It <strong>launches an instance</strong> in the availability zone you decide and with a type of your choice -_ you should also provide your key-pair_</li>
+  <li><strong>Attaches the volume including your Neo4j DB</strong> to the new instance <em>(you must provide your volume ID)</em></li>
+  <li><strong>Downloads</strong> the <strong>latest Neo4j stable release</strong> (1.5) and <strong>overwrites the server properties file with your own file</strong><em>(you have to provide a public URL where it should be available)</em></li>
+  <li>It finally <strong>starts the Neo4j Server</strong> previously copying your DB folder under the data server folder (you have to provide the name of that folder as a parameter for the template)</li>
+</ol>
+
+<p>And, what do you have to do?</p>
+
+<ol>
+  <li>Go to the <strong>CloudFormation section</strong><a href="https://console.aws.amazon.com/cloudformation/"> of the AWS console</a></li>
+  <li>Click on ‘Create New Stack’ button</li>
+  <li>Download the <a href="https://github.com/pablopareja/Neo4jAWS/raw/master/Neo4jServerCloudFormationTemplate.txt"><strong>template file</strong></a> from the github repository and then select the option ‘Upload a Template File’ </li>
+  <li>You should be seeing now the parameters window where you should enter the values: <strong>KeyPairName</strong>, <strong>Neo4jDBFolder</strong>, <strong>AvailabilityZone</strong>, <strong>EBSVolumeID</strong>, <strong>ServerPropertiesFile **(this should be a public URL), and **InstanceType</strong></li>
+  <li>Once you’ve reviewed that everything’s OK, just click next and wait for the stack to change to the <strong>state CREATE_COMPLETE</strong></li>
+</ol>
+
+<p><strong>UPDATE</strong> –&gt; Here you have the set of screenshots you should see in the process:</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/"><img src="/images/CloudFormationCreateStackScreenShot.jpg" /></a></p>
+
+<p>CloudFormation tab: click on Create new stack button.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/"><img src="/images/Neo4jTemplateScreenshot2.jpg" /></a></p>
+
+<p>Give a name to your stack and choose the option for uploading a file, browsing to the template file you previously downloaded from Neo4jAWS repository. Click ‘Continue’ then.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/"><img src="/images/Neo4jTemplateScreenshot3.jpg" /></a></p>
+
+<p>You should be seeing something like this by now. It’s time to provide all the parameters!
+When you’re done, click con ‘Continue’ after reviewing the values and just wait for it to change to state ‘CREATE_COMPLETE’ ;)</p>
+
+<p>If nothing weird happens, you should be able to see the WebAdmin in your browser typing as URL the public IP given as output of the stack plus the port you specified in your neo4j-server.properties file.</p>
+
+<blockquote>
+  <p>Beware that the template opens by default the port 7474 for communicating with the Server, if you want to use another port number for any reason, you should change the SecurityGroup manually</p>
+</blockquote>
+
+<p>As always, please don’t hesitate to give any kind of feedback or suggestion you may have, as well as pointing to possible issues/bugs <em>(you can use github issues in the repository for that)</em>.</p>
+
+<p>Happy Holidays!</p>
+
+<p><a href="http://www.twitter.com/pablopareja"><strong>@pablopareja</strong></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-02T17:15:45+01:00" pubdate data-updated="true">Dec 2<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi everyone!</p>
+
+<p>A couple of days ago I published a post describing how to obtain <a href="http://blog.bio4j.com/2011/11/cool-go-annotation-visualizations-with-gephi-bio4j/">cool GO annotation visualizations with Gephi + Bio4j</a>. As an example I used data from one of the first assemblies for the **EHEC **genome, and I was wondering today: Why not using the last version from BGI assembly we annotated with <a href="http://bg7.ohnosequences.com/">our great <strong>BG7 bacterial genome annotation pipeline</strong></a> and put together the visualizations for the three sub-ontologies? Here you have the result:</p>
+
+<p><strong>Biological Process</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/"><img src="/images/BiologicalProcessScreenshot-01.jpg" /></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Molecular Function</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_MolecularFunction/"><img src="/images/MolecularFunctionScreenshot-01.jpg" /></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Cellular Component</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_CellularComponent/"><img src="/images/CellularComponentScreenshot-01.jpg" /></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p>Have a good weekend! ;)</p>
+
+<p><a href="http://www.twitter.com/pablopareja">@pablopareja</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-18T21:28:04+02:00" pubdate data-updated="true">Oct 18<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi!</p>
+
+<p>I just finished this afternoon a small project I had to do about identification of microsatellites in DNA sequences. As with every new project I start, I think of something that:</p>
+
+<ul>
+  <li>I <strong>didn’t try before</strong></li>
+  <li>is <strong>worth learning</strong></li>
+  <li>is <strong>applicable</strong> in order to meet the needs of the specific project</li>
+</ul>
+
+<p>These last few days it was the chance to get to know and try the visualization tool included in the last version of <a href="http://blog.neo4j.org/2011/10/announcing-neo4j-15-boden-bord.html"><strong>Neo4j Webadmin dashboard</strong></a>.
+I had already heard of it a couple of times from different sources but had not had the chance to play a bit with it yet. So, after my first contact with it I have to say that although it’s something <a href="http://www.neo4j.org">Neo4j</a> introduced in the last versions, it already has a decent GUI and promising functionality. </p>
+
+<p>Apart from GUI considerations, I created the repository <a href="https://github.com/pablopareja/MicrosatellitesNeo4jModel"><strong>MicrosatellitesNeo4jModel</strong></a> with a bunch of nodes and relationships wrappers as an API for  performing traversals for all this data in an easy way.
+Here is the domain model I chose:</p>
+
+<p><a href="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDomainModel.svg"><img src="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDomainModel.jpg" alt="Microsatellites Neo4j domain model" /></a></p>
+
+<p>On the programs side, I developed two different Java classes, one dealing with the identification of the microsatellites and their subsequent storage on the Neo4j DB (<a href="https://github.com/pablopareja/Microsatellites/blob/develop/src/com/era7/bioinfo/microsats/programs/CreateMicrosatellitesDB.java">CreateMicrosatellitesDB.java</a>) and another (<a href="https://github.com/pablopareja/Microsatellites/blob/develop/src/com/era7/bioinfo/microsats/programs/ExtractDataToCSV.java">ExtractDataToCSV.java</a>)for extracting statistical information for a set of specific parameters like tuple length and things like that. 
+Both classes are in the repository <a href="https://github.com/pablopareja/Microsatellites"><strong>Microsatellites</strong></a>.</p>
+
+<p>Once the DB was created, I played a bit with the display profiles in the WebAdmin data browser so that different node types had a different aspect and this is what I got:</p>
+
+<p><a href="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDataBrowserScreenshot.jpg"><img src="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDataBrowserScreenshot.jpg" alt="Microsatellites DB data browser screenshot" /></a></p>
+
+<p>Here you can find blue circles (<strong>sequence IDs</strong>), orange boxes (<strong>tuples</strong> repeated in the microsatellites found), and greenish squares (<strong>tuple length</strong> nodes). </p>
+
+<p>One of the features I was missing in the visualization was having style rules for relationships as well as for nodes. This was specially important in my case where I have relevant information stored as relationships attributes, <em>(I actually could not visualize the number of tuple repeats in the microsatellites found, just the name of the relationship ‘MICROSATELLITE_FOUND’ everywhere)</em>.
+However I posted a question on neo4j user list about this and it seems they already are working on this, cool!</p>
+
+<p>As always, everything here is open source and released under under <a href="http://www.gnu.org/licenses/agpl.html"><strong>AGPLv3</strong></a>.</p>
+
+<p>Cheers,</p>
+
+<p><a href="http://twitter.com/pablopareja">@pablopareja</a></p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/10/14/some-thoughts-about-neo4j/">Some thoughts about Neo4j</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-14T20:33:15+02:00" pubdate data-updated="true">Oct 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I found an <a href="http://neo4j.org/forums/#nabble-td730422">interesting discussion</a> in Neo4j user list and found myself in the mood of writing a couple of related thoughts I have had in mind the last months.</p>
+
+<p>Here they are: (the titles are taken from the <a href="http://wiki.neo4j.org/content/Guidelines_for_Building_a_Neo4j_Application">guidelines for building your domain model</a>)</p>
+
+<h3 id="use-reference-and-subreference-nodes-to-organize-entry-points">Use reference and subreference nodes to organize entry points</h3>
+
+<p>In principle I don’t agree with this. Well, I do in theory <em>(it actually is how I implemented things in the beginning)</em>. However in one of my projects, where I’m dealing with huge amounts of relationships, reference and subreference nodes become supernodes which in turn are a very problematic bottleneck in most traversals; (this is due to the lack of a natively implemented system for discerning between relationships with different types, I opened this issue about this <a href="https://github.com/neo4j/community/issues/19">here</a>). While this is solved, I’m always tempted/forced to start using indexes instead of relationships, but then I wonder how different things are in the end compared to other not graph-based DB systems !??</p>
+
+<h3 id="use-relationships-types-appropiately">Use relationships types appropiately</h3>
+
+<p>I’m gonna be frank with this, I never understood why there’re mandatory relationships types but not mandatory nodes types!? 
+It just doesn’t make any sense for me. I can understand that this could bring some trouble depending on implementation decisions taken at core level but then, why doing this only half way? It’d have been better having no restriction for either nodes or relationships than how things are now. </p>
+
+<p>With all this having been said, I still find Neo4j a very promising DB in the near future and I’m really happy to use it in a lot of different projects/use-cases; however I think the way for it to get better each day is not keeping saying how cool it is but actually pointing at the weak spots it may have.</p>
+
+<p>Pablo Pareja</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/11/automatic-annotation-of-e-coli-h112180280-strain-sequence-and-assembly-by-hpa/">Automatic annotation of E. coli H112180280 strain (sequence and assembly by HPA)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T16:47:48+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>And right now we’ve finished the automatic annotation of the assembly of new strain that HPA (<a href="http://www.hpa.org.uk/">Health Protection Agency UK</a>)  made available yesterday (get the assembly file here <a href="http://www.hpa-bioinformatics.org.uk/lgp/resource/454Scaffolds.fna">http://www.hpa-bioinformatics.org.uk/lgp/resource/454Scaffolds.fna</a>)</p>
+
+<p>Once more we’ve used <a href="http://bg7.ohnosequences.com">BG7</a> and the same set of reference proteins (137,063 proteins in total):</p>
+
+<ul>
+  <li>The representative Uniprot proteins corresponding to all Uniref90 clusters for all Escherichia coli proteins</li>
+  <li>All Uniprot proteins from organisms including in their name the terms “EHEC” or “EAEC”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field the term “toxin”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field  “hemolysin”</li>
+  <li>All the proteins from Salmonella typhi, Yersinia pestis and Shigella dysenteriae</li>
+</ul>
+
+<h4 id="results">Results</h4>
+
+<p>We’ve detected 5,916 genes</p>
+
+<ul>
+  <li>5,792 protein encoding genes</li>
+  <li>124 RNA genes</li>
+</ul>
+
+<p>4,912 out of the 5,792 (84.80%) protein encoding genes have canonical start and stop codon and haven´t either frame-shifts or intragenic stop codons.</p>
+
+<p>615 out of the 5,792 (10.61%) protein encoding genes have some frameshifts or intragenic stop codon in their sequences, probably caused by inherent technology errors.</p>
+
+<p>You can get the results of the annotation here <a href="https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/H112180280/seqProject/HealthProtectionAgencyUK/annotations/era7bioinformatics/era7_HPA_H112180280_annotations">https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/H112180280/seqProject/HealthProtectionAgencyUK/annotations/era7bioinformatics/era7_HPA_H112180280_annotations</a>)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/11/automatic-annotation-of-bgi-v3-assembly-of-e-coli-ty-2482-genome/">Automatic annotation of BGI V3 assembly of E. coli TY-2482 genome</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T16:22:47+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We’ve finished the automatic annotation of the third BGI assembly of the E. coli TY-2482 strain genome (get the assembly file here ftp://ftp.genomics.org.cn/pub/Ecoli_TY-2482/Escherichia_coli_TY-2482.scaffold.20110610.fa.gz)</p>
+
+<p>As in the other annotations we’ve done so far we used<a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data"> BG7 system</a> to annotate the genome. And we have used the same set of reference proteins (137,063 proteins in total):</p>
+
+<ul>
+  <li>The representative Uniprot proteins corresponding to all Uniref90 clusters for all Escherichia coli proteins</li>
+  <li>All Uniprot proteins from organisms including in their name the terms “EHEC” or “EAEC”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field the term “toxin”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field  “hemolysin”</li>
+  <li>All the proteins from Salmonella typhi, Yersinia pestis and Shigella dysenteriae</li>
+</ul>
+
+<h4 id="results">Results</h4>
+
+<p>We’ve detected 5,936 genes</p>
+
+<ul>
+  <li>5,806 protein encoding genes</li>
+  <li>130 RNA genes</li>
+</ul>
+
+<p>4,881 out of the 5,806 (84.06%) protein encoding genes have canonical start and stop codon and haven´t either frame-shifts or intragenic stop codons.</p>
+
+<p>533 out of the 5,806 (9.18%) protein encoding genes have some frameshifts or intragenic stop codon in their sequences, probably caused by inherent technology errors.</p>
+
+<p>You can get the results of the annotation here <a href="https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/TY2482/seqProject/BGI/annotations/era7bioinformatics/BGI_V3">https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/TY2482/seqProject/BGI/annotations/era7bioinformatics/BGI_V3</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/11/missed-region-in-ehec/">Missed region in EHEC </a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T13:04:16+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>David Studholme detected a missed region in EHEC TY-2482-v1 (<a href="http://www.genomic.org.uk/blog/?p=523">http://www.genomic.org.uk/blog/?p=523</a>) assembly that was also absent in TY-2482-v2.</p>
+
+<p>This is the region with type VI secretion system surrounding the detected by Studholme missed region:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">contig  Era7 geneID ini Era7 tags Protein name</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 108864  2776  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 83591 6193  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 85611 6792  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 107028  7091  secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 79778 8549  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 58451 9104  secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 108747  10185 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 60210 10494 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 106509  10965 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 75277 12958 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 99465 13930 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 92338 15696 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 94122 16111 secretion system VI Putative uncharacterized protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 81926 16627 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 95285 18115 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 102409  18594 secretion system VI Putative type VI secretion protein</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 11998 19032   Transposase</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>contig</p>
+
+<p>Era7 geneID</p>
+
+<p>ini</p>
+
+<p>Era7 tags</p>
+
+<p>Protein name</p>
+
+<p>106</p>
+
+<p>108864</p>
+
+<p>2776</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>83591</p>
+
+<p>6193</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>85611</p>
+
+<p>6792</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>107028</p>
+
+<p>7091</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>79778</p>
+
+<p>8549</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>58451</p>
+
+<p>9104</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>108747</p>
+
+<p>10185</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>60210</p>
+
+<p>10494</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>106509</p>
+
+<p>10965</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>75277</p>
+
+<p>12958</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>99465</p>
+
+<p>13930</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>92338</p>
+
+<p>15696</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>94122</p>
+
+<p>16111</p>
+
+<p>secretion system VI</p>
+
+<p>Putative   uncharacterized protein</p>
+
+<p>106</p>
+
+<p>81926</p>
+
+<p>16627</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>95285</p>
+
+<p>18115</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>102409</p>
+
+<p>18594</p>
+
+<p>secretion system VI</p>
+
+<p>Putative type VI   secretion protein</p>
+
+<p>106</p>
+
+<p>11998</p>
+
+<p>19032</p>
+
+<p>Transposase</p>
+
+<p>.</p>
+
+<p>These are the BLASTN results for that region of  BGI_assembly_v2 vs EC 55989:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">query id  subject id  % identity  align len q. start  q. end  s. start  s. end  evalue</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.88 18937 1 18937 3369005 3387941 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  100.00  3964  18923 22886 3389265 3393228 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.92 3832  22885 26716 3397877 3401707 0.0</span>
+</span><span class="line"><span class="l-Scalar-Plain">106 gi|218350208  99.84 2455  26837 29291 3427391 3429843 0.0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>query id</p>
+
+<p>subject id</p>
+
+<p>% identity</p>
+
+<p>align len</p>
+
+<p>q. start</p>
+
+<p>q. end</p>
+
+<p>s. start</p>
+
+<p>s. end</p>
+
+<p>evalue</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.88</p>
+
+<p>18937</p>
+
+<p>1</p>
+
+<p>18937</p>
+
+<p>3369005</p>
+
+<p>3387941</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>100.00</p>
+
+<p>3964</p>
+
+<p>18923</p>
+
+<p>22886</p>
+
+<p>3389265</p>
+
+<p>3393228</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.92</p>
+
+<p>3832</p>
+
+<p>22885</p>
+
+<p>26716</p>
+
+<p>3397877</p>
+
+<p>3401707</p>
+
+<p>0.0</p>
+
+<p>106</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>gi</td>
+      <td>218350208</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>99.84</p>
+
+<p>2455</p>
+
+<p>26837</p>
+
+<p>29291</p>
+
+<p>3427391</p>
+
+<p>3429843</p>
+
+<p>0.0</p>
+
+<p>.</p>
+
+<p>These are the EC 55989 genes missed in BGI assembly v2:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3318 3401747 3402160 EC55989_3318</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3319 3402305 3402739 EC55989_3319</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3320 3402739 3403275 EC55989_3320</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3321 3403256 3404356 EC55989_3321</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3322 3404311 3406074 EC55989_3322</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein; putative membrane protein 3406082 3406879 EC55989_3323</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3324 3406776 3408374 EC55989_3324</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3325 3408374 3411763 EC55989_3325</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3326 3411756 3412904 EC55989_3326</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3327 3412908 3413174 EC55989_3327</span>
+</span><span class="line"><span class="l-Scalar-Plain">Conserved hypothetical protein. Putative exported protein 3413206 3413883 EC55989_3328</span>
+</span><span class="line"><span class="l-Scalar-Plain">conserved hypothetical protein; putative exported protein 3414027 3414704 EC55989_3329</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3330 3414724 3416406 EC55989_3330</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3331 3416403 3418928 EC55989_3331</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3333 3419451 3420026 EC55989_3333</span>
+</span><span class="line"><span class="l-Scalar-Plain">putative chaperone clpB 3420014 3422680 EC55989_3334</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3335 3422840 3423331 EC55989_3335</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3336 3423337 3425163 EC55989_3336</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3337 3425070 3425789 EC55989_3337</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3338 3425720 3427057 EC55989_3338</span>
+</span><span class="line"><span class="l-Scalar-Plain">hypothetical protein EC55989_3339 3427073 3428617 EC55989_3339</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>hypothetical   protein EC55989_3318</p>
+
+<p>3401747</p>
+
+<p>3402160</p>
+
+<p>EC55989_3318</p>
+
+<p>hypothetical protein EC55989_3319</p>
+
+<p>3402305</p>
+
+<p>3402739</p>
+
+<p>EC55989_3319</p>
+
+<p>hypothetical protein EC55989_3320</p>
+
+<p>3402739</p>
+
+<p>3403275</p>
+
+<p>EC55989_3320</p>
+
+<p>hypothetical protein EC55989_3321</p>
+
+<p>3403256</p>
+
+<p>3404356</p>
+
+<p>EC55989_3321</p>
+
+<p>hypothetical protein EC55989_3322</p>
+
+<p>3404311</p>
+
+<p>3406074</p>
+
+<p>EC55989_3322</p>
+
+<p>hypothetical protein; putative membrane protein</p>
+
+<p>3406082</p>
+
+<p>3406879</p>
+
+<p>EC55989_3323</p>
+
+<p>hypothetical protein EC55989_3324</p>
+
+<p>3406776</p>
+
+<p>3408374</p>
+
+<p>EC55989_3324</p>
+
+<p>hypothetical protein EC55989_3325</p>
+
+<p>3408374</p>
+
+<p>3411763</p>
+
+<p>EC55989_3325</p>
+
+<p>hypothetical protein EC55989_3326</p>
+
+<p>3411756</p>
+
+<p>3412904</p>
+
+<p>EC55989_3326</p>
+
+<p>hypothetical protein EC55989_3327</p>
+
+<p>3412908</p>
+
+<p>3413174</p>
+
+<p>EC55989_3327</p>
+
+<p>Conserved hypothetical protein. Putative exported protein</p>
+
+<p>3413206</p>
+
+<p>3413883</p>
+
+<p>EC55989_3328</p>
+
+<p>conserved hypothetical protein; putative exported protein</p>
+
+<p>3414027</p>
+
+<p>3414704</p>
+
+<p>EC55989_3329</p>
+
+<p>hypothetical protein EC55989_3330</p>
+
+<p>3414724</p>
+
+<p>3416406</p>
+
+<p>EC55989_3330</p>
+
+<p>hypothetical protein EC55989_3331</p>
+
+<p>3416403</p>
+
+<p>3418928</p>
+
+<p>EC55989_3331</p>
+
+<p>hypothetical protein EC55989_3333</p>
+
+<p>3419451</p>
+
+<p>3420026</p>
+
+<p>EC55989_3333</p>
+
+<p>putative chaperone clpB</p>
+
+<p>3420014</p>
+
+<p>3422680</p>
+
+<p>EC55989_3334</p>
+
+<p>hypothetical protein EC55989_3335</p>
+
+<p>3422840</p>
+
+<p>3423331</p>
+
+<p>EC55989_3335</p>
+
+<p>hypothetical protein EC55989_3336</p>
+
+<p>3423337</p>
+
+<p>3425163</p>
+
+<p>EC55989_3336</p>
+
+<p>hypothetical protein EC55989_3337</p>
+
+<p>3425070</p>
+
+<p>3425789</p>
+
+<p>EC55989_3337</p>
+
+<p>hypothetical protein EC55989_3338</p>
+
+<p>3425720</p>
+
+<p>3427057</p>
+
+<p>EC55989_3338</p>
+
+<p>hypothetical protein EC55989_3339</p>
+
+<p>3427073</p>
+
+<p>3428617</p>
+
+<p>EC55989_3339</p>
+
+<p>.</p>
+
+<p>We will review this region in the new annotations that we will do for the two new available genome sequences contributed by HPA and BGI.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/11/escherichia-coli-plasmid-pec_bactec-is-a-part-of-ehec-h112180280-strain/">Escherichia coli plasmid pEC_Bactec is a part of EHEC H112180280 strain </a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T04:23:59+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As it was suggested by Kat Holt (<a href="http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/">http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/</a>) and others a plasmid very similar to pEC_Bactec is a part of the genome of the recently sequenced EHEC H112180280 strain.</p>
+
+<p>The figure displays a simple alignment obtained using MAUVE  Move Contigs tool between pEC_Bactec plasmid (above) and the scaffolds 7 and 13 of H112180280 genome (below):</p>
+
+<p><img src="/images/pEC_Bactec_vs_UK454_7_9_11_12_13.jpg" /></p>
+
+<p>Scaffolds 7 and 13 cover practically all pEC-Bactec plasmid sequence. The two white <code>pEC-Bactec</code> regions that hasn’t associated similar regions in <code>H112180280</code> correspond to the genes:</p>
+
+<ul>
+  <li><code>pndC</code> and  <code>TnpA OrfB IS66</code> (the left white region into the red similarity block)</li>
+  <li><code>TnpA IS26</code> transposase (The white patch into the blue block)</li>
+</ul>
+
+<p>The <code>H112180280</code> sequence regions without any similarity conexion with  <code>pEC-Bactec</code> flanking the two little green blocks correspond to N regions that remain undefined in the <code>H112180280</code> sequence obtained with paired end 454 technology.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/ohnosequences">@ohnosequences</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ohnosequences',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - oh no sequences! -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

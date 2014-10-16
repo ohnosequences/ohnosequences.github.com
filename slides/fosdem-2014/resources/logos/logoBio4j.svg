@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="logoBio4j.png">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3781"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#ff7600;stop-opacity:1;"
+         offset="0"
+         id="stop3783" />
+      <stop
+         style="stop-color:#ff7600;stop-opacity:0;"
+         offset="1"
+         id="stop3785" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="170.5215"
+     inkscape:cy="921.64727"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="28.961607"
+       y="57.937725"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="28.961607"
+         y="57.937725">Bio4j</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff6600;fill-opacity:0.98412697;fill-rule:nonzero;stroke:#000000;stroke-width:0.74800003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2991"
+       sodipodi:cx="216.42519"
+       sodipodi:cy="110.64747"
+       sodipodi:rx="6.0609155"
+       sodipodi:ry="6.0609155"
+       d="m 222.4861,110.64747 a 6.0609155,6.0609155 0 1 1 -12.12183,0 6.0609155,6.0609155 0 1 1 12.12183,0 z"
+       transform="translate(-156.14885,-82.004162)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00aeff;fill-opacity:0.98412697;fill-rule:nonzero;stroke:#000000;stroke-width:0.74800003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2991-5"
+       sodipodi:cx="216.42519"
+       sodipodi:cy="110.64747"
+       sodipodi:rx="6.0609155"
+       sodipodi:ry="6.0609155"
+       d="m 222.4861,110.64747 a 6.0609155,6.0609155 0 1 1 -12.12183,0 6.0609155,6.0609155 0 1 1 12.12183,0 z"
+       transform="translate(-102.8633,-82.256697)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffce00;fill-opacity:0.98412697;fill-rule:nonzero;stroke:#000000;stroke-width:0.74800003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2991-6"
+       sodipodi:cx="216.42519"
+       sodipodi:cy="110.64747"
+       sodipodi:rx="6.0609155"
+       sodipodi:ry="6.0609155"
+       d="m 222.4861,110.64747 a 6.0609155,6.0609155 0 1 1 -12.12183,0 6.0609155,6.0609155 0 1 1 12.12183,0 z"
+       transform="translate(-200.09049,-95.893757)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff91;fill-opacity:0.98412697;fill-rule:nonzero;stroke:#000000;stroke-width:0.74800003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2991-9"
+       sodipodi:cx="216.42519"
+       sodipodi:cy="110.64747"
+       sodipodi:rx="6.0609155"
+       sodipodi:ry="6.0609155"
+       d="m 222.4861,110.64747 a 6.0609155,6.0609155 0 1 1 -12.12183,0 6.0609155,6.0609155 0 1 1 12.12183,0 z"
+       transform="translate(-147.05748,-30.991456)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 24.668461,13.743561 80.812199,11.11168"
+       id="path5269"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 18.102461,23.592551 11.36422,14.89975"
+       id="path5271"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 45.629121,61.978341 13.38452,13.63706"
+       id="path5273"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 77.196391,74.100171 16.16244,-15.65736"
+       id="path5275"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 67.094861,71.827331 -2.27284,-14.64721"
+       id="path5281"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

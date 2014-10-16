@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ngs | oh no sequences!]]></title>
+  <link href="http://ohnosequences.com/blog/categories/ngs/atom.xml" rel="self"/>
+  <link href="http://ohnosequences.com/"/>
+  <updated>2014-10-16T18:21:44+02:00</updated>
+  <id>http://ohnosequences.com/</id>
+  <author>
+    <name><![CDATA[oh no sequences!]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[INTERCROSSING cloud and NGS course]]></title>
+    <link href="http://ohnosequences.com/blog/2013/12/03/intercrossing-cloud-and-ngs-course/"/>
+    <updated>2013-12-03T19:35:00+01:00</updated>
+    <id>http://ohnosequences.com/blog/2013/12/03/intercrossing-cloud-and-ngs-course</id>
+    <content type="html"><![CDATA[<p>During the past August we gave a course as part of the <a href="http://intercrossing.wikispaces.com/"><em>INTERCROSSING</em></a> Initial Training Network we are part of. The course was titled <em>Cloud Computing and NGS Data Analysis</em></p>
+
+<p><img src="/images/intercrossing-cloud-course.jpg"></p>
+
+<p>The audience composition was a mix of Biologists, Mathematicians, Bioinformaticians and Statisticians; we tried to have something for all of them. </p>
+
+<p>We set 3 working groups with a mix of people with different backgrounds, in every group you could find <em>bio</em> and <em>maths/CS</em> guys. We made up these <em>interdisciplinary</em> teams on purpose, we wanted to simulate as much as possible the kind of working environment they could find in <em>real</em> world with its pros and cons like the advantage of being able to learn one from others but also the difficulties of understanding people with completely different background.</p>
+
+<p>From the beginning the students were given a problem to solve: <em>outbreak pathogen identification</em>. And they were asked to design a system to face it. We wanted them to come up with a solution as realistic as possible. We picked a challenging problem with no define solution to enhance their creativity and to make them work hard on something in a similar scenario of <em>real life</em> problems. We were not so interested in a given solution but in how they faced the problem and designed a solution from scratch. We really wanted them to think about a <em>real life</em> problem and we think we got it.</p>
+
+<p>So, we scheduled the talks in a way that the first days they could get some general concepts they would need to face the problem and from then on they also had sessions for team working and asking questions. On Friday each team explained the others their system.</p>
+
+<p>It was a pretty intensive week for them and for us! We had a great time supervising their work and watching from the background how they developed their projects. We hope they enjoyed the course as much as we did!</p>
+
+<h3 id="course-slides">course slides</h3>
+
+<p>You can get the slides from the course <a href="http://ohnosequences.com/slides/intercrossing-course/">here</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 ]]></title>
+    <link href="http://ohnosequences.com/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/"/>
+    <updated>2012-05-21T20:02:04+02:00</updated>
+    <id>http://ohnosequences.com/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012</id>
+    <content type="html"><![CDATA[<p>In my opinion, <strong>Curtis Huttenhower</strong> presented the newest perspectives for understanding human microbiome. Some ideas from his talk:</p>
+
+<ul>
+  <li>Not who, but why: the IBD microbiome is defined by adaptation to oxidative stress.</li>
+  <li>Niche specialization is crucial in human microbiome.</li>
+  <li>Human Microbiome Project Unified Metabolic Analysis Network: Who’s there vs what they’re doing.</li>
+  <li>Species-level resolution is critical for understanding microbiome function, strain-level is even better.</li>
+</ul>
+
+<p>Some interesting ideas presented at the conference:</p>
+
+<p><strong>Ian Wilson:</strong></p>
+
+<ul>
+  <li>Disease and microbiome: causal or casual?</li>
+  <li>Recolonization after Atbs resulted in cage-dependent subgroups with different bacterial populations and metabotypes.</li>
+</ul>
+
+<p><strong>Karen Scott:</strong></p>
+
+<ul>
+  <li>Anaerobic Roseburia/E. rectale group bacteria constitute 10% of gut microbiota in healthy individuals.</li>
+  <li>The main fermentation product of Roseburia species is butyrate. The genomic analysis of the enzymes involved is complex.</li>
+  <li>Dietary interventions (augmenting the amount of starch consumed) can dramatically affect Roseburia genus presence in gut.</li>
+</ul>
+
+<p><strong>Barbara Pachikian:</strong></p>
+
+<ul>
+  <li>Fructooligosaccharides (FOS) supplementation reverses hepatic steatosis.</li>
+</ul>
+
+<p><strong>Francisco Guarner:</strong></p>
+
+<ul>
+  <li>In IBD mucosal lesions are caused by immune response against colonic bacteria.</li>
+</ul>
+
+<p><strong>Paul Cotter:</strong></p>
+
+<ul>
+  <li>Bacteriocins as tools to alter the composition of gut microbiota.</li>
+</ul>
+
+<p><strong>Ruth Ley:</strong></p>
+
+<ul>
+  <li>In the third trimester of pregnancy gut bacterial composition shows a dramatic shift.</li>
+  <li>The third trimester microbiota could induce low-grade inflammation, adiposity gain and reduced insulin sensitivity beneficial in pregnancy R.Ley</li>
+  <li>Gut microbiota’s impact on metabolism: highly adaptive in pregnancy and detrimental in obese host.</li>
+</ul>
+
+<p><strong>Fredrik Backhed:</strong></p>
+
+<ul>
+  <li>Apoe -/- germ-free male mice are resistant to diet-induced atherosclerosis.</li>
+  <li>Gut microbiota modulate bile acid synthesis.</li>
+</ul>
+
+<p><strong>Simon Murch:</strong></p>
+
+<ul>
+  <li>There are differences between the flora from cesarean infants and from vaginally delivered infants.</li>
+  <li>Different bacteria induce different gene expression in the host</li>
+  <li>Breast milking and reduction of antibiotic exposure are critical for microbial diversity in low birth weight neonates.</li>
+</ul>
+
+<p><strong>A. Walker:</strong></p>
+
+<ul>
+  <li>CF infants have more pathogenic bacteria in their lower respiratory microbiota (P. aeruginosa, S. maltophilia, B. cepacia)</li>
+</ul>
+
+<p><strong>Elisa Noll:</strong></p>
+
+<ul>
+  <li>Gut-microbial metabolism can alter host metabolism in the favour of obesity and insulin resistance.</li>
+</ul>
+
+<p><strong>Fergus Shanaham:</strong></p>
+
+<ul>
+  <li>What is a healthy gut? Low biodiversity implies more pathogens colonization.</li>
+</ul>
+
+<p><strong>Douwe van Sinderen:</strong></p>
+
+<ul>
+  <li>Bifidobacterial pili and surface polysaccharide allow competitive host colonization and persistence
+-Perhaps genes involved in colonization are not expressed in vitro.</li>
+</ul>
+
+<p><strong>Catarina Simoes:</strong></p>
+
+<ul>
+  <li>Diet affects the gut microbiota in twins.</li>
+</ul>
+
+<p><strong>Kathleen Sim:</strong></p>
+
+<ul>
+  <li>Missing bifidobacteria: undercounting in neonatal gut microbiota using classical universal primers.</li>
+</ul>
+
+<p><strong>Julian Marchesi:</strong></p>
+
+<ul>
+  <li>Experiments colonizing gut from mices with human microbiota</li>
+  <li>Core functions of gut microbiota need to be useful to the host but at the same time to the bacteria.</li>
+</ul>
+
+<p><strong>Willem de Vos:</strong></p>
+
+<ul>
+  <li>Gut microbiome with low diversity in colitis</li>
+  <li>Ileum microbiota is shaped by fast sugar uptake</li>
+  <li>Microbiota diversity likely to provide resilience</li>
+  <li>Diversity and stability characterize a healthy microbiome.</li>
+</ul>
+
+<p><strong>Jeremy K. Nicholson:</strong></p>
+
+<ul>
+  <li>There are many more targets for cancer in human microbiome than in human genome</li>
+  <li>The microbiome as a therapeutic target</li>
+  <li>Influence of maternal genome on early microbiome development.</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly]]></title>
+    <link href="http://ohnosequences.com/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/"/>
+    <updated>2011-12-02T17:15:45+01:00</updated>
+    <id>http://ohnosequences.com/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly</id>
+    <content type="html"><![CDATA[<p>Hi everyone!</p>
+
+<p>A couple of days ago I published a post describing how to obtain <a href="http://blog.bio4j.com/2011/11/cool-go-annotation-visualizations-with-gephi-bio4j/">cool GO annotation visualizations with Gephi + Bio4j</a>. As an example I used data from one of the first assemblies for the **EHEC **genome, and I was wondering today: Why not using the last version from BGI assembly we annotated with <a href="http://bg7.ohnosequences.com/">our great <strong>BG7 bacterial genome annotation pipeline</strong></a> and put together the visualizations for the three sub-ontologies? Here you have the result:</p>
+
+<p><strong>Biological Process</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/"><img src="/images/BiologicalProcessScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Molecular Function</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_MolecularFunction/"><img src="/images/MolecularFunctionScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Cellular Component</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_CellularComponent/"><img src="/images/CellularComponentScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p>Have a good weekend! ;)</p>
+
+<p><a href="http://www.twitter.com/pablopareja">@pablopareja</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic annotation of E. coli H112180280 strain (sequence and assembly by HPA)]]></title>
+    <link href="http://ohnosequences.com/blog/2011/06/11/automatic-annotation-of-e-coli-h112180280-strain-sequence-and-assembly-by-hpa/"/>
+    <updated>2011-06-11T16:47:48+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/06/11/automatic-annotation-of-e-coli-h112180280-strain-sequence-and-assembly-by-hpa</id>
+    <content type="html"><![CDATA[<p>And right now we’ve finished the automatic annotation of the assembly of new strain that HPA (<a href="http://www.hpa.org.uk/">Health Protection Agency UK</a>)  made available yesterday (get the assembly file here <a href="http://www.hpa-bioinformatics.org.uk/lgp/resource/454Scaffolds.fna">http://www.hpa-bioinformatics.org.uk/lgp/resource/454Scaffolds.fna</a>)</p>
+
+<p>Once more we’ve used <a href="http://bg7.ohnosequences.com">BG7</a> and the same set of reference proteins (137,063 proteins in total):</p>
+
+<ul>
+  <li>The representative Uniprot proteins corresponding to all Uniref90 clusters for all Escherichia coli proteins</li>
+  <li>All Uniprot proteins from organisms including in their name the terms “EHEC” or “EAEC”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field the term “toxin”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field  “hemolysin”</li>
+  <li>All the proteins from Salmonella typhi, Yersinia pestis and Shigella dysenteriae</li>
+</ul>
+
+<h4 id="results">Results</h4>
+
+<p>We’ve detected 5,916 genes</p>
+
+<ul>
+  <li>5,792 protein encoding genes</li>
+  <li>124 RNA genes</li>
+</ul>
+
+<p>4,912 out of the 5,792 (84.80%) protein encoding genes have canonical start and stop codon and haven´t either frame-shifts or intragenic stop codons.</p>
+
+<p>615 out of the 5,792 (10.61%) protein encoding genes have some frameshifts or intragenic stop codon in their sequences, probably caused by inherent technology errors.</p>
+
+<p>You can get the results of the annotation here <a href="https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/H112180280/seqProject/HealthProtectionAgencyUK/annotations/era7bioinformatics/era7_HPA_H112180280_annotations">https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/H112180280/seqProject/HealthProtectionAgencyUK/annotations/era7bioinformatics/era7_HPA_H112180280_annotations</a>)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic annotation of BGI V3 assembly of E. coli TY-2482 genome]]></title>
+    <link href="http://ohnosequences.com/blog/2011/06/11/automatic-annotation-of-bgi-v3-assembly-of-e-coli-ty-2482-genome/"/>
+    <updated>2011-06-11T16:22:47+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/06/11/automatic-annotation-of-bgi-v3-assembly-of-e-coli-ty-2482-genome</id>
+    <content type="html"><![CDATA[<p>We’ve finished the automatic annotation of the third BGI assembly of the E. coli TY-2482 strain genome (get the assembly file here ftp://ftp.genomics.org.cn/pub/Ecoli_TY-2482/Escherichia_coli_TY-2482.scaffold.20110610.fa.gz)</p>
+
+<p>As in the other annotations we’ve done so far we used<a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data"> BG7 system</a> to annotate the genome. And we have used the same set of reference proteins (137,063 proteins in total):</p>
+
+<ul>
+  <li>The representative Uniprot proteins corresponding to all Uniref90 clusters for all Escherichia coli proteins</li>
+  <li>All Uniprot proteins from organisms including in their name the terms “EHEC” or “EAEC”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field the term “toxin”</li>
+  <li>All Uniprot proteins from bacteria that have in any Uniprot field  “hemolysin”</li>
+  <li>All the proteins from Salmonella typhi, Yersinia pestis and Shigella dysenteriae</li>
+</ul>
+
+<h4 id="results">Results</h4>
+
+<p>We’ve detected 5,936 genes</p>
+
+<ul>
+  <li>5,806 protein encoding genes</li>
+  <li>130 RNA genes</li>
+</ul>
+
+<p>4,881 out of the 5,806 (84.06%) protein encoding genes have canonical start and stop codon and haven´t either frame-shifts or intragenic stop codons.</p>
+
+<p>533 out of the 5,806 (9.18%) protein encoding genes have some frameshifts or intragenic stop codon in their sequences, probably caused by inherent technology errors.</p>
+
+<p>You can get the results of the annotation here <a href="https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/TY2482/seqProject/BGI/annotations/era7bioinformatics/BGI_V3">https://github.com/ehec-outbreak-crowdsourced/BGI-data-analysis/tree/master/strains/TY2482/seqProject/BGI/annotations/era7bioinformatics/BGI_V3</a></p>
+]]></content>
+  </entry>
+  
+</feed>

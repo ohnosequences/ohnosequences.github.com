@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: neo4j | oh no sequences!]]></title>
+  <link href="http://ohnosequences.com/blog/categories/neo4j/atom.xml" rel="self"/>
+  <link href="http://ohnosequences.com/"/>
+  <updated>2014-10-16T18:21:44+02:00</updated>
+  <id>http://ohnosequences.com/</id>
+  <author>
+    <name><![CDATA[oh no sequences!]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Neo4j Server and AWS become good friends!]]></title>
+    <link href="http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/"/>
+    <updated>2011-12-23T15:14:50+01:00</updated>
+    <id>http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends</id>
+    <content type="html"><![CDATA[<p>Hi everyone!</p>
+
+<p>Christmas Eve is almost here and there’s still time for a last-minute present. 
+Thanks to <strong><a href="http://aws.amazon.com/cloudformation/">CloudFormation</a></strong> and this template I’m about to show you, <strong><a href="http://docs.neo4j.org/chunked/snapshot/server.html">Neo4j Server</a></strong> is now friends with <strong><a href="http://aws.amazon.com">AWS</a></strong> <em>(Amazon Web Services)</em> and together they bring you the opportunity of getting your own fresh Neo4j Server machine running in just a few clicks!</p>
+
+<p>I created the github repository <strong><a href="https://github.com/pablopareja/Neo4jAWS">Neo4jAWS</a></strong> where you can find all the files needed for this, <em>(which are actually not many but probably I’ll be adding more tools for Neo4j and AWS integration soon)</em>.</p>
+
+<p>Ok, so what does this CloudFormation template actually do?</p>
+
+<ol>
+  <li>It <strong>launches an instance</strong> in the availability zone you decide and with a type of your choice -_ you should also provide your key-pair_</li>
+  <li><strong>Attaches the volume including your Neo4j DB</strong> to the new instance <em>(you must provide your volume ID)</em></li>
+  <li><strong>Downloads</strong> the <strong>latest Neo4j stable release</strong> (1.5) and <strong>overwrites the server properties file with your own file</strong><em>(you have to provide a public URL where it should be available)</em></li>
+  <li>It finally <strong>starts the Neo4j Server</strong> previously copying your DB folder under the data server folder (you have to provide the name of that folder as a parameter for the template)</li>
+</ol>
+
+<p>And, what do you have to do?</p>
+
+<ol>
+  <li>Go to the <strong>CloudFormation section</strong><a href="https://console.aws.amazon.com/cloudformation/"> of the AWS console</a></li>
+  <li>Click on ‘Create New Stack’ button</li>
+  <li>Download the <a href="https://github.com/pablopareja/Neo4jAWS/raw/master/Neo4jServerCloudFormationTemplate.txt"><strong>template file</strong></a> from the github repository and then select the option ‘Upload a Template File’ </li>
+  <li>You should be seeing now the parameters window where you should enter the values: <strong>KeyPairName</strong>, <strong>Neo4jDBFolder</strong>, <strong>AvailabilityZone</strong>, <strong>EBSVolumeID</strong>, <strong>ServerPropertiesFile **(this should be a public URL), and **InstanceType</strong></li>
+  <li>Once you’ve reviewed that everything’s OK, just click next and wait for the stack to change to the <strong>state CREATE_COMPLETE</strong></li>
+</ol>
+
+<p><strong>UPDATE</strong> –&gt; Here you have the set of screenshots you should see in the process:</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/"><img src="/images/CloudFormationCreateStackScreenShot.jpg"></a></p>
+
+<p>CloudFormation tab: click on Create new stack button.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/"><img src="/images/Neo4jTemplateScreenshot2.jpg"></a></p>
+
+<p>Give a name to your stack and choose the option for uploading a file, browsing to the template file you previously downloaded from Neo4jAWS repository. Click ‘Continue’ then.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/"><img src="/images/Neo4jTemplateScreenshot3.jpg"></a></p>
+
+<p>You should be seeing something like this by now. It’s time to provide all the parameters!
+When you’re done, click con ‘Continue’ after reviewing the values and just wait for it to change to state ‘CREATE_COMPLETE’ ;)</p>
+
+<p>If nothing weird happens, you should be able to see the WebAdmin in your browser typing as URL the public IP given as output of the stack plus the port you specified in your neo4j-server.properties file.</p>
+
+<blockquote>
+  <p>Beware that the template opens by default the port 7474 for communicating with the Server, if you want to use another port number for any reason, you should change the SecurityGroup manually</p>
+</blockquote>
+
+<p>As always, please don’t hesitate to give any kind of feedback or suggestion you may have, as well as pointing to possible issues/bugs <em>(you can use github issues in the repository for that)</em>.</p>
+
+<p>Happy Holidays!</p>
+
+<p><a href="http://www.twitter.com/pablopareja"><strong>@pablopareja</strong></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j]]></title>
+    <link href="http://ohnosequences.com/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/"/>
+    <updated>2011-10-18T21:28:04+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j</id>
+    <content type="html"><![CDATA[<p>Hi!</p>
+
+<p>I just finished this afternoon a small project I had to do about identification of microsatellites in DNA sequences. As with every new project I start, I think of something that:</p>
+
+<ul>
+  <li>I <strong>didn’t try before</strong></li>
+  <li>is <strong>worth learning</strong></li>
+  <li>is <strong>applicable</strong> in order to meet the needs of the specific project</li>
+</ul>
+
+<p>These last few days it was the chance to get to know and try the visualization tool included in the last version of <a href="http://blog.neo4j.org/2011/10/announcing-neo4j-15-boden-bord.html"><strong>Neo4j Webadmin dashboard</strong></a>.
+I had already heard of it a couple of times from different sources but had not had the chance to play a bit with it yet. So, after my first contact with it I have to say that although it’s something <a href="http://www.neo4j.org">Neo4j</a> introduced in the last versions, it already has a decent GUI and promising functionality. </p>
+
+<p>Apart from GUI considerations, I created the repository <a href="https://github.com/pablopareja/MicrosatellitesNeo4jModel"><strong>MicrosatellitesNeo4jModel</strong></a> with a bunch of nodes and relationships wrappers as an API for  performing traversals for all this data in an easy way.
+Here is the domain model I chose:</p>
+
+<p><a href="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDomainModel.svg"><img src="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDomainModel.jpg" alt="Microsatellites Neo4j domain model" /></a></p>
+
+<p>On the programs side, I developed two different Java classes, one dealing with the identification of the microsatellites and their subsequent storage on the Neo4j DB (<a href="https://github.com/pablopareja/Microsatellites/blob/develop/src/com/era7/bioinfo/microsats/programs/CreateMicrosatellitesDB.java">CreateMicrosatellitesDB.java</a>) and another (<a href="https://github.com/pablopareja/Microsatellites/blob/develop/src/com/era7/bioinfo/microsats/programs/ExtractDataToCSV.java">ExtractDataToCSV.java</a>)for extracting statistical information for a set of specific parameters like tuple length and things like that. 
+Both classes are in the repository <a href="https://github.com/pablopareja/Microsatellites"><strong>Microsatellites</strong></a>.</p>
+
+<p>Once the DB was created, I played a bit with the display profiles in the WebAdmin data browser so that different node types had a different aspect and this is what I got:</p>
+
+<p><a href="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDataBrowserScreenshot.jpg"><img src="https://s3-eu-west-1.amazonaws.com/pablo-tests/MicrosatellitesDataBrowserScreenshot.jpg" alt="Microsatellites DB data browser screenshot" /></a></p>
+
+<p>Here you can find blue circles (<strong>sequence IDs</strong>), orange boxes (<strong>tuples</strong> repeated in the microsatellites found), and greenish squares (<strong>tuple length</strong> nodes). </p>
+
+<p>One of the features I was missing in the visualization was having style rules for relationships as well as for nodes. This was specially important in my case where I have relevant information stored as relationships attributes, <em>(I actually could not visualize the number of tuple repeats in the microsatellites found, just the name of the relationship ‘MICROSATELLITE_FOUND’ everywhere)</em>.
+However I posted a question on neo4j user list about this and it seems they already are working on this, cool!</p>
+
+<p>As always, everything here is open source and released under under <a href="http://www.gnu.org/licenses/agpl.html"><strong>AGPLv3</strong></a>.</p>
+
+<p>Cheers,</p>
+
+<p><a href="http://twitter.com/pablopareja">@pablopareja</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some thoughts about Neo4j]]></title>
+    <link href="http://ohnosequences.com/blog/2011/10/14/some-thoughts-about-neo4j/"/>
+    <updated>2011-10-14T20:33:15+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/10/14/some-thoughts-about-neo4j</id>
+    <content type="html"><![CDATA[<p>Today I found an <a href="http://neo4j.org/forums/#nabble-td730422">interesting discussion</a> in Neo4j user list and found myself in the mood of writing a couple of related thoughts I have had in mind the last months.</p>
+
+<p>Here they are: (the titles are taken from the <a href="http://wiki.neo4j.org/content/Guidelines_for_Building_a_Neo4j_Application">guidelines for building your domain model</a>)</p>
+
+<h3 id="use-reference-and-subreference-nodes-to-organize-entry-points">Use reference and subreference nodes to organize entry points</h3>
+
+<p>In principle I don’t agree with this. Well, I do in theory <em>(it actually is how I implemented things in the beginning)</em>. However in one of my projects, where I’m dealing with huge amounts of relationships, reference and subreference nodes become supernodes which in turn are a very problematic bottleneck in most traversals; (this is due to the lack of a natively implemented system for discerning between relationships with different types, I opened this issue about this <a href="https://github.com/neo4j/community/issues/19">here</a>). While this is solved, I’m always tempted/forced to start using indexes instead of relationships, but then I wonder how different things are in the end compared to other not graph-based DB systems !??</p>
+
+<h3 id="use-relationships-types-appropiately">Use relationships types appropiately</h3>
+
+<p>I’m gonna be frank with this, I never understood why there’re mandatory relationships types but not mandatory nodes types!? 
+It just doesn’t make any sense for me. I can understand that this could bring some trouble depending on implementation decisions taken at core level but then, why doing this only half way? It’d have been better having no restriction for either nodes or relationships than how things are now. </p>
+
+<p>With all this having been said, I still find Neo4j a very promising DB in the near future and I’m really happy to use it in a lot of different projects/use-cases; however I think the way for it to get better each day is not keeping saying how cool it is but actually pointing at the weak spots it may have.</p>
+
+<p>Pablo Pareja</p>
+]]></content>
+  </entry>
+  
+</feed>

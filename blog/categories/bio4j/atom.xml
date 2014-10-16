@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: bio4j | oh no sequences!]]></title>
+  <link href="http://ohnosequences.com/blog/categories/bio4j/atom.xml" rel="self"/>
+  <link href="http://ohnosequences.com/"/>
+  <updated>2014-10-16T18:21:44+02:00</updated>
+  <id>http://ohnosequences.com/</id>
+  <author>
+    <name><![CDATA[oh no sequences!]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly]]></title>
+    <link href="http://ohnosequences.com/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/"/>
+    <updated>2011-12-02T17:15:45+01:00</updated>
+    <id>http://ohnosequences.com/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly</id>
+    <content type="html"><![CDATA[<p>Hi everyone!</p>
+
+<p>A couple of days ago I published a post describing how to obtain <a href="http://blog.bio4j.com/2011/11/cool-go-annotation-visualizations-with-gephi-bio4j/">cool GO annotation visualizations with Gephi + Bio4j</a>. As an example I used data from one of the first assemblies for the **EHEC **genome, and I was wondering today: Why not using the last version from BGI assembly we annotated with <a href="http://bg7.ohnosequences.com/">our great <strong>BG7 bacterial genome annotation pipeline</strong></a> and put together the visualizations for the three sub-ontologies? Here you have the result:</p>
+
+<p><strong>Biological Process</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_BiologicalProcess/"><img src="/images/BiologicalProcessScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Molecular Function</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_MolecularFunction/"><img src="/images/MolecularFunctionScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p><strong>Cellular Component</strong></p>
+
+<p><a href="http://bio4j.com/imgs/EHEC_BGI_CellularComponent/"><img src="/images/CellularComponentScreenshot-01.jpg"></a></p>
+
+<p><em>(Please click on the image above to check the zoomable version)</em></p>
+
+<p>Have a good weekend! ;)</p>
+
+<p><a href="http://www.twitter.com/pablopareja">@pablopareja</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bio4j includes RefSeq data now !]]></title>
+    <link href="http://ohnosequences.com/blog/2011/05/30/bio4j-includes-refseq-data-now/"/>
+    <updated>2011-05-30T17:26:31+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/05/30/bio4j-includes-refseq-data-now</id>
+    <content type="html"><![CDATA[<p>Hi!</p>
+
+<p>The first version of Bio4j including RefSeq data is already available.
+More information <a href="http://blog.bio4j.com/2011/05/bio4j-includes-refseq-data-now/">here</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bio4j GO Tools goes web]]></title>
+    <link href="http://ohnosequences.com/blog/2011/04/11/bio4j-go-tools-goes-web/"/>
+    <updated>2011-04-11T19:11:11+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/04/11/bio4j-go-tools-goes-web</id>
+    <content type="html"><![CDATA[<p>Hi!</p>
+
+<p>From now on Bio4j GO Tools will be available <a href="http://blog.bio4j.com/2011/04/bio4j-go-tools-goes-web/">here</a>.</p>
+
+<p>Remember to check the <a href="blog.bio4j.com">Bio4j Blog</a> for updates.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with Gephi, Bio4j and Go]]></title>
+    <link href="http://ohnosequences.com/blog/2011/03/29/playing-with-gephi-bio4j-and-go/"/>
+    <updated>2011-03-29T17:27:17+02:00</updated>
+    <id>http://ohnosequences.com/blog/2011/03/29/playing-with-gephi-bio4j-and-go</id>
+    <content type="html"><![CDATA[<p>It had already been some time without having some fun with <a href="http://www.gephi.org"><strong>Gephi</strong></a> so today I told myself: why not trying visualizing the whole Gene Ontology and seeing what happens?</p>
+
+<p>First of all I had to generate the corresponding file in <a href="http://gexf.net/format/">gexf format</a> containing all the terms and relationships belonging to the ontology.
+For that I did a small program (<a href="https://github.com/bio4j/Bio4jTools/blob/master/src/com/era7/bioinfo/bio4j/tools/GenerateGexfGo.java"><strong>GenerateGexfGo.java</strong></a>) which uses <a href="http://www.bio4j.com"><strong>Bio4j</strong></a> for terms/relationships info retrieval and a couple of XML Gexf wrapper classes from the github project <a href="https://github.com/pablopareja/BioinfoXML">BioinfoXML</a>.</p>
+
+<p>Once I had my gexf file I tried opening it (~17 MB) with gephi in my laptop with no success, (<em>gephi froze forever when trying to import the file</em>). 
+Then, after a quick search on google I figured out that the amount of memory used by Gephi was really easy to change, (<em>just open the file ‘etc/gephi07beta.conf’ and change the -Xmx value</em>).</p>
+
+<p>With my file already imported, first I applied the algorithm <a href="http://gephi.org/2010/openord-new-layout-plugin-the-fastest-algorithm-so-far/"><strong>OpenOrd</strong></a> (which is the best one for large graphs) and then once it had an acceptable distribution I finally applied some iterations of the algorithm Fruchterman Reingold for a better visualization.
+And this is what I got:</p>
+
+<p><img src="/images/wholeGo.svg"></p>
+
+<p>Colors correspondance:	</p>
+
+<ul>
+  <li><strong>Green</strong>: Cellular component</li>
+  <li><strong>Blue</strong>: Molecular function</li>
+  <li><strong>Orange</strong>: Biological process</li>
+</ul>
+
+<p><strong>UPDATE:</strong> zoomable independent ontology visualizations using gephi <a href="http://gephi.org/plugins/seadragon/">SeaDragon plugin</a>.</p>
+
+<p><strong>Molecular function</strong></p>
+
+<p><img src="/images/molecularFunctionScreenShot-300x281.jpg"></p>
+
+<p><strong>Cellular component</strong></p>
+
+<p><img src="/images/cellularComponentScreenShot-300x280.jpg"></p>
+
+<p><strong>Biological process</strong></p>
+
+<p><img src="/images/biologicalProcessScreenShot-300x275.jpg"></p>
+
+<p><a href="https://s3-eu-west-1.amazonaws.com/pablo-tests/wholeGo.gexf">Here</a> you can download the gexf file in case you want to experiment a bit with it.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using Bio4j Go Tools to get the GO annotations of a set of Uniprot proteins]]></title>
+    <link href="http://ohnosequences.com/blog/2011/03/25/using-bio4j-go-tools-to-get-the-go-annotations-of-a-set-of-uniprot-proteins-2/"/>
+    <updated>2011-03-25T18:29:11+01:00</updated>
+    <id>http://ohnosequences.com/blog/2011/03/25/using-bio4j-go-tools-to-get-the-go-annotations-of-a-set-of-uniprot-proteins-2</id>
+    <content type="html"><![CDATA[<p>We have recently launched a first version of Bio4j Go Tools: an <a href="https://github.com/bio4j/Bio4jGoTools/blob/master/releases/Bio4jGoTools.air">AIR application </a>that allows the user to perform different kinds of GO Analysis using <a href="bio4j.com">Bio4j </a>as back-end.
+More info about the tool in <a href="http://blog.bio4j.com/?p=9">this post</a> of <a href="http://blog.bio4j.com/">Bio4j blog</a></p>
+
+<p><img src="/images/Bio4jJPG.jpg"></p>
+
+<p>So far you can do the following:</p>
+
+<ol>
+  <li>Get the GO annotations of a set of proteins. All the GO annotations belonging to the three different GO ontologies (Molecular function, Biological process y Cellular component) are provided separately</li>
+  <li>“Perform” a GO Slim analysis</li>
+</ol>
+
+<p>Using this tool for 1) is pretty easy. You just have to enter in the text field the Uniprot IDs (protein accessions) of the set of proteins of interest and select which kind of separator you are using (enter, tab, whitespace…). Then click on “Get results”, select the location where the result file will be downloaded and wait until the “File downloaded!” message appears.</p>
+
+<p>New charts utilities are coming soon. By now, you can import the XML result file into an Excel file and create the charts there. The following ones are an example of the charts you can make. They represent the GO annotations of all the <em>Helicobacter pylori</em> proteins (11,934 proteins), only those GO terms that appear 20 times or more in the set of proteins are depicted.</p>
+
+<p><img src="/images/HPylori_BP2.jpg"></p>
+
+<p><img src="/images/HPylori_CC.jpg"></p>
+
+<p><img src="/images/HPylori_MF.jpg)"></p>
+
+<p>How to use this tool to perform GOSlim analysis in upcoming posts…</p>
+]]></content>
+  </entry>
+  
+</feed>

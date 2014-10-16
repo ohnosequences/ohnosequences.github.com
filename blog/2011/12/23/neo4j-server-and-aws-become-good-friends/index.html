@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Neo4j Server and AWS become good friends! - oh no sequences!</title>
+  <meta name="author" content="oh no sequences!">
+
+  
+  <meta name="description" content="Hi everyone! Christmas Eve is almost here and there’s still time for a last-minute present. Thanks to CloudFormation and this template I’m about to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="oh no sequences!" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,300italic,400,400italic,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  showMathMenu: false,
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }, 
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", webFont: "TeX", availableFonts: [] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12161444-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1>
+    <a href="/">
+      <span class="title_oh">oh</span><span class="title_no">no</span><span class="title_sequences">sequences</span><span class="title_bang">!</span>
+    </a>
+  </h1>
+  <h2>era7 bioinformatics R&D group</h2>
+
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ohnosequences.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog">blog</a></li>
+  <li><a href="/publications">publications</a></li>
+  <li><a href="/projects">projects</a></li>
+  <li><a href="/people">people</a></li>
+  <li><a href="/about">about</a></li>
+  <li><a href="/contact">contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Neo4j Server and AWS become good friends!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-23T15:14:50+01:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Hi everyone!</p>
+
+<p>Christmas Eve is almost here and there’s still time for a last-minute present. 
+Thanks to <strong><a href="http://aws.amazon.com/cloudformation/">CloudFormation</a></strong> and this template I’m about to show you, <strong><a href="http://docs.neo4j.org/chunked/snapshot/server.html">Neo4j Server</a></strong> is now friends with <strong><a href="http://aws.amazon.com">AWS</a></strong> <em>(Amazon Web Services)</em> and together they bring you the opportunity of getting your own fresh Neo4j Server machine running in just a few clicks!</p>
+
+<p>I created the github repository <strong><a href="https://github.com/pablopareja/Neo4jAWS">Neo4jAWS</a></strong> where you can find all the files needed for this, <em>(which are actually not many but probably I’ll be adding more tools for Neo4j and AWS integration soon)</em>.</p>
+
+<p>Ok, so what does this CloudFormation template actually do?</p>
+
+<ol>
+  <li>It <strong>launches an instance</strong> in the availability zone you decide and with a type of your choice -_ you should also provide your key-pair_</li>
+  <li><strong>Attaches the volume including your Neo4j DB</strong> to the new instance <em>(you must provide your volume ID)</em></li>
+  <li><strong>Downloads</strong> the <strong>latest Neo4j stable release</strong> (1.5) and <strong>overwrites the server properties file with your own file</strong><em>(you have to provide a public URL where it should be available)</em></li>
+  <li>It finally <strong>starts the Neo4j Server</strong> previously copying your DB folder under the data server folder (you have to provide the name of that folder as a parameter for the template)</li>
+</ol>
+
+<p>And, what do you have to do?</p>
+
+<ol>
+  <li>Go to the <strong>CloudFormation section</strong><a href="https://console.aws.amazon.com/cloudformation/"> of the AWS console</a></li>
+  <li>Click on ‘Create New Stack’ button</li>
+  <li>Download the <a href="https://github.com/pablopareja/Neo4jAWS/raw/master/Neo4jServerCloudFormationTemplate.txt"><strong>template file</strong></a> from the github repository and then select the option ‘Upload a Template File’ </li>
+  <li>You should be seeing now the parameters window where you should enter the values: <strong>KeyPairName</strong>, <strong>Neo4jDBFolder</strong>, <strong>AvailabilityZone</strong>, <strong>EBSVolumeID</strong>, <strong>ServerPropertiesFile **(this should be a public URL), and **InstanceType</strong></li>
+  <li>Once you’ve reviewed that everything’s OK, just click next and wait for the stack to change to the <strong>state CREATE_COMPLETE</strong></li>
+</ol>
+
+<p><strong>UPDATE</strong> –&gt; Here you have the set of screenshots you should see in the process:</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/cloudformationcreatestackscreenshot/"><img src="/images/CloudFormationCreateStackScreenShot.jpg" /></a></p>
+
+<p>CloudFormation tab: click on Create new stack button.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot2/"><img src="/images/Neo4jTemplateScreenshot2.jpg" /></a></p>
+
+<p>Give a name to your stack and choose the option for uploading a file, browsing to the template file you previously downloaded from Neo4jAWS repository. Click ‘Continue’ then.</p>
+
+<p><a href="http://blog.ohnosequences.com/2011/12/neo4j-server-and-aws-become-good-friends/neo4jtemplatescreenshot3/"><img src="/images/Neo4jTemplateScreenshot3.jpg" /></a></p>
+
+<p>You should be seeing something like this by now. It’s time to provide all the parameters!
+When you’re done, click con ‘Continue’ after reviewing the values and just wait for it to change to state ‘CREATE_COMPLETE’ ;)</p>
+
+<p>If nothing weird happens, you should be able to see the WebAdmin in your browser typing as URL the public IP given as output of the stack plus the port you specified in your neo4j-server.properties file.</p>
+
+<blockquote>
+  <p>Beware that the template opens by default the port 7474 for communicating with the Server, if you want to use another port number for any reason, you should change the SecurityGroup manually</p>
+</blockquote>
+
+<p>As always, please don’t hesitate to give any kind of feedback or suggestion you may have, as well as pointing to possible issues/bugs <em>(you can use github issues in the repository for that)</em>.</p>
+
+<p>Happy Holidays!</p>
+
+<p><a href="http://www.twitter.com/pablopareja"><strong>@pablopareja</strong></a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pablo Pareja</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-23T15:14:50+01:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cloud-computing/'>cloud computing</a>, <a class='category' href='/blog/categories/ec2/'>ec2</a>, <a class='category' href='/blog/categories/neo4j/'>neo4j</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/" title="Previous Post: Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly">&laquo; Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/" title="Next Post: A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 ">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012  &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/21/a-short-report-about-the-conference-exploring-human-host-microbiome-interactions-in-health-and-disease-at-wellcome-trust-hinxton-on-may-8-10-2012/">A short report about the Conference Exploring Human Host-Microbiome Interactions in Health and Disease at Wellcome Trust, Hinxton on May 8 - 10, 2012 </a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/23/neo4j-server-and-aws-become-good-friends/">Neo4j Server and AWS become good friends!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/ohnosequences">@ohnosequences</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ohnosequences',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - oh no sequences! -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
