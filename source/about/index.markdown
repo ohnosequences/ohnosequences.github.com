@@ -35,7 +35,7 @@ We've been using AWS since 2005, and it plays a critical role in everything we d
 
 ### NoSQL databases
 
-We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [TitanDB](https://github.com/thinkaurelius/titan) from its inception; [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest and more complex graph DBs for biological data out there, [bio4j](http://bio4j.com).
+We're particularly interested in graph DBs: We've been heavy users of [neo4j](http://neo4j.com) since 2010, and [Titan](https://github.com/thinkaurelius/titan) from its inception; [Pablo Pareja](ppareja) is a well-known participant of the graph db community. We've built and use on a daily basis one of the biggest and more complex graph DBs for biological data out there, [bio4j](http://bio4j.com).
 
 ### category theory
 

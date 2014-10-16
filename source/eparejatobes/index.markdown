@@ -11,4 +11,4 @@ footer: true
 
 ### bio
 
-Hi! I'm leading maths/computer science activities here. I have +6 years of experience with AWS and +3 with Scala. I love abstract stuff, particularly category theory and conceptual approaches to programming (functional programming, dependent type theory, etc).
+Hi! I'm Eduardo Pareja-Tobes, and I am leading **maths** / **computer science** research at _oh no sequences!_. My educational background is in **category theory** and related matters; I love abstract stuff. But I also enjoy coding and working with machines: I have **+6 years** of **cloud computing** experience and somewhere around **4 years** with **Scala**.

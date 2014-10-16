@@ -35,7 +35,7 @@ group members publications, (more or less accurate) reverse chronological order:
 - **Characterization of a Listeria monocytogenes protein interfering with Rab5a.**  Carmen Alvarez-Dominguez, Fidel Madrazo-Toca, Lorena Fernandez-Prieto, Joël Vandekerckhove, Eduardo Pareja, Raquel Tobes, Maria Teresa Gomez-Lopez, et al. <br/>
 *Traffic* \| **2008** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/18088303 "http://www.ncbi.nlm.nih.gov/pubmed/18088303")
 
-- **symmetric monoidal (bi)categories with feedback and biological networks.** Eduardo Pareja-Tobes, Marina Manrique, Raquel Tobes, and Eduardo Pareja. 2008. <br/> *4th Meeting of the Spanish Systems Biology Network (REBS)*. \| **2008** \| [slides](http://www.era7bioinformatics.com/docs/SlidesTalk-01122008-Sysbiol2008.pdf "http://www.era7bioinformatics.com/docs/SlidesTalk-01122008-Sysbiol2008.pdf")
+- **symmetric monoidal (bi)categories with feedback and biological networks.** Eduardo Pareja-Tobes, Marina Manrique, Raquel Tobes, and Eduardo Pareja. 2008. <br/> *4th Meeting of the Spanish Systems Biology Network (REBS)*. \| **2008** \| [slides](http://www.slideshare.net/eduardo_pareja_tobes/slidestalk01122008sysbiol2008 "http://www.slideshare.net/eduardo_pareja_tobes/slidestalk01122008sysbiol2008")
 
 - **Cutting Edge: Natural DNA Repetitive Extragenic Sequences from Gram-Negative Pathogens Strongly Stimulate TLR9.** Mattias Magnusson, Raquel Tobes, Jaime Sancho, and Eduardo Pareja <br/> *Journal of Immunology* \| **2007** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/17579017 "http://www.ncbi.nlm.nih.gov/pubmed/17579017")
 
