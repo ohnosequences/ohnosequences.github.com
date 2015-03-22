@@ -4,7 +4,7 @@
   <title><![CDATA[oh no sequences!]]></title>
   <link href="http://ohnosequences.com/atom.xml" rel="self"/>
   <link href="http://ohnosequences.com/"/>
-  <updated>2014-10-16T18:21:44+02:00</updated>
+  <updated>2015-03-22T20:24:37+01:00</updated>
   <id>http://ohnosequences.com/</id>
   <author>
     <name><![CDATA[oh no sequences!]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bio4j preprint]]></title>
+    <link href="http://ohnosequences.com/blog/2015/03/22/bio4j-preprint/"/>
+    <updated>2015-03-22T19:35:00+01:00</updated>
+    <id>http://ohnosequences.com/blog/2015/03/22/bio4j-preprint</id>
+    <content type="html"><![CDATA[<p>It’s been <em>years</em> since we started working on <a href="http://bio4j.com">Bio4j</a>, and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally found quite impressive, given the scale and scope of the project. </p>
+
+<p>However, not having a standard way of citing Bio4j was starting to cause some difficulties for Bio4j users; a link to a GitHub repository is (still) not a generally accepted practice. This was so even for ourselves: we have several papers in the works which build on Bio4j, blocked because it would not make sense to publish them before Bio4j itself.</p>
+
+<p>Well, this is no longer an issue: yesterday a preprint in the <a href="http://biorxiv.org/">bioRxiv</a> went online, describing what is Bio4j</p>
+
+<ul>
+  <li><strong><a href="http://biorxiv.org/content/early/2015/03/20/016758">Bio4j: a high-performance cloud-enabled graph-based data platform</a></strong></li>
+</ul>
+
+<p>We chose the bioRxiv because preprints there are easily citable (they get a <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> assigned), and several open-access journals are happy with publishing a manuscript based on a preprint submitted to it (something which we will certainly do in the next few months).</p>
+
+<p>I’m including below the citing info and abstract; any sort of feedback is welcome!</p>
+
+<hr />
+<p><br /></p>
+
+<h3 id="bio4j-a-high-performance-cloud-enabled-graph-based-data-platform">Bio4j: a high-performance cloud-enabled graph-based data platform</h3>
+
+<p><em>Pablo Pareja-Tobes, Raquel Tobes, Marina Manrique, Eduardo Pareja, Eduardo Pareja-Tobes</em> <br />
+<strong>bioRxiv</strong> – <strong>doi</strong>: <a href="http://dx.doi.org/10.1101/016758">10.1101/016758</a></p>
+
+<!-- ### Abstract -->
+
+<p><strong>Background.</strong> Next Generation Sequencing and other high-throughput technologies have brought a revolution to the bioinformatics landscape, by offering sheer amounts of data about previously unaccessible domains in a cheap and scalable way. However, fast, reproducible, and cost-effective data analysis at such scale remains elusive. A key need for achieving it is being able to access and query the vast amount of publicly available data, specially so in the case of knowledge-intensive, semantically rich data: incredibly valuable information about proteins and their functions, genes, pathways, or all sort of biological knowledge encoded in ontologies remains scattered, semantically and physically fragmented.</p>
+
+<p><strong>Methods and Results.</strong> Guided by this, we have designed and developed Bio4j. It aims to offer a platform for the integration of semantically rich biological data using typed graph models. We have modeled and integrated most publicly available data linked with proteins into a set of interdependent graphs. Data querying is possible through a data model aware Domain Specific Language implemented in Java, letting the user write typed graph traversals over the integrated data. A ready to use cloud-based data distribution, based on the Titan graph database engine is provided; generic data import code can also be used for in-house deployment.</p>
+
+<p><strong>Conclusion.</strong> Bio4j represents a unique resource for the current Bioinformatician, providing at once a solution for several key problems: data integration; expressive, high performance data access; and a cost-effective scalable cloud deployment model.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[INTERCROSSING cloud and NGS course]]></title>
@@ -6503,23 +6541,6 @@ There are 33 predicted genes annotated as toxins and we have found three putativ
 
 <p>[caption id=”attachment_298” align=”aligncenter” width=”452” caption=”Figure 1: Taxonomic origin of proteins responsible of the prediction of the detected genes”]
 <img src="http://ohnosequences.com/images/organism1.jpg" />[/caption] </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Talks, Genomes, Reads and Annotations]]></title>
-    <link href="http://ohnosequences.com/blog/2011/06/05/talks-genomes-reads-and-annotations/"/>
-    <updated>2011-06-05T22:01:46+02:00</updated>
-    <id>http://ohnosequences.com/blog/2011/06/05/talks-genomes-reads-and-annotations</id>
-    <content type="html"><![CDATA[<p>Last 1st of June I was attending to the conference “<a href="https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227">Applied Bioinformatics &amp; Public Health Microbiology</a>” held at the Welcome Trust Conference Centre (Hinxton, UK)</p>
-
-<p>The main purpose of the conference was to point out the importance of high-throughput technologies (mainly NGS) and bioinformatics in solving issues related to public health.</p>
-
-<p>During the morning sessions of the second day (2nd of June) BGI announced the release of the sequencing data of 5 IonTorrent chips (see the  announcement <a href="http://www.bgisequence.com/eu/index.php?cID=194&amp;sms_ss=twitter&amp;at_xt=4de74702e845e3a2,0">here </a>). Just some hours later Nick Loman (@pathogenomenick) published a de novo assembly of the reads with MIRA in his blog (see post <a href="http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/">here</a>). And then, some hours later (in the morning of the 3rd of June) we published the annotation of the Nick’s assembly in <a href="http://www.era7bioinformatics.com/en/E_Coli_EHEC_O104_STRAIN_EU_OUTBREAK_era7bioinformatics.html">our website</a>. We annotated it with the pipeline (BG7 pipeline) we were presenting at the conference (see talk slides <a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data">here</a>).</p>
-
-<p>Now we are working on this automatic annotation data searching for proteins that may be involved in pathogenesis. These preliminary results look promising.</p>
-
-<p>Definitely, it’s been a really exciting experience. In the middle of a conference where we were trying to see how NGS could be applied to solve public health issues we could get the genome of the bacteria responsible for this important outbreak. In less than 24 hours we got the reads, the assembly and the annotation. A good case study :)</p>
 ]]></content>
   </entry>
   

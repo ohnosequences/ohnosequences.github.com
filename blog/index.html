@@ -9,7 +9,7 @@
   <meta name="author" content="oh no sequences!">
 
   
-  <meta name="description" content="During the past August we gave a course as part of the INTERCROSSING Initial Training Network we are part of. The course was titled Cloud Computing &hellip;">
+  <meta name="description" content="It’s been years since we started working on Bio4j, and during all this time we have prioritized working on Bio4j over writing about (and publishing) &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,6 +104,71 @@ MathJax.Hub.Config({
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/22/bio4j-preprint/">Bio4j preprint</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-22T19:35:00+01:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It’s been <em>years</em> since we started working on <a href="http://bio4j.com">Bio4j</a>, and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally found quite impressive, given the scale and scope of the project. </p>
+
+<p>However, not having a standard way of citing Bio4j was starting to cause some difficulties for Bio4j users; a link to a GitHub repository is (still) not a generally accepted practice. This was so even for ourselves: we have several papers in the works which build on Bio4j, blocked because it would not make sense to publish them before Bio4j itself.</p>
+
+<p>Well, this is no longer an issue: yesterday a preprint in the <a href="http://biorxiv.org/">bioRxiv</a> went online, describing what is Bio4j</p>
+
+<ul>
+  <li><strong><a href="http://biorxiv.org/content/early/2015/03/20/016758">Bio4j: a high-performance cloud-enabled graph-based data platform</a></strong></li>
+</ul>
+
+<p>We chose the bioRxiv because preprints there are easily citable (they get a <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> assigned), and several open-access journals are happy with publishing a manuscript based on a preprint submitted to it (something which we will certainly do in the next few months).</p>
+
+<p>I’m including below the citing info and abstract; any sort of feedback is welcome!</p>
+
+<hr />
+<p><br /></p>
+
+<h3 id="bio4j-a-high-performance-cloud-enabled-graph-based-data-platform">Bio4j: a high-performance cloud-enabled graph-based data platform</h3>
+
+<p><em>Pablo Pareja-Tobes, Raquel Tobes, Marina Manrique, Eduardo Pareja, Eduardo Pareja-Tobes</em> <br />
+<strong>bioRxiv</strong> – <strong>doi</strong>: <a href="http://dx.doi.org/10.1101/016758">10.1101/016758</a></p>
+
+<!-- ### Abstract -->
+
+<p><strong>Background.</strong> Next Generation Sequencing and other high-throughput technologies have brought a revolution to the bioinformatics landscape, by offering sheer amounts of data about previously unaccessible domains in a cheap and scalable way. However, fast, reproducible, and cost-effective data analysis at such scale remains elusive. A key need for achieving it is being able to access and query the vast amount of publicly available data, specially so in the case of knowledge-intensive, semantically rich data: incredibly valuable information about proteins and their functions, genes, pathways, or all sort of biological knowledge encoded in ontologies remains scattered, semantically and physically fragmented.</p>
+
+<p><strong>Methods and Results.</strong> Guided by this, we have designed and developed Bio4j. It aims to offer a platform for the integration of semantically rich biological data using typed graph models. We have modeled and integrated most publicly available data linked with proteins into a set of interdependent graphs. Data querying is possible through a data model aware Domain Specific Language implemented in Java, letting the user write typed graph traversals over the integrated data. A ready to use cloud-based data distribution, based on the Titan graph database engine is provided; generic data import code can also be used for in-house deployment.</p>
+
+<p><strong>Conclusion.</strong> Bio4j represents a unique resource for the current Bioinformatician, providing at once a solution for several key problems: data integration; expressive, high performance data access; and a cost-effective scalable cloud deployment model.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1319,56 +1384,6 @@ It just doesn’t make any sense for me. I can understand that this could bring 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/11/escherichia-coli-plasmid-pec_bactec-is-a-part-of-ehec-h112180280-strain/">Escherichia coli plasmid pEC_Bactec is a part of EHEC H112180280 strain </a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-11T04:23:59+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>As it was suggested by Kat Holt (<a href="http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/">http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/</a>) and others a plasmid very similar to pEC_Bactec is a part of the genome of the recently sequenced EHEC H112180280 strain.</p>
-
-<p>The figure displays a simple alignment obtained using MAUVE  Move Contigs tool between pEC_Bactec plasmid (above) and the scaffolds 7 and 13 of H112180280 genome (below):</p>
-
-<p><img src="/images/pEC_Bactec_vs_UK454_7_9_11_12_13.jpg" /></p>
-
-<p>Scaffolds 7 and 13 cover practically all pEC-Bactec plasmid sequence. The two white <code>pEC-Bactec</code> regions that hasn’t associated similar regions in <code>H112180280</code> correspond to the genes:</p>
-
-<ul>
-  <li><code>pndC</code> and  <code>TnpA OrfB IS66</code> (the left white region into the red similarity block)</li>
-  <li><code>TnpA IS26</code> transposase (The white patch into the blue block)</li>
-</ul>
-
-<p>The <code>H112180280</code> sequence regions without any similarity conexion with  <code>pEC-Bactec</code> flanking the two little green blocks correspond to N regions that remain undefined in the <code>H112180280</code> sequence obtained with paired end 454 technology.</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1384,6 +1399,10 @@ It just doesn’t make any sense for me. I can understand that this could bring 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/22/bio4j-preprint/">Bio4j preprint</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
       </li>
     
@@ -1397,10 +1416,6 @@ It just doesn’t make any sense for me. I can understand that this could bring 
     
       <li class="post">
         <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
       </li>
     
   </ul>
@@ -1441,7 +1456,7 @@ It just doesn’t make any sense for me. I can understand that this could bring 
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - oh no sequences! -
+  Copyright &copy; 2015 - oh no sequences! -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

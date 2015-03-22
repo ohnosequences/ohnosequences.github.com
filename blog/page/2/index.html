@@ -9,7 +9,7 @@
   <meta name="author" content="oh no sequences!">
 
   
-  <meta name="description" content="HPA (Health Public Agency http://www.hpa.org.uk/) has just announced the sequence of a E. coli strain. the strain H112180280. They have sequenced the &hellip;">
+  <meta name="description" content="As it was suggested by Kat Holt (http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/) and others a plasmid very similar to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,6 +104,56 @@ MathJax.Hub.Config({
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/11/escherichia-coli-plasmid-pec_bactec-is-a-part-of-ehec-h112180280-strain/">Escherichia coli plasmid pEC_Bactec is a part of EHEC H112180280 strain </a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-11T04:23:59+02:00" pubdate data-updated="true">Jun 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As it was suggested by Kat Holt (<a href="http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/">http://bacpathgenomics.wordpress.com/2011/06/05/ehec-genomes-snp-locations/</a>) and others a plasmid very similar to pEC_Bactec is a part of the genome of the recently sequenced EHEC H112180280 strain.</p>
+
+<p>The figure displays a simple alignment obtained using MAUVE  Move Contigs tool between pEC_Bactec plasmid (above) and the scaffolds 7 and 13 of H112180280 genome (below):</p>
+
+<p><img src="/images/pEC_Bactec_vs_UK454_7_9_11_12_13.jpg" /></p>
+
+<p>Scaffolds 7 and 13 cover practically all pEC-Bactec plasmid sequence. The two white <code>pEC-Bactec</code> regions that hasn’t associated similar regions in <code>H112180280</code> correspond to the genes:</p>
+
+<ul>
+  <li><code>pndC</code> and  <code>TnpA OrfB IS66</code> (the left white region into the red similarity block)</li>
+  <li><code>TnpA IS26</code> transposase (The white patch into the blue block)</li>
+</ul>
+
+<p>The <code>H112180280</code> sequence regions without any similarity conexion with  <code>pEC-Bactec</code> flanking the two little green blocks correspond to N regions that remain undefined in the <code>H112180280</code> sequence obtained with paired end 454 technology.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -5847,50 +5897,6 @@ There are 33 predicted genes annotated as toxins and we have found three putativ
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/05/talks-genomes-reads-and-annotations/">Talks, Genomes, Reads and Annotations</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-05T22:01:46+02:00" pubdate data-updated="true">Jun 5<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Last 1st of June I was attending to the conference “<a href="https://registration.hinxton.wellcome.ac.uk/display_info.asp?id=227">Applied Bioinformatics &amp; Public Health Microbiology</a>” held at the Welcome Trust Conference Centre (Hinxton, UK)</p>
-
-<p>The main purpose of the conference was to point out the importance of high-throughput technologies (mainly NGS) and bioinformatics in solving issues related to public health.</p>
-
-<p>During the morning sessions of the second day (2nd of June) BGI announced the release of the sequencing data of 5 IonTorrent chips (see the  announcement <a href="http://www.bgisequence.com/eu/index.php?cID=194&amp;sms_ss=twitter&amp;at_xt=4de74702e845e3a2,0">here </a>). Just some hours later Nick Loman (@pathogenomenick) published a de novo assembly of the reads with MIRA in his blog (see post <a href="http://pathogenomics.bham.ac.uk/blog/2011/06/ehec-genome-assembly/">here</a>). And then, some hours later (in the morning of the 3rd of June) we published the annotation of the Nick’s assembly in <a href="http://www.era7bioinformatics.com/en/E_Coli_EHEC_O104_STRAIN_EU_OUTBREAK_era7bioinformatics.html">our website</a>. We annotated it with the pipeline (BG7 pipeline) we were presenting at the conference (see talk slides <a href="http://www.slideshare.net/marina_manrique/bg7-a-new-system-for-bacterial-genome-annotation-designed-for-ngs-data">here</a>).</p>
-
-<p>Now we are working on this automatic annotation data searching for proteins that may be involved in pathogenesis. These preliminary results look promising.</p>
-
-<p>Definitely, it’s been a really exciting experience. In the middle of a conference where we were trying to see how NGS could be applied to solve public health issues we could get the genome of the bacteria responsible for this important outbreak. In less than 24 hours we got the reads, the assembly and the annotation. A good case study :)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -5908,6 +5914,10 @@ There are 33 predicted genes annotated as toxins and we have found three putativ
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/22/bio4j-preprint/">Bio4j preprint</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/">INTERCROSSING cloud and NGS course</a>
       </li>
     
@@ -5921,10 +5931,6 @@ There are 33 predicted genes annotated as toxins and we have found three putativ
     
       <li class="post">
         <a href="/blog/2011/12/02/gene-ontology-go-graph-visualizations-for-ehec-automatic-annotation-of-bgi-v4-assembly/">Gene Ontology (GO) graph visualizations for EHEC automatic annotation of BGI V4 assembly</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/18/playing-with-microsatellites-simple-sequence-repeats-java-and-neo4j/">Playing with microsatellites (Simple Sequence Repeats), Java, and Neo4j</a>
       </li>
     
   </ul>
@@ -5965,7 +5971,7 @@ There are 33 predicted genes annotated as toxins and we have found three putativ
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - oh no sequences! -
+  Copyright &copy; 2015 - oh no sequences! -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

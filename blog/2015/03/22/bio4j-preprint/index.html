@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Using Gephi with gene ontology graphs - oh no sequences!</title>
+  <title>Bio4j preprint - oh no sequences!</title>
   <meta name="author" content="oh no sequences!">
 
   
-  <meta name="description" content="It’s already been a couple of weeks since we started integrating Gephi in some of our services and projects and I must say I’m quite impressed with &hellip;">
+  <meta name="description" content="It’s been years since we started working on Bio4j, and during all this time we have prioritized working on Bio4j over writing about (and publishing) &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ohnosequences.com/blog/2011/02/07/using-gephi-with-gene-ontology-graphs">
+  <link rel="canonical" href="http://ohnosequences.com/blog/2015/03/22/bio4j-preprint">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -107,7 +107,7 @@ MathJax.Hub.Config({
   
   <header>
     
-      <h1 class="entry-title">Using Gephi with gene ontology graphs</h1>
+      <h1 class="entry-title">Bio4j preprint</h1>
     
     
       <p class="meta">
@@ -123,20 +123,42 @@ MathJax.Hub.Config({
   
 
 
-<time datetime="2011-02-07T18:49:01+01:00" pubdate data-updated="true">Feb 7<span>th</span>, 2011</time>
+<time datetime="2015-03-22T19:35:00+01:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2015</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>It’s already been a couple of weeks since we started integrating <a href="http://gephi.org/"><strong>Gephi</strong></a> in some of our services and projects and I must say I’m quite impressed with the results so far.</p>
+<div class="entry-content"><p>It’s been <em>years</em> since we started working on <a href="http://bio4j.com">Bio4j</a>, and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally found quite impressive, given the scale and scope of the project. </p>
 
-<p>One of the first uses we found for it was representing gene ontology protein annotations and Go Slim analysis.</p>
+<p>However, not having a standard way of citing Bio4j was starting to cause some difficulties for Bio4j users; a link to a GitHub repository is (still) not a generally accepted practice. This was so even for ourselves: we have several papers in the works which build on Bio4j, blocked because it would not make sense to publish them before Bio4j itself.</p>
 
-<p>Here you can see a graph representation of a protein set gene ontology annotations. Different colors have been applied to each ontology (<em>molecular function, biological process and cellular component</em>). Besides, nodes size is proportional to protein annotations number.</p>
+<p>Well, this is no longer an issue: yesterday a preprint in the <a href="http://biorxiv.org/">bioRxiv</a> went online, describing what is Bio4j</p>
 
-<p>Click <a href="/images/GoSlimBlog.svg"><strong>here</strong></a> to open the svg in a new window.</p>
+<ul>
+  <li><strong><a href="http://biorxiv.org/content/early/2015/03/20/016758">Bio4j: a high-performance cloud-enabled graph-based data platform</a></strong></li>
+</ul>
+
+<p>We chose the bioRxiv because preprints there are easily citable (they get a <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> assigned), and several open-access journals are happy with publishing a manuscript based on a preprint submitted to it (something which we will certainly do in the next few months).</p>
+
+<p>I’m including below the citing info and abstract; any sort of feedback is welcome!</p>
+
+<hr />
+<p><br /></p>
+
+<h3 id="bio4j-a-high-performance-cloud-enabled-graph-based-data-platform">Bio4j: a high-performance cloud-enabled graph-based data platform</h3>
+
+<p><em>Pablo Pareja-Tobes, Raquel Tobes, Marina Manrique, Eduardo Pareja, Eduardo Pareja-Tobes</em> <br />
+<strong>bioRxiv</strong> – <strong>doi</strong>: <a href="http://dx.doi.org/10.1101/016758">10.1101/016758</a></p>
+
+<!-- ### Abstract -->
+
+<p><strong>Background.</strong> Next Generation Sequencing and other high-throughput technologies have brought a revolution to the bioinformatics landscape, by offering sheer amounts of data about previously unaccessible domains in a cheap and scalable way. However, fast, reproducible, and cost-effective data analysis at such scale remains elusive. A key need for achieving it is being able to access and query the vast amount of publicly available data, specially so in the case of knowledge-intensive, semantically rich data: incredibly valuable information about proteins and their functions, genes, pathways, or all sort of biological knowledge encoded in ontologies remains scattered, semantically and physically fragmented.</p>
+
+<p><strong>Methods and Results.</strong> Guided by this, we have designed and developed Bio4j. It aims to offer a platform for the integration of semantically rich biological data using typed graph models. We have modeled and integrated most publicly available data linked with proteins into a set of interdependent graphs. Data querying is possible through a data model aware Domain Specific Language implemented in Java, letting the user write typed graph traversals over the integrated data. A ready to use cloud-based data distribution, based on the Titan graph database engine is provided; generic data import code can also be used for in-house deployment.</p>
+
+<p><strong>Conclusion.</strong> Bio4j represents a unique resource for the current Bioinformatician, providing at once a solution for several key problems: data integration; expressive, high performance data access; and a cost-effective scalable cloud deployment model.</p>
 
 </div>
 
@@ -146,7 +168,7 @@ MathJax.Hub.Config({
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Pablo Pareja</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Eduardo Pareja-Tobes</span></span>
 
       
 
@@ -160,15 +182,21 @@ MathJax.Hub.Config({
   
 
 
-<time datetime="2011-02-07T18:49:01+01:00" pubdate data-updated="true">Feb 7<span>th</span>, 2011</time>
+<time datetime="2015-03-22T19:35:00+01:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2015</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bioinformatics/'>bioinformatics</a>, <a class='category' href='/blog/categories/cloud-computing/'>cloud computing</a>, <a class='category' href='/blog/categories/news/'>news</a>, <a class='category' href='/blog/categories/ngs/'>ngs</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2011/02/07/using-gephi-with-gene-ontology-graphs/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2011/02/07/using-gephi-with-gene-ontology-graphs/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ohnosequences.com/blog/2015/03/22/bio4j-preprint/" data-via="ohnoseq" data-counturl="http://ohnosequences.com/blog/2015/03/22/bio4j-preprint/" >Tweet</a>
   
   
   
@@ -177,8 +205,8 @@ MathJax.Hub.Config({
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/12/03/intercrossing-cloud-and-ngs-course/" title="Previous Post: INTERCROSSING cloud and NGS course">&laquo; INTERCROSSING cloud and NGS course</a>
       
-        <a class="basic-alignment right" href="/blog/2011/02/14/still-playing-with-gephi-and-go-i/" title="Next Post: Still playing with Gephi and GO (I)">Still playing with Gephi and GO (I) &raquo;</a>
       
     </p>
   </footer>
