@@ -18,7 +18,7 @@ tag:
 - cloud computing
 ---
 
-It's been _years_ since we started working on [Bio4j][Bio4j], and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally found quite impressive, given the scale and scope of the project. 
+It's been _years_ since we started working on [Bio4j][Bio4j], and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally find quite impressive, given the scale and scope of the project. 
 
 However, not having a standard way of citing Bio4j was starting to cause some difficulties for Bio4j users; a link to a GitHub repository is (still) not a generally accepted practice. This was so even for ourselves: we have several papers in the works which build on Bio4j, blocked because it would not make sense to publish them before Bio4j itself.
 
