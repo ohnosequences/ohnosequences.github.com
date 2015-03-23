@@ -8,6 +8,22 @@ footer: true
  
 group members publications, (more or less accurate) reverse chronological order:
 
+- **A Dendritic Cell-Targeted Vaccine Loaded with Glyceraldehyde-3-Phosphate Dehydrogenase Peptides Proposed for Individuals at High Risk of Listeriosis** Ricardo Calderon-Gonzalez, Elisabet Frande-Cabanes, Raquel Tobes, Eduardo Pareja, Lidia Alaez-Alvarez and Carmen Alvarez-Dominguez <br /> *Journal of Vaccines & Vaccination* \| **2015** \| [journal link](http://omicsonline.org/vaccines-vaccination-abstract.php?abstract_id=40246)
+
+- **Response to "In vivo attenuation and genetic evolution of a ST247-SCCmecI MRSA clone after 13 years of pathogenic bronchopulmonary colonization in a patient with cystic fibrosis: implications of the innate immune response"** López-Collazo E, Jurado T, de Dios Caballero J, Pérez-Vázquez M, Vindel A, Hernández-Jiménez E, Tamames J, Cubillos-Zapata C, Manrique M,Tobes R, Máiz L, Cantón R, Baquero F, Del Campo R <br /> *Mucosal Immunology* \| **2015** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25736458)
+
+- **Complete Genome Sequence of Ehrlichia mineirensis, a Novel Organism Closely Related to Ehrlichia canis with a New Host Association.** Cabezas-Cruz A, Zweygarth E, Broniszweska M, Passos LM, Ribeiro MF, Manrique M, Tobes R, de la Fuente J. <br /> *Genome Announcements* \| **2015** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25614563)
+
+- **Gene Calling and Bacterial Genome Annotation with BG7.** Tobes R, Pareja-Tobes P, Manrique M, Pareja-Tobes E, Kovach E, Alekhin A, Pareja E.  <br /> *Methods in Molecular Biology* \| **2015** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25343866)
+
+- **In vivo attenuation and genetic evolution of a ST247-SCCmecI MRSA clone after 13 years of pathogenic bronchopulmonary colonization in a patient with cystic fibrosis: implications of the innate immune response.** López-Collazo E, Jurado T, de Dios Caballero J, Pérez-Vázquez M, Vindel A, Hernández-Jiménez E, Tamames J, Cubillos-Zapata C, Manrique M, Tobes R, Máiz L, Cantón R, Baquero F, Del Campo R. <br /> *Mucosal Immunology* \| **2015** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/25118167)
+
+- **Genomic resources notes accepted 1 April 2014 - 31 May 2014** Genomic Resources Development Consortium, Contreras M, de la Fuente J, Estrada-Peña A, Grubhoffer L, Tobes R. <br /> *Molecular Ecology Resources* \| **2014** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24976445)
+
+- **A Systems Biology Approach to the Characterization of Stress Response in Dermacentor reticulatus Tick Unfed Larvae.** Margarita Villar, Marina Popara, Nieves Ayllón, Isabel G. Fernández de Mera, Lourdes Mateos-Hernández, Ruth C. Galindo,  Marina Manrique, Raquel Tobes, José de la Fuente <br /> *PLOS ONE* \| **2014** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24586875)
+
+- **Cellular vaccines in listeriosis: role of the Listeria antigen GAPDH.** Calderón-González R, Frande-Cabanes E, Bronchalo-Vicente L, Lecea-Cuello MJ, Pareja E, Bosch-Martínez A, Fanarraga ML, Yañez-Díaz S, Carrasco-Marín E and Álvarez-Domínguez. <br /> *Frontiers in Cellular and Infection Microbiology*, \| **2014** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24600592)
+
 - **Genomic analysis of the emergence and evolution of multidrug resistance during a Klebsiella pneumoniae outbreak including carbapenem and colistin resistance.** Elena López-Camacho, Rosa Gómez-Gil, Raquel Tobes, Marina Manrique, María Lorenzo, Beatriz Galván, Estefanía Salvarelli, Youssef Moatassim, Iñigo J. Salanueva, Eduardo Pareja, Francisco M. Codoñer, Miguel Alvarez-Tejado, María Pilar Garcillán-Barcia, Fernando De la Cruz, Jesús Mingorance <br /> *Journal of Antimicrobial Chemotherapy* \| **2013** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24155060 "http://www.ncbi.nlm.nih.gov/pubmed/24155060")
 
 - **Normal Mutation Rate Variants Arise in a Mutator (Mut S) Escherichia coli Population** María-Carmen Turrientes, Fernando Baquero, Bruce R. Levin, José-Luis Martínez, Aida Ripoll, José-María González-Alba,  Raquel Tobes, Marina Manrique, Maria-Rosario Baquero, Mario-José Rodríguez-Domínguez, Rafael Cantón, Juan-Carlos Galán <br /> *PLOS ONE* \| **2013** \| [pubmed](http://www.ncbi.nlm.nih.gov/pubmed/24069167 "http://www.ncbi.nlm.nih.gov/pubmed/24069167")
