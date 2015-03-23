@@ -4,7 +4,7 @@
   <title><![CDATA[Category: bioinformatics | oh no sequences!]]></title>
   <link href="http://ohnosequences.com/blog/categories/bioinformatics/atom.xml" rel="self"/>
   <link href="http://ohnosequences.com/"/>
-  <updated>2015-03-23T19:40:37+01:00</updated>
+  <updated>2015-03-23T19:47:36+01:00</updated>
   <id>http://ohnosequences.com/</id>
   <author>
     <name><![CDATA[oh no sequences!]]></name>
@@ -18,7 +18,7 @@
     <link href="http://ohnosequences.com/blog/2015/03/22/bio4j-preprint/"/>
     <updated>2015-03-22T19:35:00+01:00</updated>
     <id>http://ohnosequences.com/blog/2015/03/22/bio4j-preprint</id>
-    <content type="html"><![CDATA[<p>It’s been <em>years</em> since we started working on <a href="http://bio4j.com">Bio4j</a>, and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally found quite impressive, given the scale and scope of the project. </p>
+    <content type="html"><![CDATA[<p>It’s been <em>years</em> since we started working on <a href="http://bio4j.com">Bio4j</a>, and during all this time we have prioritized working on Bio4j over writing about (and publishing) what we were doing. Thanks in part to this, Bio4j 1.0 is going to be an amazing resource for the Bioinformatics community, built by only a handful of people; which I personally find quite impressive, given the scale and scope of the project. </p>
 
 <p>However, not having a standard way of citing Bio4j was starting to cause some difficulties for Bio4j users; a link to a GitHub repository is (still) not a generally accepted practice. This was so even for ourselves: we have several papers in the works which build on Bio4j, blocked because it would not make sense to publish them before Bio4j itself.</p>
 
